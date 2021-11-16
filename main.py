@@ -1,4 +1,5 @@
 import argparse
+import os
 
 def main():
     parser = argparse.ArgumentParser()
@@ -11,7 +12,8 @@ def main():
 
     args = parser.parse_args()
     dataset = args.dataset
-    print(dataset)
+    
+    data_path = os.path.join('../data',dataset)
 
 if __name__ == "__main__":
     main()
