@@ -17,10 +17,6 @@ class TestStringMethods(unittest.TestCase):
         print(test_graph.vs["id"])
         print(ig.summary(test_graph))
         
-
-
-
-
     # def test_split(self):
     #     s = 'hello world'
     #     self.assertEqual(s.split(), ['hello', 'world'])
