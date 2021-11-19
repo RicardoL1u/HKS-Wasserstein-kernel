@@ -44,6 +44,26 @@ def main():
     print('Wasserstein distances computation done. Saved to file.')
     print()
 
+    # Gammas in eps(-gamma*M):
+    gammas = 0.001
+    M = wasserstein_distances
+    g = gammas
+    K = np.exp(-g*M)
+
+    kernel_matrices = []
+    kernel_params = []
+    kernel_matrices.append(K)
+    kernel_params.append((g))
+
+
+    #---------------------------------
+    # Classification
+    #---------------------------------
+    # Run hyperparameter search if needed
+    print(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
+    # Load labels
+    label_file = os.path.join(data_path, 'Labels.txt')
+    y = np.array(read_labels(label_file))
 
 
 if __name__ == "__main__":
