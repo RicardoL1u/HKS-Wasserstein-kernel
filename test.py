@@ -5,7 +5,7 @@ import utilities
 import numpy as np
 import igraph as ig
 import HKS
-
+import wass_dis
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestStringMethods(unittest.TestCase):
 
@@ -17,8 +17,8 @@ class TestStringMethods(unittest.TestCase):
         # print(test_graph.get_edgelist()[0:10])
         test_graph.vs[3]["foo"] =  "bar"
         # print(test_graph.es['weight'])
-        # print(test_graph.vs['label'])
-        # print(test_graph.vs["id"])
+        print(test_graph.vs['label'])
+        print(test_graph.vs["id"])
         # print(ig.summary(test_graph))
         
         graph_A = test_graph.get_adjacency()
@@ -40,14 +40,21 @@ class TestStringMethods(unittest.TestCase):
         print(test)
         embedding = [np.sum(np.exp(-eigenvalues*t)*eigenvectors[0]*eigenvectors[0]) for t in T]
         # embedding = np.sum(np.exp(-eigenvectors)*eigenvectors[0]*eigenvectors)
-        print(embedding)
-        # assert_equal(np.sum(np.exp(-eigenvalues)*eigenvectors[0]*eigenvectors[0]),embedding[0])
-        # assert_equal()
-        print(np.sum(np.exp(-eigenvalues*0)*eigenvectors[0]*eigenvectors[0])-np.sum(eigenvectors[0]*eigenvectors[0]))
-        print(np.sum(np.exp(-eigenvalues*1)*eigenvectors[0]*eigenvectors[0]))
-        print(np.sum(np.exp(-eigenvalues*0)*eigenvectors[0]*eigenvectors[0]))
-        # print(sum(sum(graph_laplacian-verse_decom_matrix)))
-        print(HKS.HKS(test_graph,T))
+        # print(embedding)
+        # # assert_equal(np.sum(np.exp(-eigenvalues)*eigenvectors[0]*eigenvectors[0]),embedding[0])
+        # # assert_equal()
+        # print(np.sum(np.exp(-eigenvalues*0)*eigenvectors[0]*eigenvectors[0])-np.sum(eigenvectors[0]*eigenvectors[0]))
+        # print(np.sum(np.exp(-eigenvalues*1)*eigenvectors[0]*eigenvectors[0]))
+        # print(np.sum(np.exp(-eigenvalues*0)*eigenvectors[0]*eigenvectors[0]))
+        # # print(sum(sum(graph_laplacian-verse_decom_matrix)))
+        # print(HKS.HKS(graphs,T))
+        # print(np.random.random())
+        
+        print(len(graphs))
+        print(len(HKS.CalculateHKS4Graphs(graphs)))
+        print(np.shape(wass_dis.pairwise_wasserstein_distance(graphs,sinkhorn=True)))
+        
+
         # assert_equal(verse_decom_matrix,graph_laplacian)
         # print(eigenvectors.shape)
 
