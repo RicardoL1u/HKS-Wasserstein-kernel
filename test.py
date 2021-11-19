@@ -4,6 +4,7 @@ from numpy.testing._private.utils import assert_equal
 import utilities
 import numpy as np
 import igraph as ig
+import HKS
 
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestStringMethods(unittest.TestCase):
@@ -33,7 +34,10 @@ class TestStringMethods(unittest.TestCase):
         # embedding = np.sum(np.exp())
         print(eigenvectors[0])
         print(eigenvectors[0] * eigenvectors[0])
-        T = {1,3.6,4.8,8,9,0}
+        print(type({1,23,0}))
+        T = [1,3.6,4.8,8,9,0]
+        test = [t*t for t in T]
+        print(test)
         embedding = [np.sum(np.exp(-eigenvalues*t)*eigenvectors[0]*eigenvectors[0]) for t in T]
         # embedding = np.sum(np.exp(-eigenvectors)*eigenvectors[0]*eigenvectors)
         print(embedding)
@@ -43,7 +47,7 @@ class TestStringMethods(unittest.TestCase):
         print(np.sum(np.exp(-eigenvalues*1)*eigenvectors[0]*eigenvectors[0]))
         print(np.sum(np.exp(-eigenvalues*0)*eigenvectors[0]*eigenvectors[0]))
         # print(sum(sum(graph_laplacian-verse_decom_matrix)))
-        
+        print(HKS.HKS(test_graph,T))
         # assert_equal(verse_decom_matrix,graph_laplacian)
         # print(eigenvectors.shape)
 
