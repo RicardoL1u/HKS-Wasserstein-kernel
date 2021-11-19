@@ -19,7 +19,7 @@ class TestStringMethods(unittest.TestCase):
         # print(test_graph.es['weight'])
         print(test_graph.vs['label'])
         print(test_graph.vs["id"])
-        # print(ig.summary(test_graph))
+        print(ig.summary(test_graph))
         
         graph_A = test_graph.get_adjacency()
         adj_matrix = np.array(graph_A.data)
@@ -52,7 +52,7 @@ class TestStringMethods(unittest.TestCase):
         
         print(len(graphs))
         print(len(HKS.CalculateHKS4Graphs(graphs)))
-        print(np.shape(wass_dis.pairwise_wasserstein_distance(graphs,sinkhorn=True)))
+        # print(np.shape(wass_dis.pairwise_wasserstein_distance(graphs,sinkhorn=True)))
         
 
         # assert_equal(verse_decom_matrix,graph_laplacian)
