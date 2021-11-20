@@ -17,7 +17,8 @@ def main():
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
-    parser.add_argument('--h', type = int, required=False, default=2, help = "(Max) number of WL iterations")
+    parser.add_argument('--h_min', type = int, required=False, default=3, help = "(Min) number of sample points in HKS, would be 2^n")
+    parser.add_argument('--h_max', type = int, required=False, default=8, help = "(Max) number of sample points in HKS, would be 2^n")
 
     args = parser.parse_args()
     dataset = args.dataset
@@ -29,6 +30,24 @@ def main():
     for path in [output_path, results_path]:
         if not os.path.exists(path):
             os.makedirs(path)
+
+    # Transform to Kernel
+    # Here the flags come into play
+    if args.gridsearch:
+        # Gammas in eps(-gamma*M):
+        gammas = np.logspace(-4,1,num=6)  
+        # iterate over the iterations too
+        param_grid = [
+            # C is the hype parameter of SVM
+            # The strength of the regularization is inversely proportional to C. 
+            # Must be strictly positive. The penalty is a squared l2 penalty.
+            {'C': np.logspace(-3,3,num=7)}
+        ]
+        hs = [2**n for n in range(args.h_min,args.h_max)]
+    else:
+        gammas = [0.001]
+        hs = [8]
+
     #---------------------------------
     # Embeddings
     #---------------------------------
@@ -41,7 +60,7 @@ def main():
     #     label_sequences = compute_wl_embeddings_discrete(data_path, h)
     graph_filenames = utilities.retrieve_graph_filenames(data_path)
     graphs = [ig.read(filename) for filename in graph_filenames]
-    wasserstein_distances = wass_dis.pairwise_wasserstein_distance(graphs)
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t) for t in hs]
 
 
     sinkhorn = False
@@ -56,32 +75,19 @@ def main():
     print()
 
 
-    # Transform to Kernel
-    # Here the flags come into play
-    if args.gridsearch:
-        # Gammas in eps(-gamma*M):
-        gammas = np.logspace(-4,1,num=6)  
-        # iterate over the iterations too
-        param_grid = [
-            # C is the hype parameter of SVM
-            # The strength of the regularization is inversely proportional to C. 
-            # Must be strictly positive. The penalty is a squared l2 penalty.
-            {'C': np.logspace(-3,3,num=7)}
-        ]
-    else:
-        gammas = [0.001]
 
 
     kernel_matrices = []
     kernel_params = []
+    for i, current_h in enumerate(hs):
+        # Generate the full list of kernel matrices from which to select
+        M = wasserstein_distances[i]
+        for g in gammas:
+            K = np.exp(-g*M)
+            kernel_matrices.append(K)
+            kernel_params.append((current_h, g))
 
-    M = wasserstein_distances
-    for g in gammas:
-        K = np.exp(-g*M)
-        kernel_matrices.append(K)
-        kernel_params.append((g))
-
-    # Check for no hyperparam:
+    # Check for no hyperparameter:
     if not args.gridsearch:
         assert len(kernel_matrices) == 1
     print('Kernel matrices computed.')
@@ -104,6 +110,7 @@ def main():
     
     # Hyperparam logging
     best_C = []
+    best_h = []
     best_gamma = []
 
     cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
@@ -119,14 +126,14 @@ def main():
                     param_grid, K_train, y_train, cv=5)
             # Store best params
             C_ = best_params['params']['C']
-            gamma_ = kernel_params[best_params['K_idx']]
+            h_,gamma_ = kernel_params[best_params['K_idx']]
             y_pred = gs.predict(K_test[best_params['K_idx']])
         else:
             gs = SVC(C=100, kernel='precomputed').fit(K_train[0], y_train)
             y_pred = gs.predict(K_test[0])
-            gamma_, C_ = gammas[0], 100 
+            h_,gamma_, C_ =8, gammas[0], 100 
         best_C.append(C_)
-        # best_h.append(h_)
+        best_h.append(h_)
         best_gamma.append(gamma_)
 
         accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
@@ -152,8 +159,8 @@ def main():
             extension += '_gridsearch'
         results_filename = os.path.join(results_path, f'results_{dataset}'+extension+'.csv')
         n_splits = 10 if args.crossvalidation else 1
-        pd.DataFrame(np.array([best_C, best_gamma, accuracy_scores]).T, 
-                columns=[['C', 'gamma', 'accuracy']], 
+        pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
+                columns=[['h','C', 'gamma', 'accuracy']], 
                 index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
         print(f'Results saved in {results_filename}.')
     else:
