@@ -7,6 +7,7 @@ import numpy as np
 import sklearn.model_selection
 import igraph as ig
 import sklearn.metrics
+import pandas as pd
 from sklearn.svm import SVC
 
 def main():
@@ -54,17 +55,37 @@ def main():
     print('Wasserstein distances computation done. Saved to file.')
     print()
 
-    # Gammas in eps(-gamma*M):
-    gammas = 0.001
-    M = wasserstein_distances
-    g = gammas
-    K = np.exp(-g*M)
+
+    # Transform to Kernel
+    # Here the flags come into play
+    if args.gridsearch:
+        # Gammas in eps(-gamma*M):
+        gammas = np.logspace(-4,1,num=6)  
+        # iterate over the iterations too
+        param_grid = [
+            # C is the hype parameter of SVM
+            # The strength of the regularization is inversely proportional to C. 
+            # Must be strictly positive. The penalty is a squared l2 penalty.
+            {'C': np.logspace(-3,3,num=7)}
+        ]
+    else:
+        gammas = [0.001]
+
 
     kernel_matrices = []
     kernel_params = []
-    kernel_matrices.append(K)
-    kernel_params.append((g))
 
+    M = wasserstein_distances
+    for g in gammas:
+        K = np.exp(-g*M)
+        kernel_matrices.append(K)
+        kernel_params.append((g))
+
+    # Check for no hyperparam:
+    if not args.gridsearch:
+        assert len(kernel_matrices) == 1
+    print('Kernel matrices computed.')
+    print()
 
     #---------------------------------
     # Classification
@@ -92,18 +113,51 @@ def main():
         K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
         y_train, y_test = y[train_index], y[test_index]
        
-        gs = SVC(C=100, kernel='precomputed').fit(K_train[0], y_train)
-        y_pred = gs.predict(K_test[0])
-        gamma_, C_ = gammas, 100 
+        # Gridsearch
+        if args.gridsearch:
+            gs, best_params = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
+                    param_grid, K_train, y_train, cv=5)
+            # Store best params
+            C_ = best_params['params']['C']
+            gamma_ = kernel_params[best_params['K_idx']]
+            y_pred = gs.predict(K_test[best_params['K_idx']])
+        else:
+            gs = SVC(C=100, kernel='precomputed').fit(K_train[0], y_train)
+            y_pred = gs.predict(K_test[0])
+            gamma_, C_ = gammas[0], 100 
         best_C.append(C_)
+        # best_h.append(h_)
         best_gamma.append(gamma_)
+
         accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
         if not args.crossvalidation:
             break
     
     
-    print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
-
+    #---------------------------------
+    # Printing and logging
+    #---------------------------------
+    if args.crossvalidation:
+        print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
+                    np.mean(accuracy_scores) * 100,  
+                    np.std(accuracy_scores) * 100))
+    else:
+        print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
+    
+    if args.crossvalidation or args.gridsearch:
+        extension = ''
+        if args.crossvalidation:
+            extension += '_crossvalidation'
+        if args.gridsearch:
+            extension += '_gridsearch'
+        results_filename = os.path.join(results_path, f'results_{dataset}'+extension+'.csv')
+        n_splits = 10 if args.crossvalidation else 1
+        pd.DataFrame(np.array([best_C, best_gamma, accuracy_scores]).T, 
+                columns=[['C', 'gamma', 'accuracy']], 
+                index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
+        print(f'Results saved in {results_filename}.')
+    else:
+        print('No results saved to file as --crossvalidation or --gridsearch were not selected.')
 
 if __name__ == "__main__":
     main()
