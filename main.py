@@ -1,8 +1,14 @@
 import argparse
 import os
+from random import shuffle
 import wass_dis
 import utilities
 import numpy as np
+import sklearn.model_selection
+import igraph as ig
+import sklearn.metrics
+from sklearn.svm import SVC
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or Enzymes)',
@@ -15,9 +21,13 @@ def main():
     args = parser.parse_args()
     dataset = args.dataset
     
-    data_path = os.path.join('../data',dataset)
+    data_path = os.path.join('./data',dataset)
     output_path = os.path.join('output', dataset)
     results_path = os.path.join('results', dataset)
+
+    for path in [output_path, results_path]:
+        if not os.path.exists(path):
+            os.makedirs(path)
     #---------------------------------
     # Embeddings
     #---------------------------------
@@ -63,7 +73,36 @@ def main():
     print(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
     # Load labels
     label_file = os.path.join(data_path, 'Labels.txt')
-    y = np.array(read_labels(label_file))
+    
+    y = np.array(utilities.read_labels(label_file))
+
+    # Contains accuracy scores for each cross validation step; the
+    # means of this list will be used later on.
+    accuracy_scores = []
+    np.random.seed(42)
+    
+    # Hyperparam logging
+    best_C = []
+    best_gamma = []
+
+    cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
+
+    for train_index, test_index in cv.split(kernel_matrices[0], y):
+        K_train = [K[train_index][:, train_index] for K in kernel_matrices]
+        K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
+        y_train, y_test = y[train_index], y[test_index]
+       
+        gs = SVC(C=100, kernel='precomputed').fit(K_train[0], y_train)
+        y_pred = gs.predict(K_test[0])
+        gamma_, C_ = gammas, 100 
+        best_C.append(C_)
+        best_gamma.append(gamma_)
+        accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
+        if not args.crossvalidation:
+            break
+    
+    
+    print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
 
 
 if __name__ == "__main__":
