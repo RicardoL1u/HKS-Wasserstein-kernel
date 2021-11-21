@@ -15,7 +15,7 @@
 1000 | 82.95 | 9.76
 1250 | 82.95 | 9.76
 3000 | 83.48 | 9.96
-5000 | 83/48 | 9.96
+5000 | 83.48 | 9.96
 
 # HKS with exponential dis
 ```python
@@ -50,3 +50,9 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
 542 | dynamic | 50   | 86.70 | 5.91 - (h:5-10) 
 1205 | dynamic | 50   | 87.22 | 6.77 - (h:5-10) 
 1205 | dynamic | 50   | 86.70 | 5.91 
+
+# Single Hyper
+h = 400
+g = 0.001
+c = 1000
+87.22 | 7.54
