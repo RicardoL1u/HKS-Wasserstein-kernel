@@ -17,8 +17,8 @@ def main():
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
-    parser.add_argument('--h_min', type = int, required=False, default=3, help = "(Min) number of sample points in HKS, would be 2^n")
-    parser.add_argument('--h_max', type = int, required=False, default=8, help = "(Max) number of sample points in HKS, would be 2^n")
+    parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
+    parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
 
     args = parser.parse_args()
     dataset = args.dataset
@@ -43,7 +43,7 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = [2**n for n in range(args.h_min,args.h_max)]
+        hs = np.arange(1,10)*100
     else:
         gammas = [0.001]
         hs = [8]
