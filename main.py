@@ -52,7 +52,7 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    embedding_type = 'continuous' if dataset == 'ENZYMES' else 'discrete'
+    embedding_type = 'continuous' 
     print(f'Generating {embedding_type} embeddings for {dataset}.')
     # if dataset == 'ENZYMES':
     #     label_sequences = compute_wl_embeddings_continuous(data_path, h)
