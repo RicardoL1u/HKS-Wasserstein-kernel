@@ -43,7 +43,7 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = np.arange(1,10)*100
+        hs = np.arange(1,7)*100
     else:
         gammas = [0.001]
         hs = [400]
