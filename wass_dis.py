@@ -8,8 +8,7 @@ def pairwise_wasserstein_distance(X,T,  sinkhorn=False):
     graphs in X.
     args:
         X (List[ig.graphs]): List of graphs
-        node_features (array): Array containing the node features for continuously attributed graphs
-        num_iterations (int): Number of iterations for the propagation scheme
+        T (int): the num of sample points for HKS
         sinkhorn (bool): Indicates whether sinkhorn approximation should be used
     """
     
