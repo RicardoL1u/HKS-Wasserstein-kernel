@@ -43,7 +43,7 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = np.arange(1,10)*100
+        hs = np.arange(args.h_min,args.h_max)*100
     else:
         gammas = [0.001]
         hs = [400]
@@ -52,18 +52,15 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    embedding_type = 'continuous' if dataset == 'ENZYMES' else 'discrete'
-    print(f'Generating {embedding_type} embeddings for {dataset}.')
-    # if dataset == 'ENZYMES':
-    #     label_sequences = compute_wl_embeddings_continuous(data_path, h)
-    # else:
-    #     label_sequences = compute_wl_embeddings_discrete(data_path, h)
+    print(f'Generating HKS embeddings for {dataset}.')
     graph_filenames = utilities.retrieve_graph_filenames(data_path)
     graphs = [ig.read(filename) for filename in graph_filenames]
+
+    # Calculate the wass dis with the given number of samples points in HKS
     wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t) for t in hs]
 
+    sinkhorn = args.sinkhorn
 
-    sinkhorn = False
     # Save Wasserstein distance matrices
     for i, D_w in enumerate(wasserstein_distances):
         filext = 'wasserstein_distance_matrix'
@@ -73,9 +70,6 @@ def main():
         np.save(os.path.join(output_path,filext), D_w)
     print('Wasserstein distances computation done. Saved to file.')
     print()
-
-
-
 
     kernel_matrices = []
     kernel_params = []
@@ -106,10 +100,7 @@ def main():
     # Contains accuracy scores for each cross validation step; the
     # means of this list will be used later on.
     accuracy_scores = []
-    # np.random.seed(42)
-    np.random.seed(1205) #Mean 10-fold accuracy: 72.43 +- 8.22 %
-    # np.random.seed(1205542) #Mean 10-fold accuracy: 70.73 +- 8.27 %
-    # np.random.seed(2018212874) #Mean 10-fold accuracy: 68.48 +- 10.15 %
+    np.random.seed(1205) 
     # Hyperparam logging
     best_C = []
     best_h = []
