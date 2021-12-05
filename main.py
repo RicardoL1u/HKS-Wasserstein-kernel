@@ -45,8 +45,9 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        gammas = [0.001]
-        hs = [400]
+        gammas = [1]
+        hs = [800]
+        C = [1]
 
     #---------------------------------
     # Embeddings
@@ -122,9 +123,9 @@ def main():
             h_,gamma_ = kernel_params[best_params['K_idx']]
             y_pred = gs.predict(K_test[best_params['K_idx']])
         else:
-            gs = SVC(C=1000, kernel='precomputed').fit(K_train[0], y_train)
+            gs = SVC(C=C[0], kernel='precomputed').fit(K_train[0], y_train)
             y_pred = gs.predict(K_test[0])
-            h_,gamma_, C_ =hs[0], gammas[0], 1000 
+            h_,gamma_, C_ =hs[0], gammas[0], C[0] 
         best_C.append(C_)
         best_h.append(h_)
         best_gamma.append(gamma_)

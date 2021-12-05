@@ -1,11 +1,24 @@
 import numpy as np
 import igraph as ig
 
-def get_random_samples(T=8):
-    np.random.seed(1205)
-    # return np.random.random((T))*1500
-    # return np.linspace(0,5000,T)
-    return np.random.standard_exponential((T))
+def get_random_samples(lambda2,lambdaLast,T=8):
+    """
+    sample HKS uniformly over the logarithm scaled temporal domain
+    
+    Parameters
+    ---
+    lambda2: the 2nd eigenvalue of eigendecomposition for the given graph,
+             represent the base frequency of the graph spectral
+    lambdaLast: the biggest eigenvalue represents the maximum frequency
+
+    Returns:
+    ---
+    sample points: numpy.array
+    """
+    t_min = 4*np.log(10/lambdaLast)
+    t_max = 4*np.log(10/lambda2)
+    points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
+    return points
 
 def get_random_samples_based_exp(T=8,lambda_ = 1):
     np.random.seed(542)
@@ -21,16 +34,8 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     # np.maximum()
     return np.concatenate((samples_left,samples_right))
 
-# def get_random_samples_based_hypoexp(lambdas,T=8):
-#     np.random.seed(42)
-#     samples_list = [np.random.exponential(scale=1/lambda_,size=(T)) for lambda_ in lambdas]
-#     sample_list = np.zeros((T))
-#     for sample in samples_list:
-#         samples_list += sample
-#     return sample_list/len(lambdas)
 
-
-def HKS(graph,T):
+def HKS(graph,T,isHeuristics=True):
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
@@ -51,10 +56,15 @@ def HKS(graph,T):
     deg_matrix = np.diagflat(deg_vector)
     graph_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
-    sample_points = get_random_samples_based_exp_dual(T,np.mean(eigenvalues))
+    eigenvalues = np.sort(eigenvalues)
+    sample_points = get_random_samples(eigenvalues[1],eigenvalues[-1],T)
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
     for i in range(len(deg_vector)):
-        embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+        if not isHeuristics:
+            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+        else:
+            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/
+            np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
         embeddings[i] = embedding
     return embeddings
 
