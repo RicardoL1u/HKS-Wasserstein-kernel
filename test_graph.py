@@ -10,32 +10,35 @@ import wass_dis
 class TestStringMethods(unittest.TestCase):
 
     #这些方法的命名都以 test 开头。 这个命名约定告诉测试运行者类的哪些方法表示测试。
-    def test_direct_file_list(self):
-        graph_filenames = utilities.retrieve_graph_filenames("./data/MUTAG")
-        graphs = [ig.read(filename) for filename in graph_filenames]
-        test_graph = graphs[0]
-        # print(test_graph.get_edgelist()[0:10])
-        test_graph.vs[3]["foo"] =  "bar"
-        # print(test_graph.es['weight'])
-        # print(test_graph.vs['label'])
-        # print(test_graph.vs["id"])
-        # print(ig.summary(test_graph))
+    # def test_direct_file_list(self):
+    #     graph_filenames = utilities.retrieve_graph_filenames("./data/MUTAG")
+    #     graphs = [ig.read(filename) for filename in graph_filenames]
+    #     test_graph = graphs[0]
+    #     # print(test_graph.get_edgelist()[0:10])
+    #     test_graph.vs[3]["foo"] =  "bar"
+    #     # print(test_graph.es['weight'])
+    #     # print(test_graph.vs['label'])
+    #     # print(test_graph.vs["id"])
+    #     # print(ig.summary(test_graph))
         
-        graph_A = test_graph.get_adjacency()
-        adj_matrix = np.array(graph_A.data)
-        degree_vector = np.array(test_graph.degree())
-        degree_matrix  = np.diagflat(degree_vector)
-        graph_laplacian = degree_matrix - adj_matrix
-        eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
-        eigenvalues = np.sort(eigenvalues)
+    #     graph_A = test_graph.get_adjacency()
+    #     adj_matrix = np.array(graph_A.data)
+    #     degree_vector = np.array(test_graph.degree())
+    #     degree_matrix  = np.diagflat(degree_vector)
+    #     graph_laplacian = degree_matrix - adj_matrix
+    #     eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
+    #     eigenvalues = np.sort(eigenvalues)
 
-        print(eigenvalues)
-        print(eigenvalues[1],eigenvalues[-1])
-        T = HKS.get_random_samples(eigenvalues[1],eigenvalues[-1])
-        # embedding = [np.sum(np.exp(-eigenvalues*t)*eigenvectors[0]*eigenvectors[0]) for t in T]
-        print(T)
+    #     print(eigenvalues)
+    #     print(eigenvalues[1],eigenvalues[-1])
+    #     T = HKS.get_random_samples(eigenvalues[1],eigenvalues[-1])
+    #     # embedding = [np.sum(np.exp(-eigenvalues*t)*eigenvectors[0]*eigenvectors[0]) for t in T]
+    #     print(T)
 
-        
+    def test_what(self):
+        embedding = np.array([t for t in [1,2,3]/
+        np.sum(np.array([1,2,3]))])
+        print(embedding)
 
     # def test_split(self):
     #     s = 'hello world'

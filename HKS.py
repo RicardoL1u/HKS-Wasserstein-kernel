@@ -45,9 +45,11 @@ def HKS(graph,T,isHeuristics=True):
 
     Returns
     ----------
+    tuple
     embeddings: numpy.array
         shape (len(T) * N)
         this shape is used to consistent with ot.dist
+    
 
     """
     
@@ -56,17 +58,18 @@ def HKS(graph,T,isHeuristics=True):
     deg_matrix = np.diagflat(deg_vector)
     graph_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
-    eigenvalues = np.sort(eigenvalues)
-    sample_points = get_random_samples(eigenvalues[1],eigenvalues[-1],T)
+    sorted_eigenvalues = np.sort(eigenvalues)
+    sample_points = get_random_samples(sorted_eigenvalues[1],sorted_eigenvalues[-1],T)
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
     for i in range(len(deg_vector)):
         if not isHeuristics:
             embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
         else:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/
-            np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
+            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
         embeddings[i] = embedding
-    return embeddings
+    return embeddings,eigenvalues
+
+
 
 def CalculateHKS4Graphs(graphs,T):
     """
