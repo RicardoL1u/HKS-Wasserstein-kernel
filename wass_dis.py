@@ -36,13 +36,18 @@ def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False,
         for graph_index_2, graph_2 in enumerate(node_embeddings_matrice[graph_index_1:]):
             # Get cost matrix
             costs = ot.dist(graph_1[0], graph_2[0], metric='euclidean')
+            # temp1 = 1/graph_1[1]
+            # temp2 = 1/graph_2[1]
             if isImport :
-                graph1_dis = np.exp(graph_1[1])/np.sum(np.exp(graph_1[1]))
-                graph2_dis = np.exp(graph_2[1])/np.sum(np.exp(graph_2[1]))
+                temp1 = np.exp(-graph_1[1])
+                temp2 = np.exp(-graph_2[1])
+                print(temp1)
+                graph1_dis = np.exp(temp1)/np.sum(np.exp(temp1))
+                graph2_dis = np.exp(temp2)/np.sum(np.exp(temp2))
             else:
                 graph1_dis = np.ones(len(graph_1[1]))/len(graph_1[1])
                 graph2_dis = np.ones(len(graph_2[1]))/len(graph_2[1])
-            # print(graph1_dis)
+
             if sinkhorn:
                 mat = ot.sinkhorn(graph1_dis, graph2_dis, costs, sinkhorn_lambda, numItermax=50)
                 M[graph_index_1, graph_index_2 + graph_index_1] = np.sum(np.multiply(mat, costs))

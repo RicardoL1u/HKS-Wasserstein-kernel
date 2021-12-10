@@ -9,6 +9,7 @@ import igraph as ig
 import sklearn.metrics
 import pandas as pd
 from sklearn.svm import SVC
+import datetime
 
 def main():
     parser = argparse.ArgumentParser()
@@ -45,9 +46,9 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        hs = [600]
-        C = [10]
-        gammas = [1.0]
+        hs = [500]
+        C = [1000]
+        gammas = [0.001]
 
     #---------------------------------
     # Embeddings
@@ -146,7 +147,7 @@ def main():
         print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
     
     if args.crossvalidation or args.gridsearch:
-        extension = ''
+        extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         if args.crossvalidation:
             extension += '_crossvalidation'
         if args.gridsearch:

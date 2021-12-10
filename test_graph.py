@@ -6,6 +6,7 @@ import numpy as np
 import igraph as ig
 import HKS
 import wass_dis
+import datetime
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestStringMethods(unittest.TestCase):
 
@@ -39,6 +40,11 @@ class TestStringMethods(unittest.TestCase):
         embedding = np.array([t for t in [1,2,3]/
         np.sum(np.array([1,2,3]))])
         print(embedding)
+        print(datetime.datetime.now())
+        if True:
+            test = np.arange(1,5)
+        print(test)
+
 
     # def test_split(self):
     #     s = 'hello world'

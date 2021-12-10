@@ -35,7 +35,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     return np.concatenate((samples_left,samples_right))
 
 
-def HKS(graph,T,isHeuristics=True):
+def HKS(graph,T,isHeuristics=False):
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
