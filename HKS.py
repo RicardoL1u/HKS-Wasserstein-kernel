@@ -35,7 +35,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     return np.concatenate((samples_left,samples_right))
 
 
-def HKS(graph,T,isHeuristics=False):
+def HKS(graph,T,categorical=True,isHeuristics=False):
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
@@ -61,15 +61,26 @@ def HKS(graph,T,isHeuristics=False):
     sorted_eigenvalues = np.sort(eigenvalues)
     sample_points = get_random_samples(sorted_eigenvalues[1],sorted_eigenvalues[-1],T)
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
+
     for i in range(len(deg_vector)):
-        if not isHeuristics:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
-        else:
+        if isHeuristics:
             embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
+        else:
+            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+        
         embeddings[i] = embedding
+    if categorical:
+        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph)),axis=1)
     return embeddings,eigenvalues
 
-
+def GetNodeAttrMat(graph,categorical = True):
+    if categorical:
+        labels = np.array(graph.vs['label'],dtype=int)
+        num_labels = 7
+        return 2*np.eye(num_labels)[labels]
+    else:
+        return np.zeros((4,4))
+    
 
 def CalculateHKS4Graphs(graphs,T):
     """

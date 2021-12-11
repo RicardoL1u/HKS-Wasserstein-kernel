@@ -22,7 +22,7 @@ def pairwise_wasserstein_distance(X,T,  sinkhorn=False):
 
 
 def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False, 
-                                   sinkhorn_lambda=1e-2,isImport=True):
+                                   sinkhorn_lambda=1e-2,isImport=False):
     '''
     Generate the Wasserstein distance matrix for the graphs embedded 
     in label_sequences
