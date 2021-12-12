@@ -19,6 +19,9 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     # print(lambda2,lambdaLast)
     t_min = 4*np.log(10/lambdaLast)
     t_max = 4*np.log(10/lambda2)
+    if t_min < 0:
+        t_min = 0.01
+    print(t_min,t_max)
     points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
     return points
 

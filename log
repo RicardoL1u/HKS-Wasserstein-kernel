@@ -1,0 +1,24 @@
+(myconda) root@40bf603a3132:~/HKS-Wasserstein-kernel# python3 main.py --dataset ENZYMES --gridsearch > output.txt
+/root/HKS-Wasserstein-kernel/HKS.py:79: ComplexWarning: Casting complex values to real discards the imaginary part
+  embeddings[i] = embedding
+/root/HKS-Wasserstein-kernel/HKS.py:25: RuntimeWarning: divide by zero encountered in log
+  points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
+/root/miniconda3/envs/myconda/lib/python3.7/site-packages/ot/utils.py:172: RuntimeWarning: invalid value encountered in add
+  c += b2[None, :]
+/root/miniconda3/envs/myconda/lib/python3.7/site-packages/ot/lp/__init__.py:495: UserWarning: Problem unbounded
+  check_result(result_code)
+^CTraceback (most recent call last):
+  File "main.py", line 169, in <module>
+    main()
+  File "main.py", line 66, in main
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
+  File "main.py", line 66, in <listcomp>
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
+  File "/root/HKS-Wasserstein-kernel/wass_dis.py", line 20, in pairwise_wasserstein_distance
+    sinkhorn_lambda=1e-2)
+  File "/root/HKS-Wasserstein-kernel/wass_dis.py", line 48, in _compute_wasserstein_distance
+    graph1_dis = np.ones(len(graph_1[1]))/len(graph_1[1])
+KeyboardInterrupt
+(myconda) root@40bf603a3132:~/HKS-Wasserstein-kernel# python3 main.py --dataset ENZYMES --gridsearch > output.txt
+/root/HKS-Wasserstein-kernel/HKS.py:79: ComplexWarning: Casting complex values to real discards the imaginary part
+  embeddings[i] = embedding
