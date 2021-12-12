@@ -15,6 +15,7 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     ---
     sample points: numpy.array
     """
+    # print(lambda2,lambdaLast)
     t_min = 4*np.log(10/lambdaLast)
     t_max = 4*np.log(10/lambda2)
     points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
@@ -58,8 +59,11 @@ def HKS(graph,T,categorical=True,isHeuristics=False):
     deg_matrix = np.diagflat(deg_vector)
     graph_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
-    sorted_eigenvalues = np.sort(eigenvalues)
-    sample_points = get_random_samples(sorted_eigenvalues[1],sorted_eigenvalues[-1],T)
+    sorted_eigen = np.sort(eigenvalues)
+    lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.001)]
+    lambdaLast = sorted_eigen[-1]
+    print(len(sorted_eigen),lambda2,lambdaLast)
+    sample_points = get_random_samples(lambda2,lambdaLast,T)
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
 
     for i in range(len(deg_vector)):
@@ -77,7 +81,7 @@ def GetNodeAttrMat(graph,categorical = True):
     if categorical:
         labels = np.array(graph.vs['label'],dtype=int)
         num_labels = 7
-        return 3*np.eye(num_labels)[labels]
+        return 2.5*np.eye(num_labels)[labels]
     else:
         return np.zeros((4,4))
     
