@@ -1,5 +1,6 @@
 import numpy as np
 import igraph as ig
+import os
 
 def get_random_samples(lambda2,lambdaLast,T=8):
     """
@@ -36,7 +37,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     return np.concatenate((samples_left,samples_right))
 
 
-def HKS(graph,T,categorical=True,isHeuristics=False):
+def HKS(graph,T,categorical,isHeuristics=False):
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
@@ -74,19 +75,22 @@ def HKS(graph,T,categorical=True,isHeuristics=False):
         
         embeddings[i] = embedding
     if categorical:
-        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph)),axis=1)
+        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph,categorical)),axis=1)
     return embeddings,eigenvalues
 
-def GetNodeAttrMat(graph,categorical = True):
+def GetNodeAttrMat(graph,categorical,data_directory='./data/ENZYMES'):
     if categorical:
         labels = np.array(graph.vs['label'],dtype=int)
         num_labels = 7
         return 2.5*np.eye(num_labels)[labels]
     else:
-        return np.zeros((4,4))
+        attribtues_filenames = os.path.join(data_directory, 'node_features.npy')
+        if os.path.isfile(attribtues_filenames):
+            node_features = np.load(attribtues_filenames,allow_pickle=True)
+        return node_features
     
 
-def CalculateHKS4Graphs(graphs,T):
+def CalculateHKS4Graphs(graphs,T,categorical):
     """
     Calculate generate the matrix the node embeddings for each given graph
 
@@ -99,5 +103,5 @@ def CalculateHKS4Graphs(graphs,T):
     feature_matrices: list of matrix of node embeddings
 
     """
-    matrices = [HKS(graph,T) for graph in graphs]
+    matrices = [HKS(graph,T,categorical) for graph in graphs]
     return matrices

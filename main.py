@@ -58,8 +58,12 @@ def main():
     graph_filenames = utilities.retrieve_graph_filenames(data_path)
     graphs = [ig.read(filename) for filename in graph_filenames]
 
+    
+    # Load the data and generate the embeddings 
+    categorical = False if dataset == 'ENZYMES' else True
+    print(categorical)
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t) for t in hs]
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
 
     sinkhorn = args.sinkhorn
 

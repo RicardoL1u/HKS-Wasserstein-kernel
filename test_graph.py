@@ -11,19 +11,15 @@ class TestStringMethods(unittest.TestCase):
 
     # 这些方法的命名都以 test 开头。 这个命名约定告诉测试运行者类的哪些方法表示测试。
     def test_direct_file_list(self):
-        graph_filenames = utilities.retrieve_graph_filenames("./data/MUTAG")
-        graphs = [ig.read(filename) for filename in graph_filenames]
-        test_graph = graphs[0]
-        # print(test_graph.get_edgelist()[0:10])
-        test_graph.vs[3]["foo"] =  "bar"
-        # print(test_graph.es['weight'])
-        B = np.array(test_graph.vs['label'],dtype=int)
+        node_features,adj_mat,n_nodes = utilities.load_continuous_graphs("./data/ENZYMES")
 
-        num_labels = 7
-        print(2*np.eye(num_labels)[B])
-
-        A = np.arange(0,9).reshape((3,3))
-        print(np.concatenate((A,A),axis=1))
+        print(len(node_features))
+        print(len(adj_mat))
+        print(len(n_nodes))
+        print(node_features[0].shape)
+        print(adj_mat[0].shape)
+        print(n_nodes[0])
+        # print(2*np.eye(num_labels)[B])
 
         # print(test_graph.vs["id"])
         # print(ig.summary(test_graph))

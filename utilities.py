@@ -4,6 +4,7 @@ import sklearn.model_selection._validation
 import sklearn.metrics
 import sklearn.base
 import numpy as np
+import igraph as ig
 
 #################
 # File loaders 
@@ -37,6 +38,49 @@ def retrieve_graph_filenames(data_directory):
     graphs = [g for g in files if g.endswith('gml')]
     graphs.sort()
     return [os.path.join(data_directory, g) for g in graphs]
+
+def read_gml(filename):
+	node_features = []
+	g = ig.read(filename)
+		
+	if not 'label' in g.vs.attribute_names():
+		g.vs['label'] = list(map(str, [l for l in g.vs.degree()]))    
+	
+	node_features = g.vs['label']
+
+	adj_mat = np.asarray(g.get_adjacency().data)
+	
+	return node_features, adj_mat
+
+
+def load_continuous_graphs(data_directory):
+    graph_filenames = retrieve_graph_filenames(data_directory)
+
+    # initialize
+    node_features = []
+    adj_mat = []
+    n_nodes = []
+
+    # Iterate across graphs and load initial node features
+    for graph_fname in graph_filenames:
+        node_features_cur, adj_mat_cur = read_gml(graph_fname)
+        # Load features
+        node_features.append(np.asarray(node_features_cur).astype(float).reshape(-1,1))
+        adj_mat.append(adj_mat_cur.astype(int))
+        n_nodes.append(adj_mat_cur.shape[0])
+
+    # Check if there is a node_features.npy file 
+    # containing continuous attributes
+    # PS: these were obtained by processing the TU Dortmund website
+    # If none is present, keep degree or label as features.
+    attribtues_filenames = os.path.join(data_directory, 'node_features.npy')
+    if os.path.isfile(attribtues_filenames):
+        node_features = np.load(attribtues_filenames,allow_pickle=True)
+
+    n_nodes = np.asarray(n_nodes)
+    node_features = np.asarray(node_features)
+
+    return node_features, adj_mat, n_nodes
 
 #######################
 # Hyperparameter search
