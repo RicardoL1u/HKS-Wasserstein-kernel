@@ -63,7 +63,7 @@ def HKS(graph,T,categorical,isHeuristics=False):
     sorted_eigen = np.sort(eigenvalues)
     lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.001)]
     lambdaLast = sorted_eigen[-1]
-    print(len(sorted_eigen),lambda2,lambdaLast)
+    # print(len(sorted_eigen),lambda2,lambdaLast)
     sample_points = get_random_samples(lambda2,lambdaLast,T)
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
 
