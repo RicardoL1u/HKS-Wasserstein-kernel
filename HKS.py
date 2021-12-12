@@ -70,14 +70,15 @@ def HKS(graph,T,categorical=True,isHeuristics=False):
         
         embeddings[i] = embedding
     if categorical:
-        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph)),axis=1)
+        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph,eigenvalues)),axis=1)
     return embeddings,eigenvalues
 
-def GetNodeAttrMat(graph,categorical = True):
+def GetNodeAttrMat(graph,eigenvalues,categorical = True):
     if categorical:
         labels = np.array(graph.vs['label'],dtype=int)
         num_labels = 7
-        return 3*np.eye(num_labels)[labels]
+        return np.eye(num_labels)[labels] * eigenvalues[:,None]
+        # return np.eye(num_labels)[labels]
     else:
         return np.zeros((4,4))
     
