@@ -46,9 +46,9 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        hs = [500]
-        C = [1000]
-        gammas = [0.001]
+        hs = [900]
+        C = [10]
+        gammas = [0.1]
 
     #---------------------------------
     # Embeddings

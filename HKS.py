@@ -77,7 +77,7 @@ def GetNodeAttrMat(graph,categorical = True):
     if categorical:
         labels = np.array(graph.vs['label'],dtype=int)
         num_labels = 7
-        return 2*np.eye(num_labels)[labels]
+        return 3*np.eye(num_labels)[labels]
     else:
         return np.zeros((4,4))
     
