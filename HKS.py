@@ -17,10 +17,10 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     sample points: numpy.array
     """
     # print(lambda2,lambdaLast)
-    t_min = 4*np.log(10/lambdaLast)
-    t_max = 4*np.log(10/lambda2)
-    if t_min < 0:
-        t_min = 0.01
+    t_min = 4*np.log(10)/lambdaLast
+    t_max = 4*np.log(10)/lambda2
+    # if t_min < 0:
+    #     t_min = 0.01
     print(t_min,t_max)
     points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
     return points
@@ -64,7 +64,7 @@ def HKS(graph,T,categorical,isHeuristics=False):
     graph_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
     sorted_eigen = np.sort(eigenvalues)
-    lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.001)]
+    lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.0001)]
     lambdaLast = sorted_eigen[-1]
     # print(len(sorted_eigen),lambda2,lambdaLast)
     sample_points = get_random_samples(lambda2,lambdaLast,T)
