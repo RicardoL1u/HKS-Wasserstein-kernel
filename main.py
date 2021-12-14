@@ -36,15 +36,15 @@ def main():
     # Here the flags come into play
     if args.gridsearch:
         # Gammas in eps(-gamma*M):
-        gammas = np.logspace(-4,-3,num=2)  
+        gammas = np.logspace(-4,1,num=6)  
         # iterate over the iterations too
         param_grid = [
             # C is the hype parameter of SVM
             # The strength of the regularization is inversely proportional to C. 
             # Must be strictly positive. The penalty is a squared l2 penalty.
-            {'C': np.logspace(0,1,num=2)}
+            {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = np.arange(1,2)*100
+        hs = np.arange(args.h_min,args.h_min)*100
     else:
         hs = [900]
         C = [10]
