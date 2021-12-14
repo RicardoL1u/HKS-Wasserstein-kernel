@@ -46,9 +46,9 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        hs = [900]
-        C = [10]
-        gammas = [0.1]
+        hs = [500]
+        C = [1000]
+        gammas = [0.001]
 
     #---------------------------------
     # Embeddings
@@ -61,7 +61,7 @@ def main():
     
     # Load the data and generate the embeddings 
     categorical = False if dataset == 'ENZYMES' else True
-    print(categorical)
+    # print(categorical)
     # Calculate the wass dis with the given number of samples points in HKS
     wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
 

@@ -19,10 +19,7 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     # print(lambda2,lambdaLast)
     t_min = 4*np.log(10)/lambdaLast
     t_max = 4*np.log(10)/lambda2
-    # if t_min < 0:
-    #     t_min = 0.01
-    print(t_min,t_max)
-    points = np.log(np.linspace(start=t_min,stop=t_max,num=T))
+    points = np.log(np.linspace(start=np.log(t_min),stop=np.log(t_max),num=T))
     return points
 
 def get_random_samples_based_exp(T=8,lambda_ = 1):
@@ -72,7 +69,8 @@ def HKS(graph,T,categorical,isHeuristics=False):
 
     for i in range(len(deg_vector)):
         if isHeuristics:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
+            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/\
+                np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
         else:
             embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
         
