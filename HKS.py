@@ -22,6 +22,13 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     points = np.log(np.linspace(start=np.log(t_min),stop=np.log(t_max),num=T))
     return points
 
+def get_random_samples_li():
+    t0 =  0.01
+    alpha1 = 2 
+    tauScale = 15
+    tau = np.arange(0,tauScale,1/16)
+    return t0*alpha1**tau
+
 def get_random_samples_based_exp(T=8,lambda_ = 1):
     np.random.seed(542)
     beta = 1/lambda_
@@ -64,7 +71,8 @@ def HKS(graph,T,categorical,isHeuristics=False):
     lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.0001)]
     lambdaLast = sorted_eigen[-1]
     # print(len(sorted_eigen),lambda2,lambdaLast)
-    sample_points = get_random_samples(lambda2,lambdaLast,T)
+    # sample_points = get_random_samples(lambda2,lambdaLast,T)
+    sample_points = get_random_samples_li()
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
 
     for i in range(len(deg_vector)):
