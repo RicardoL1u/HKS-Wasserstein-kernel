@@ -11,7 +11,7 @@ class TestStringMethods(unittest.TestCase):
 
     # 这些方法的命名都以 test 开头。 这个命名约定告诉测试运行者类的哪些方法表示测试。
     def test_direct_file_list(self):
-        node_features,adj_mat,n_nodes = utilities.load_continuous_graphs("./data/ENZYMES")
+        node_features,adj_mat,n_nodes = utilities.load_continuous_graphs("./data/MUTAG")
 
         print(len(node_features))
         print(len(adj_mat))
