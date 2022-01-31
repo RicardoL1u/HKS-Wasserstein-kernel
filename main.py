@@ -61,6 +61,7 @@ def main():
     # Load the data and generate the embeddings 
     print(f'Generating HKS embeddings for {dataset}.')
     data = dgl.data.GINDataset(name=dataset,self_loop=False,degree_as_nlabel=True)
+    # data = dgl.data.MUTAGDataset()
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
     y = list(y)

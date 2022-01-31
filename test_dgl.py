@@ -15,7 +15,7 @@ class TestPipeline(unittest.TestCase):
 
     def test_dataset(self):
         data = dgl.data.GINDataset(name='MUTAG', self_loop=False,degree_as_nlabel=True)
-        g, label = data[128]
+        g, label = data[132]
         print((g.ndata['attr']).numpy())
         print(g)
 
