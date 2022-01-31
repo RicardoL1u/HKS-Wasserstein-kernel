@@ -1,6 +1,8 @@
 import numpy as np
-import igraph as ig
+# import igraph as ig
 import os
+import dgl
+import torch
 
 def get_random_samples(lambda2,lambdaLast,T=8):
     """
@@ -62,11 +64,14 @@ def HKS(graph,T,categorical,isHeuristics=False):
 
     """
     
-    adj_matrix = np.array(graph.get_adjacency().data)
-    deg_vector = np.array(graph.degree())
-    deg_matrix = np.diagflat(deg_vector)
-    graph_laplacian = deg_matrix - adj_matrix
-    eigenvalues,eigenvectors = np.linalg.eig(graph_laplacian)
+    adj_matrix = graph.adj()
+    deg_vector = graph.ndata["label"]
+    deg_matrix = torch.diag(graph.ndata["label"])
+    graphical_laplacian = deg_matrix - adj_matrix
+    eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
+    eigenvalues = eigenvalues.numpy()
+    eigenvectors = eigenvectors.numpy()
+
     sorted_eigen = np.sort(eigenvalues)
     lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.0001)]
     lambdaLast = sorted_eigen[-1]
@@ -84,19 +89,20 @@ def HKS(graph,T,categorical,isHeuristics=False):
         
         embeddings[i] = embedding
     if categorical:
-        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph,categorical)),axis=1)
+        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph)),axis=1)
     return embeddings,eigenvalues
 
-def GetNodeAttrMat(graph,categorical,data_directory='./data/ENZYMES'):
-    if categorical:
-        labels = np.array(graph.vs['label'],dtype=int)
-        num_labels = 7
-        return 2.5*np.eye(num_labels)[labels]
-    else:
-        attribtues_filenames = os.path.join(data_directory, 'node_features.npy')
-        if os.path.isfile(attribtues_filenames):
-            node_features = np.load(attribtues_filenames,allow_pickle=True)
-        return node_features
+def GetNodeAttrMat(graph):
+    return (graph.ndata['attr']).numpy()
+    # if categorical:
+    #     labels = np.array(graph.vs['attr'],dtype=int)
+    #     num_labels = 7
+    #     return 2.5*np.eye(num_labels)[labels]
+    # else:
+    #     attribtues_filenames = os.path.join(data_directory, 'node_features.npy')
+    #     if os.path.isfile(attribtues_filenames):
+    #         node_features = np.load(attribtues_filenames,allow_pickle=True)
+    #     return node_features
     
 
 def CalculateHKS4Graphs(graphs,T,categorical):

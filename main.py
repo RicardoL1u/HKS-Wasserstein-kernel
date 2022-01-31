@@ -1,11 +1,13 @@
 import argparse
+from math import fabs
 import os
 from random import shuffle
 import wass_dis
 import utilities
 import numpy as np
 import sklearn.model_selection
-import igraph as ig
+import dgl.data
+# import igraph as ig
 import sklearn.metrics
 import pandas as pd
 from sklearn.svm import SVC
@@ -55,8 +57,18 @@ def main():
     #---------------------------------
     # Load the data and generate the embeddings 
     print(f'Generating HKS embeddings for {dataset}.')
-    graph_filenames = utilities.retrieve_graph_filenames(data_path)
-    graphs = [ig.read(filename) for filename in graph_filenames]
+    data = dgl.data.GINDataset(name=dataset,self_loop=False,degree_as_nlabel=True)
+    graphs, y = zip(*[graph for graph in data])
+    graphs = list(graphs)
+    y = list(y)
+    y = [unit.item() for unit in y]
+    print(y)
+    print(len(y))
+    print(sum(y))
+    
+    
+    # graph_filenames = utilities.retrieve_graph_filenames(data_path)
+    # graphs = [ig.read(filename) for filename in graph_filenames]
 
     
     # Load the data and generate the embeddings 
@@ -99,9 +111,9 @@ def main():
     # Run hyperparameter search if needed
     print(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
     # Load labels
-    label_file = os.path.join(data_path, 'Labels.txt')
+    # label_file = os.path.join(data_path, 'Labels.txt')
     
-    y = np.array(utilities.read_labels(label_file))
+    # y = np.array(utilities.read_labels(label_file))
 
     # Contains accuracy scores for each cross validation step; the
     # means of this list will be used later on.
@@ -115,6 +127,7 @@ def main():
     cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
 
     for train_index, test_index in cv.split(kernel_matrices[0], y):
+        print(train_index,test_index)
         K_train = [K[train_index][:, train_index] for K in kernel_matrices]
         K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
         y_train, y_test = y[train_index], y[test_index]
