@@ -63,7 +63,7 @@ def HKS(graph,T,categorical,isHeuristics=False):
     
 
     """
-    
+    w = 0.4
     adj_matrix = graph.adj()
     deg_vector = graph.ndata["label"]
     deg_matrix = torch.diag(graph.ndata["label"])
@@ -72,9 +72,7 @@ def HKS(graph,T,categorical,isHeuristics=False):
     eigenvalues = eigenvalues.numpy()
     eigenvectors = eigenvectors.numpy()
 
-    sorted_eigen = np.sort(eigenvalues)
-    lambda2 = sorted_eigen[np.argmax(sorted_eigen>0.0001)]
-    lambdaLast = sorted_eigen[-1]
+    # sorted_eigen = np.sort(eigenvalues)
     # print(len(sorted_eigen),lambda2,lambdaLast)
     # sample_points = get_random_samples(lambda2,lambdaLast,T)
     sample_points = get_random_samples_li()
@@ -88,8 +86,11 @@ def HKS(graph,T,categorical,isHeuristics=False):
             embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
         
         embeddings[i] = embedding
+
     if categorical:
-        embeddings = np.concatenate((embeddings,GetNodeAttrMat(graph)),axis=1)
+        print(embeddings.shape)
+        embeddings = np.concatenate(((1-w)*embeddings,w*GetNodeAttrMat(graph)),axis=1)
+        print(embeddings.shape)
     return embeddings,eigenvalues
 
 def GetNodeAttrMat(graph):

@@ -14,16 +14,10 @@ class TestPipeline(unittest.TestCase):
         print(numpy.linalg.eig(A))
 
     def test_dataset(self):
-        data = dgl.data.GINDataset(name='PTC', self_loop=False,degree_as_nlabel=True)
+        data = dgl.data.GINDataset(name='MUTAG', self_loop=False,degree_as_nlabel=True)
         g, label = data[128]
-        adj_matrix = g.adj()
-        deg_matrix = torch.diag(g.ndata["label"])
-        graphical_laplacian = deg_matrix - adj_matrix
-        eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
-        eigenvalues = eigenvalues.numpy()
-        eigenvectors = eigenvectors.numpy()
-        print(eigenvalues)
-        print(eigenvectors)
+        print((g.ndata['attr']).numpy())
+        print(g)
 
         # print(g)
         # print(g.adj())

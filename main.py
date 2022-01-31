@@ -13,10 +13,13 @@ import pandas as pd
 from sklearn.svm import SVC
 import datetime
 
+# global parameter
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or Enzymes)',
-                            choices=['MUTAG', 'ENZYMES'])
+                            choices=['MUTAG', 'PTC'])
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
@@ -61,10 +64,8 @@ def main():
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
     y = list(y)
-    y = [unit.item() for unit in y]
-    print(y)
-    print(len(y))
-    print(sum(y))
+    y = np.array([unit.item() for unit in y])
+
     
     
     # graph_filenames = utilities.retrieve_graph_filenames(data_path)
@@ -73,7 +74,7 @@ def main():
     
     # Load the data and generate the embeddings 
     categorical = False if dataset == 'ENZYMES' else True
-    # print(categorical)
+    print(categorical)
     # Calculate the wass dis with the given number of samples points in HKS
     wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
 
@@ -127,7 +128,6 @@ def main():
     cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
 
     for train_index, test_index in cv.split(kernel_matrices[0], y):
-        print(train_index,test_index)
         K_train = [K[train_index][:, train_index] for K in kernel_matrices]
         K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
         y_train, y_test = y[train_index], y[test_index]
