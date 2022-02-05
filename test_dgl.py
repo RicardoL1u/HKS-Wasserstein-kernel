@@ -12,7 +12,8 @@ class TestPipeline(unittest.TestCase):
         print(torch.linalg.eig(A))
         A = A.numpy()
         print(numpy.linalg.eig(A))
-
+    # def test_bug(self):
+    #     sort_eigen = 
     def test_dataset(self):
         data = dgl.data.GINDataset(name='MUTAG', self_loop=False,degree_as_nlabel=True)
         g, label = data[132]

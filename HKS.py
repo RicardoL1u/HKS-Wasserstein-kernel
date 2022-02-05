@@ -46,6 +46,38 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     return np.concatenate((samples_left,samples_right))
 
 
+def WKS(graph,N=200):
+    w = 0.5
+    wks_variance = 6
+    adj_matrix = graph.adj()
+    deg_vector = graph.ndata["label"]
+    deg_matrix = torch.diag(graph.ndata["label"])
+    graphical_laplacian = deg_matrix - adj_matrix
+    eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
+    eigenvalues = np.abs(eigenvalues.numpy())
+    eigenvectors = eigenvectors.numpy()
+
+    sorted_eigen = np.sort(eigenvalues)
+    sorted_eigen[sorted_eigen<1e-6]=1e-6
+    print(sorted_eigen)
+    log_eigenvalue = np.log(sorted_eigen)
+    # print(np.abs(sorted_eigen))
+    # print(np.max(np.abs(sorted_eigen),1e-6))
+    # log_eigenvalue = np.log(np.max(np.abs(sorted_eigen),1e-6))
+    e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
+    sigma =(e_set[1]-e_set[0])*wks_variance
+    print(e_set)
+    print(eigenvectors)
+    wks = np.zeros((len(deg_vector),N))
+    for i in range(len(deg_vector)):
+        print(i)
+        wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
+        print("hi")
+        # embeddings[i] = embedding
+    embeddings = np.concatenate(((1-w)*wks,w*GetNodeAttrMat(graph)),axis=1)
+    print("hi")
+    return embeddings,eigenvalues
+
 def HKS(graph,T,categorical,isHeuristics=False):
     """
     Compute the Heat Kernel Signature for each node in the given graph
@@ -78,14 +110,18 @@ def HKS(graph,T,categorical,isHeuristics=False):
     sample_points = get_random_samples_li()
     embeddings = np.zeros((len(deg_vector),len(sample_points)))
 
+    # HKS part
+    # for i in range(len(deg_vector)):
+    #     if isHeuristics:
+    #         embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/\
+    #             np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
+    #     else:
+    #         embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
+    #     embeddings[i] = embedding
+
     for i in range(len(deg_vector)):
-        if isHeuristics:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/\
-                np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
-        else:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
-        
-        embeddings[i] = embedding
+        embeddings[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
+        # embeddings[i] = embedding
 
     if categorical:
         print(embeddings.shape)
@@ -119,5 +155,6 @@ def CalculateHKS4Graphs(graphs,T,categorical):
     feature_matrices: list of matrix of node embeddings
 
     """
-    matrices = [HKS(graph,T,categorical) for graph in graphs]
+    # matrices = [HKS(graph,T,categorical) for graph in graphs]
+    matrices = [WKS(graph) for graph in graphs]
     return matrices
