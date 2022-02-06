@@ -31,22 +31,22 @@ def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False,
     n = len(node_embeddings_matrice)
     
     M = np.zeros((n,n))
+
+    for graph_index_1, graph_1 in enumerate(node_embeddings_matrice):
+        graph_1 = np.nan_to_num(graph_1,posinf=0.5,neginf=1e-7,nan=0)
     # Iterate over pairs of graphs
     for graph_index_1, graph_1 in enumerate(node_embeddings_matrice):
         for graph_index_2, graph_2 in enumerate(node_embeddings_matrice[graph_index_1:]):
+            
+            # print(graph_1.tolist())
+            # print(np.dot(graph_1,graph_2.T))
             # Get cost matrix
-            costs = ot.dist(graph_1[0], graph_2[0], metric='euclidean')
-            # temp1 = 1/graph_1[1]
-            # temp2 = 1/graph_2[1]
-            if isImport :
-                temp1 = np.exp(-graph_1[1])
-                temp2 = np.exp(-graph_2[1])
-                print(temp1)
-                graph1_dis = np.exp(temp1)/np.sum(np.exp(temp1))
-                graph2_dis = np.exp(temp2)/np.sum(np.exp(temp2))
-            else:
-                graph1_dis = np.ones(len(graph_1[1]))/len(graph_1[1])
-                graph2_dis = np.ones(len(graph_2[1]))/len(graph_2[1])
+            costs = ot.dist(graph_1, graph_2, metric='sqeuclidean')
+            print(costs)
+            # print(graph_1-graph_2)
+
+            graph1_dis = np.ones(graph_1.shape[0])/graph_1.shape[0]
+            graph2_dis = np.ones(graph_2.shape[0])/graph_2.shape[0]
 
             if sinkhorn:
                 mat = ot.sinkhorn(graph1_dis, graph2_dis, costs, sinkhorn_lambda, numItermax=50)
