@@ -1,0 +1,1 @@
+python3 -X faulthandler main.py --dataset PTC  --crossvalidation --gridsearch > logwks

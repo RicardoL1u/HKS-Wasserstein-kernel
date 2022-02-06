@@ -32,8 +32,8 @@ def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False,
     
     M = np.zeros((n,n))
 
-    for graph_index_1, graph_1 in enumerate(node_embeddings_matrice):
-        graph_1 = np.nan_to_num(graph_1,posinf=0.5,neginf=1e-7,nan=0)
+    for i in range(len(node_embeddings_matrice)):
+        node_embeddings_matrice[i] = np.nan_to_num(node_embeddings_matrice[i],posinf=1.0,neginf=1e-7,nan=0)
     # Iterate over pairs of graphs
     for graph_index_1, graph_1 in enumerate(node_embeddings_matrice):
         for graph_index_2, graph_2 in enumerate(node_embeddings_matrice[graph_index_1:]):
@@ -42,7 +42,7 @@ def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False,
             # print(np.dot(graph_1,graph_2.T))
             # Get cost matrix
             costs = ot.dist(graph_1, graph_2, metric='sqeuclidean')
-            print(costs)
+            # print(costs)
             # print(graph_1-graph_2)
 
             graph1_dis = np.ones(graph_1.shape[0])/graph_1.shape[0]
