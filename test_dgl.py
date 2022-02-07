@@ -6,18 +6,20 @@ import numpy
 
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestPipeline(unittest.TestCase):
-    def test_eig(self):
-        A = torch.randn(2, 2, dtype=torch.complex128)
-        print()
-        print(torch.linalg.eig(A))
-        A = A.numpy()
-        print(numpy.linalg.eig(A))
+    # def test_eig(self):
+    #     A = torch.randn(2, 2, dtype=torch.complex128)
+    #     print()
+    #     print(torch.linalg.eig(A))
+    #     A = A.numpy()
+    #     print(numpy.linalg.eig(A))
     # def test_bug(self):
     #     sort_eigen = 
     def test_dataset(self):
-        data = dgl.data.GINDataset(name='MUTAG', self_loop=False,degree_as_nlabel=True)
-        g, label = data[132]
-        print((g.ndata['attr']).numpy())
+        data = dgl.data.LegacyTUDataset('MUTAG')
+        # data = dgl.data.MUTAGDataset() 
+        print(data)
+        g = data[132]
+        # print((g.ndata['attr']).numpy())
         print(g)
 
         # print(g)
