@@ -29,7 +29,6 @@ def main():
     args = parser.parse_args()
     dataset = args.dataset
     
-    data_path = os.path.join('./data',dataset)
     output_path = os.path.join('output', dataset)
     results_path = os.path.join('results', dataset)
 
@@ -66,30 +65,20 @@ def main():
     graphs = list(graphs)
     y = list(y)
     y = np.array([unit.item() for unit in y])
-
-    
-    
-    # graph_filenames = utilities.retrieve_graph_filenames(data_path)
-    # graphs = [ig.read(filename) for filename in graph_filenames]
-
     
     # Load the data and generate the embeddings 
-    categorical = False if dataset == 'ENZYMES' else True
-    print(categorical)
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,categorical,args.sinkhorn) for t in hs]
-
-    sinkhorn = args.sinkhorn
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,args.sinkhorn) for t in hs]
 
     # Save Wasserstein distance matrices
-    for i, D_w in enumerate(wasserstein_distances):
-        filext = 'wasserstein_distance_matrix'
-        if sinkhorn:
-            filext += '_sinkhorn'
-        filext += f'_it{i}.npy'
-        np.save(os.path.join(output_path,filext), D_w)
-    print('Wasserstein distances computation done. Saved to file.')
-    print()
+    # for i, D_w in enumerate(wasserstein_distances):
+    #     filext = 'wasserstein_distance_matrix'
+    #     if args.sinkhorn:
+    #         filext += '_sinkhorn'
+    #     filext += f'_it{i}.npy'
+    #     np.save(os.path.join(output_path,filext), D_w)
+    # print('Wasserstein distances computation done. Saved to file.')
+    # print()
 
     kernel_matrices = []
     kernel_params = []

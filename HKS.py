@@ -124,18 +124,9 @@ def HKS(graph,T,categorical,isHeuristics=False):
 
 def GetNodeAttrMat(graph):
     return (graph.ndata['feat']).numpy()
-    # if categorical:
-    #     labels = np.array(graph.vs['attr'],dtype=int)
-    #     num_labels = 7
-    #     return 2.5*np.eye(num_labels)[labels]
-    # else:
-    #     attribtues_filenames = os.path.join(data_directory, 'node_features.npy')
-    #     if os.path.isfile(attribtues_filenames):
-    #         node_features = np.load(attribtues_filenames,allow_pickle=True)
-    #     return node_features
     
 
-def CalculateHKS4Graphs(graphs,T,categorical):
+def CalculateHKS4Graphs(graphs,T):
     """
     Calculate generate the matrix the node embeddings for each given graph
 
@@ -148,6 +139,6 @@ def CalculateHKS4Graphs(graphs,T,categorical):
     feature_matrices: list of matrix of node embeddings
 
     """
-    # matrices = [HKS(graph,T,categorical) for graph in graphs]
-    matrices = [WKS(graph) for graph in graphs]
+    # matrices = [HKS(graph,T) for graph in graphs]
+    matrices = [WKS(graph,T) for graph in graphs]
     return matrices
