@@ -115,10 +115,6 @@ def HKS(graph,T,categorical,isHeuristics=False):
             embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
         embeddings[i] = embedding
 
-    # for i in range(len(deg_vector)):
-    #     embeddings[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
-    #     # embeddings[i] = embedding
-
     embeddings = np.concatenate(((1-w)*embeddings,w*GetNodeAttrMat(graph)),axis=1)
     return embeddings
 
