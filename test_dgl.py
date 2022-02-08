@@ -15,12 +15,15 @@ class TestPipeline(unittest.TestCase):
     # def test_bug(self):
     #     sort_eigen = 
     def test_dataset(self):
-        data = dgl.data.LegacyTUDataset('MUTAG')
+        data = dgl.data.LegacyTUDataset('PTC_FM')
         # data = dgl.data.MUTAGDataset() 
         print(data)
-        g = data[132]
-        # print((g.ndata['attr']).numpy())
+        g,label = data[132]
         print(g)
+        print(label)
+        print(g.out_degrees())
+        print(g.in_degrees())
+        # print((g.ndata['attr']).numpy())
 
         # print(g)
         # print(g.adj())

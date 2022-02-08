@@ -50,8 +50,8 @@ def WKS(graph,N=200):
     w = 0.5
     wks_variance = 6
     adj_matrix = graph.adj()
-    deg_vector = graph.ndata["label"]
-    deg_matrix = torch.diag(graph.ndata["label"])
+    deg_vector = graph.out_degrees()
+    deg_matrix = torch.diag(deg_vector)
     graphical_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = np.abs(eigenvalues.numpy())
@@ -71,7 +71,7 @@ def WKS(graph,N=200):
         # embeddings[i] = embedding
     # print(wks.shape)
     wks = np.concatenate(((1-w)*wks,w*GetNodeAttrMat(graph)),axis=1)
-    # print(embeddings.shape)
+    # print(wks.shape)
     return wks
 
 def HKS(graph,T,categorical,isHeuristics=False):
@@ -93,8 +93,8 @@ def HKS(graph,T,categorical,isHeuristics=False):
     """
     w = 0.4
     adj_matrix = graph.adj()
-    deg_vector = graph.ndata["label"]
-    deg_matrix = torch.diag(graph.ndata["label"])
+    deg_vector = graph.out_degrees()
+    deg_matrix = torch.diag(deg_vector)
     graphical_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = eigenvalues.numpy()
@@ -123,7 +123,7 @@ def HKS(graph,T,categorical,isHeuristics=False):
     return embeddings
 
 def GetNodeAttrMat(graph):
-    return (graph.ndata['attr']).numpy()
+    return (graph.ndata['feat']).numpy()
     # if categorical:
     #     labels = np.array(graph.vs['attr'],dtype=int)
     #     num_labels = 7
