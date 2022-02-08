@@ -42,7 +42,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     zero_list = np.zeros((int(T/2)))
     samples_left = np.random.exponential(scale=beta,size=(int(T/2)))
     samples_right = np.maximum(50-np.random.exponential(scale=beta,size=(int(T/2))),zero_list)
-    # np.maximum()
+
     return np.concatenate((samples_left,samples_right))
 
 
@@ -60,9 +60,6 @@ def WKS(graph,N=200):
     sorted_eigen = np.sort(eigenvalues)
     sorted_eigen[sorted_eigen<1e-6]=1e-6
     log_eigenvalue = np.log(sorted_eigen)
-    # print(np.abs(sorted_eigen))
-    # print(np.max(np.abs(sorted_eigen),1e-6))
-    # log_eigenvalue = np.log(np.max(np.abs(sorted_eigen),1e-6))
     e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
     sigma =(e_set[1]-e_set[0])*wks_variance
     wks = np.zeros((len(deg_vector),N))
@@ -74,7 +71,7 @@ def WKS(graph,N=200):
     # print(wks.shape)
     return wks
 
-def HKS(graph,T,categorical,isHeuristics=False):
+def HKS(graph,T,isHeuristics=False):
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
@@ -122,7 +119,7 @@ def GetNodeAttrMat(graph):
     return (graph.ndata['feat']).numpy()
     
 
-def CalculateHKS4Graphs(graphs,T):
+def CalculateSignature4Graphs(graphs,method,T):
     """
     Calculate generate the matrix the node embeddings for each given graph
 
@@ -135,6 +132,9 @@ def CalculateHKS4Graphs(graphs,T):
     feature_matrices: list of matrix of node embeddings
 
     """
-    # matrices = [HKS(graph,T) for graph in graphs]
-    matrices = [WKS(graph,T) for graph in graphs]
+    if method==0:
+        matrices = [HKS(graph,T) for graph in graphs]
+    elif method==1:
+        matrices = [WKS(graph,T) for graph in graphs]
+        
     return matrices

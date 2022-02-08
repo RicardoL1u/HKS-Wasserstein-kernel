@@ -2,7 +2,7 @@ import HKS
 import numpy as np
 import ot
 
-def pairwise_wasserstein_distance(X,T,sinkhorn=False):
+def pairwise_wasserstein_distance(X,T,method,sinkhorn=False):
     """
     Pairwise computation of the Wasserstein distance between embeddings of the 
     graphs in X.
@@ -13,7 +13,7 @@ def pairwise_wasserstein_distance(X,T,sinkhorn=False):
     """
     
     # Embed the nodes
-    node_embeddings_matrice = HKS.CalculateHKS4Graphs(X,T)
+    node_embeddings_matrice = HKS.CalculateSignature4Graphs(X,method,T)
 
     # Compute the Wasserstein distance
     pairwise_distances = _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=sinkhorn, 

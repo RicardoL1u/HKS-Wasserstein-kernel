@@ -14,12 +14,16 @@ from sklearn.svm import SVC
 import datetime
 
 # global parameter
-
+method_dict = {
+    0:'HKS',
+    1:'WKS',
+}
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or Enzymes)',
                             choices=['MUTAG', 'PTC_FM'])
+    parser.add_argument('--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
@@ -58,7 +62,7 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    print(f'Generating HKS embeddings for {dataset}.')
+    print(f'Generating {method_dict[args.method]} embeddings for {dataset}.')
     data = dgl.data.LegacyTUDataset(name=dataset)
     # data = dgl.data.MUTAGDataset()
     graphs, y = zip(*[graph for graph in data])
@@ -68,8 +72,8 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,args.sinkhorn) for t in hs]
-
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,args.method,args.sinkhorn) for t in hs]
+    
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):
     #     filext = 'wasserstein_distance_matrix'
