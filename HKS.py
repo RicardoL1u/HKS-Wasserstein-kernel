@@ -47,7 +47,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
 
 
 def WKS(graph,N=200):
-    w = 0.5
+    # w = 0.5
     wks_variance = 6
     adj_matrix = graph.adj()
     deg_vector = graph.out_degrees()
@@ -65,10 +65,7 @@ def WKS(graph,N=200):
     wks = np.zeros((len(deg_vector),N))
     for i in range(len(deg_vector)):
         wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
-        # embeddings[i] = embedding
-    # print(wks.shape)
-    wks = np.concatenate(((1-w)*wks,w*GetNodeAttrMat(graph)),axis=1)
-    # print(wks.shape)
+
     return wks
 
 def HKS(graph,T,isHeuristics=False):
@@ -88,7 +85,7 @@ def HKS(graph,T,isHeuristics=False):
     
 
     """
-    w = 0.4
+    # w = 0.4
     adj_matrix = graph.adj()
     deg_vector = graph.out_degrees()
     deg_matrix = torch.diag(deg_vector)
@@ -101,19 +98,17 @@ def HKS(graph,T,isHeuristics=False):
     # print(len(sorted_eigen),lambda2,lambdaLast)
     # sample_points = get_random_samples(lambda2,lambdaLast,T)
     sample_points = get_random_samples_li()
-    embeddings = np.zeros((len(deg_vector),len(sample_points)))
+    hks = np.zeros((len(deg_vector),len(sample_points)))
 
     # HKS part
     for i in range(len(deg_vector)):
         if isHeuristics:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/\
+            hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i])/\
                 np.sum(np.exp(-eigenvalues*t)) for t in sample_points])
         else:
-            embedding = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
-        embeddings[i] = embedding
+            hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])    
 
-    embeddings = np.concatenate(((1-w)*embeddings,w*GetNodeAttrMat(graph)),axis=1)
-    return embeddings
+    return hks
 
 def GetNodeAttrMat(graph):
     return (graph.ndata['feat']).numpy()
@@ -132,9 +127,10 @@ def CalculateSignature4Graphs(graphs,method,T):
     feature_matrices: list of matrix of node embeddings
 
     """
+    w = 0.4
     if method==0:
-        matrices = [HKS(graph,T) for graph in graphs]
+        matrices = [np.concatenate(((1-w)*HKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
     elif method==1:
-        matrices = [WKS(graph,T) for graph in graphs]
+        matrices = [np.concatenate(((1-w)*WKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
         
     return matrices
