@@ -21,7 +21,7 @@ method_dict = {
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or Enzymes)',
+    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
                             choices=['MUTAG', 'PTC_FM'])
     parser.add_argument('--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')

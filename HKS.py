@@ -1,3 +1,4 @@
+from distutils.log import debug
 import numpy as np
 # import igraph as ig
 import os
@@ -56,13 +57,20 @@ def WKS(graph,N=200):
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = np.abs(eigenvalues.numpy())
     eigenvectors = eigenvectors.numpy()
-
     sorted_eigen = np.sort(eigenvalues)
     sorted_eigen[sorted_eigen<1e-6]=1e-6
     log_eigenvalue = np.log(sorted_eigen)
     e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
     sigma =(e_set[1]-e_set[0])*wks_variance
     wks = np.zeros((len(deg_vector),N))
+    debugmark = False
+    for e in e_set:
+        if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
+            debugmark = True
+            print(e)
+    if debugmark:
+        print(e_set)
+        print(log_eigenvalue)
     for i in range(len(deg_vector)):
         wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
 
