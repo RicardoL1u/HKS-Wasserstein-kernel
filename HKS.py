@@ -4,6 +4,10 @@ import numpy as np
 import os
 import dgl
 import torch
+import dgl.data
+
+problem_graphs = []
+problem_esets = []
 
 def get_random_samples(lambda2,lambdaLast,T=8):
     """
@@ -71,6 +75,7 @@ def WKS(graph,N=200):
     if debugmark:
         print(e_set)
         print(log_eigenvalue)
+        problem_graphs.append(graph)
     for i in range(len(deg_vector)):
         wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
 
@@ -140,5 +145,5 @@ def CalculateSignature4Graphs(graphs,method,T):
         matrices = [np.concatenate(((1-w)*HKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
     elif method==1:
         matrices = [np.concatenate(((1-w)*WKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
-        
+    dgl.data.utils.save_graphs('./graph.bin',problem_graphs)
     return matrices
