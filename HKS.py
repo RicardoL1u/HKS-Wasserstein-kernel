@@ -60,9 +60,10 @@ def WKS(graph,N=200):
     graphical_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = np.abs(eigenvalues.numpy())
+    print(eigenvalues)
     eigenvectors = eigenvectors.numpy()
     sorted_eigen = np.sort(eigenvalues)
-    sorted_eigen[sorted_eigen<1e-6]=1e-6
+    sorted_eigen[sorted_eigen<1e-6] = 1
     log_eigenvalue = np.log(sorted_eigen)
     e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
     sigma =(e_set[1]-e_set[0])*wks_variance
@@ -73,7 +74,8 @@ def WKS(graph,N=200):
             debugmark = True
             print(e)
     if debugmark:
-        print(e_set)
+        # print(e_set)
+        print(eigenvalues)
         print(log_eigenvalue)
         problem_graphs.append(graph)
     for i in range(len(deg_vector)):

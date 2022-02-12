@@ -10,8 +10,13 @@ class TestPipeline(unittest.TestCase):
     
     def test_wks(self):
         print('hi')
-        glist = load_graphs('./graph.bin')
-        print(glist)
-        g = glist[0]
-        print(g)
-        HKS.WKS(g)
+        glist,label = load_graphs('./graph.bin')
+        print(len(glist))
+        offset_list =[]
+        cnt = 0
+        for g in glist:
+            print(g)
+            HKS.WKS(g)
+
+if __name__ == "__main__":
+    unittest.main()
