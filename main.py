@@ -54,8 +54,8 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        hs = [500]
-        C = [1]
+        hs = [600]
+        C = [10]
         gammas = [10]
 
     #---------------------------------
