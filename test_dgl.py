@@ -2,7 +2,7 @@ import dgl.data
 import unittest
 # from sklearn.covariance import graphical_lasso
 import torch
-import numpy
+import numpy as np
 
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestPipeline(unittest.TestCase):
@@ -16,38 +16,18 @@ class TestPipeline(unittest.TestCase):
     #     sort_eigen = 
     def test_dataset(self):
         data = dgl.data.LegacyTUDataset('PTC_FM')
+        distr = np.zeros((1000))
         # data = dgl.data.MUTAGDataset() 
-        print(data)
-        g,label = data[132]
-        print(g)
-        print(label)
-        print(g.out_degrees())
-        print(g.in_degrees())
-        # print((g.ndata['attr']).numpy())
+        for i in range(len(data)):
+            g,label = data[i]
+            node_num = len(g.out_degrees())
+            if node_num >999:
+                node_num = 999
+            distr[node_num]+=1
+        print(distr)
 
-        # print(g)
-        # print(g.adj())
 
-        # print(g.ndata["label"])
         
-        # print(g.degree())
-
-        # graphs, labels = zip(*[data[i] for i in range(4)])
-        # graphs = list(graphs)
-        # labels = list(labels)
-        # print(graphs)
-        # print(labels)
-        # print(type(graphs))
-        # print(type(labels))
-        # for i in range(128,129):
-        #     print(data[i])
-        #     g, label = data[i]
-            
-        #     print(g.ndata['attr'])
-        #     print(label)
-        #     g, label = data[i+150]
-        #     print(g)
-        #     print(label)
 
 
       
