@@ -64,7 +64,6 @@ def main():
     # Load the data and generate the embeddings 
     print(f'Generating {method_dict[args.method]} embeddings for {dataset}.')
     data = dgl.data.LegacyTUDataset(name=dataset)
-    # data = dgl.data.MUTAGDataset()
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
     y = list(y)

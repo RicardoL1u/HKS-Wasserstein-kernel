@@ -16,6 +16,14 @@ class TestPipeline(unittest.TestCase):
     #     sort_eigen = 
     def test_dataset(self):
         data = dgl.data.LegacyTUDataset('PTC_FM')
+        print("original dataset length : ", len(data.graph_lists))
+        preserve_idx = []
+        for (i, g) in enumerate(data.graph_lists):
+            if g.number_of_nodes() > 2:
+                preserve_idx.append(i)
+        data.graph_lists = [data.graph_lists[i] for i in preserve_idx]
+        data.graph_labels = [data.graph_labels[i] for i in preserve_idx]
+        print("after pruning graphs that are too big : ", len(data.graph_lists))
         distr = np.zeros((1000))
         # data = dgl.data.MUTAGDataset() 
         for i in range(len(data)):

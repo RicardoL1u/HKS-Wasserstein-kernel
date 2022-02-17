@@ -70,6 +70,7 @@ def WKS(graph,N=200):
     e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
     wks_variance = 6 * 60 / len(eigenvalues)
     sigma =(e_set[1]-e_set[0])*wks_variance
+    sigma = 1
     wks = np.zeros((len(deg_vector),N))
     debugmark = False
     for e in e_set:
