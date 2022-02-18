@@ -35,6 +35,7 @@ def main():
     
     output_path = os.path.join('output', dataset)
     results_path = os.path.join('results', dataset)
+    results_path = os.path.join(results_path,method_dict[args.method])
 
     for path in [output_path, results_path]:
         if not os.path.exists(path):
@@ -56,7 +57,7 @@ def main():
     else:
         hs = [500]
         C = [1]
-        gammas = [10]
+        gammas = [1]
 
     #---------------------------------
     # Embeddings
@@ -163,7 +164,7 @@ def main():
             extension += '_crossvalidation'
         if args.gridsearch:
             extension += '_gridsearch'
-        results_filename = os.path.join(results_path, f'results_{dataset}'+extension+'.csv')
+        results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
         n_splits = 10 if args.crossvalidation else 1
         pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
                 columns=[['h','C', 'gamma', 'accuracy']], 
