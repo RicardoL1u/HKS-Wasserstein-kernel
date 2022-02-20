@@ -63,7 +63,6 @@ def WKS(graph,N=200):
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = np.abs(eigenvalues.numpy())
     eigenvalues[eigenvalues<1e-6] = 1
-    # print(eigenvalues)
     eigenvectors = eigenvectors.numpy()
     sorted_eigen = np.sort(eigenvalues)
     log_eigenvalue = np.log(sorted_eigen)
@@ -72,20 +71,20 @@ def WKS(graph,N=200):
     sigma =(e_set[1]-e_set[0])*wks_variance
     sigma = 1
     wks = np.zeros((len(deg_vector),N))
-    debugmark = False
-    for e in e_set:
-        if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
-            debugmark = True
-            print(e)
-            # break
-    if debugmark:
-        problem_labels.append(cnt) 
-        print(e_set)
-        print(sigma)
-        print(graph)
-        print(sorted_eigen)
-        print(log_eigenvalue)
-        problem_graphs.append(graph)
+    # debugmark = False
+    # for e in e_set:
+    #     if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
+    #         debugmark = True
+    #         print(e)
+    #         # break
+    # if debugmark:
+    #     problem_labels.append(cnt) 
+    #     print(e_set)
+    #     print(sigma)
+    #     print(graph)
+    #     print(sorted_eigen)
+    #     print(log_eigenvalue)
+    #     problem_graphs.append(graph)
     for i in range(len(deg_vector)):
         wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
 
