@@ -1,8 +1,14 @@
+from distutils.log import debug
 import numpy as np
 # import igraph as ig
 import os
 import dgl
 import torch
+import dgl.data
+
+problem_graphs = []
+problem_labels = []
+cnt = 0
 
 def get_random_samples(lambda2,lambdaLast,T=8):
     """
@@ -47,22 +53,38 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
 
 
 def WKS(graph,N=200):
-    # w = 0.5
-    wks_variance = 6
+    # w = 0.
+    global cnt
+    cnt = cnt + 1
     adj_matrix = graph.adj()
     deg_vector = graph.out_degrees()
     deg_matrix = torch.diag(deg_vector)
     graphical_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
     eigenvalues = np.abs(eigenvalues.numpy())
+    eigenvalues[eigenvalues<1e-6] = 1
     eigenvectors = eigenvectors.numpy()
-
     sorted_eigen = np.sort(eigenvalues)
-    sorted_eigen[sorted_eigen<1e-6]=1e-6
     log_eigenvalue = np.log(sorted_eigen)
     e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
+    wks_variance = 6 * 60 / len(eigenvalues)
     sigma =(e_set[1]-e_set[0])*wks_variance
+    sigma = 1
     wks = np.zeros((len(deg_vector),N))
+    # debugmark = False
+    # for e in e_set:
+    #     if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
+    #         debugmark = True
+    #         print(e)
+    #         # break
+    # if debugmark:
+    #     problem_labels.append(cnt) 
+    #     print(e_set)
+    #     print(sigma)
+    #     print(graph)
+    #     print(sorted_eigen)
+    #     print(log_eigenvalue)
+    #     problem_graphs.append(graph)
     for i in range(len(deg_vector)):
         wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
 
@@ -132,5 +154,6 @@ def CalculateSignature4Graphs(graphs,method,T):
         matrices = [np.concatenate(((1-w)*HKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
     elif method==1:
         matrices = [np.concatenate(((1-w)*WKS(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
-        
+    if len(problem_graphs) > 0:
+        dgl.data.utils.save_graphs('./graph.bin',problem_graphs)
     return matrices

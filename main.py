@@ -21,7 +21,7 @@ method_dict = {
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or Enzymes)',
+    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
                             choices=['MUTAG', 'PTC_FM'])
     parser.add_argument('--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
@@ -56,8 +56,13 @@ def main():
         hs = np.arange(args.h_min,args.h_max)*100
     else:
         hs = [500]
+<<<<<<< HEAD
         C = [1]
         gammas = [1]
+=======
+        C = [100]
+        gammas = [0.01]
+>>>>>>> fix/wks
 
     #---------------------------------
     # Embeddings
@@ -65,7 +70,6 @@ def main():
     # Load the data and generate the embeddings 
     print(f'Generating {method_dict[args.method]} embeddings for {dataset}.')
     data = dgl.data.LegacyTUDataset(name=dataset)
-    # data = dgl.data.MUTAGDataset()
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
     y = list(y)
