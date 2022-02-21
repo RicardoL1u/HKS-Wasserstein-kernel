@@ -21,7 +21,7 @@ from grakel.kernels import ShortestPath
 from grakel.kernels import RandomWalk
 from grakel.kernels import WeisfeilerLehman
 
-kernel_list = [ShortestPath,WeisfeilerLehman,RandomWalk]
+kernel_list = [ShortestPath,WeisfeilerLehman]
 
 def main():
     print()
