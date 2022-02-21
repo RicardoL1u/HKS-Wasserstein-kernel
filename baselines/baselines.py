@@ -31,8 +31,8 @@ def main():
     print()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
-                            choices=['MUTAG', 'PTC_FM'])
+    parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
+                            choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
     args = parser.parse_args()
       
     # Loads the given dataset
