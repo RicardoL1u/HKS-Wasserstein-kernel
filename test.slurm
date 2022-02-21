@@ -9,5 +9,4 @@
 #SBATCH --error=%j.err
 
 source activate base
-python3 main.py -d MUTAG
-python3 baselines/baselines.py -d PTC_FM
+python3 main.py -d PTC_MR --crossvalidation
