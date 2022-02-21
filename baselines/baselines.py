@@ -1,12 +1,12 @@
-"""
-=============================================================
-Graph classification on MUTAG using the shortest path kernel.
-=============================================================
+# """
+# =============================================================
+# Graph classification on MUTAG using the shortest path kernel.
+# =============================================================
 
-Script makes use of :class:`grakel.ShortestPath`
-"""
-from __future__ import print_function
-print(__doc__)
+# Script makes use of :class:`grakel.ShortestPath`
+# """
+# from __future__ import print_function
+# print(__doc__)
 import argparse
 
 import numpy as np
@@ -24,6 +24,10 @@ from grakel.kernels import WeisfeilerLehman
 kernel_list = [ShortestPath,RandomWalk,WeisfeilerLehman]
 
 def main():
+    print("=============================================================")
+    print("Graph classification on MUTAG using the shortest path kernel.")
+    print("=============================================================")
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
                             choices=['MUTAG', 'PTC_FM'])
@@ -52,7 +56,7 @@ def main():
 
 
         # Computes and prints the classification accuracy
-        print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
+        print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
                             np.mean(accuracy_scores) * 100,  
                             np.std(accuracy_scores) * 100))
 
