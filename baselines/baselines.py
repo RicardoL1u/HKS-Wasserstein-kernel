@@ -18,6 +18,10 @@ from sklearn.metrics import accuracy_score
 
 from grakel.datasets import fetch_dataset
 from grakel.kernels import ShortestPath
+from grakel.kernels import RandomWalk
+from grakel.kernels import WeisfeilerLehman
+
+kernel_list = [ShortestPath,RandomWalk,WeisfeilerLehman]
 
 def main():
     parser = argparse.ArgumentParser()
@@ -25,31 +29,32 @@ def main():
                             choices=['MUTAG', 'PTC_FM'])
     args = parser.parse_args()
       
-    # Loads the MUTAG dataset
-    MUTAG = fetch_dataset(args.dataset, verbose=False)
-    G, y = MUTAG.data, MUTAG.target
+    # Loads the given dataset
+    DATASET = fetch_dataset(args.dataset, verbose=False)
+    G, y = DATASET.data, DATASET.target
 
-    gk = ShortestPath(normalize=True)
-    cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
+    for kernel in kernel_list:
+        gk = kernel(normalize=True)
+        cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
 
-    accuracy_scores = []
-    for train_index, test_index in cv.split(G, y):
-        G_train = [G[i] for i in train_index]
-        G_test  = [G[i] for i in test_index]
-        y_train, y_test = y[train_index], y[test_index]
-        K_train = gk.fit_transform(G_train)
-        K_test = gk.transform(G_test)
-        # Uses the SVM classifier to perform classification
-        clf = SVC(kernel="precomputed")
-        clf.fit(K_train, y_train)
-        y_pred = clf.predict(K_test)
-        accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
+        accuracy_scores = []
+        for train_index, test_index in cv.split(G, y):
+            G_train = [G[i] for i in train_index]
+            G_test  = [G[i] for i in test_index]
+            y_train, y_test = y[train_index], y[test_index]
+            K_train = gk.fit_transform(G_train)
+            K_test = gk.transform(G_test)
+            # Uses the SVM classifier to perform classification
+            clf = SVC(kernel="precomputed")
+            clf.fit(K_train, y_train)
+            y_pred = clf.predict(K_test)
+            accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
 
 
-    # Computes and prints the classification accuracy
-    print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
-                        np.mean(accuracy_scores) * 100,  
-                        np.std(accuracy_scores) * 100))
+        # Computes and prints the classification accuracy
+        print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
+                            np.mean(accuracy_scores) * 100,  
+                            np.std(accuracy_scores) * 100))
 
 if __name__ == "__main__":
     main()
