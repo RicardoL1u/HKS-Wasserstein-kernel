@@ -10,3 +10,4 @@
 
 source activate base
 python3 main.py -d MUTAG
+python3 baselines/baselines.py -d PTC_FM
