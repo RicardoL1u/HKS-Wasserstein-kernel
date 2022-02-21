@@ -36,11 +36,13 @@ def main():
     args = parser.parse_args()
       
     # Loads the given dataset
-    DATASET = fetch_dataset(args.dataset, verbose=False)
+    DATASET = fetch_dataset(args.dataset, verbose=False,as_graphs=False)
     G_ori, y_ori = DATASET.data, DATASET.target
+    
     index_list = []
-    for i in range(len(G)):
-        if G[i].n > 3:
+    for i in range(len(G_ori)):
+        if len(G_ori[i][1]) > 3:
+            # [Graphs[i], node_labels[i], edge_labels[i]]
             index_list.append(i)
     G = [G_ori[i] for i in index_list]
     y = y_ori[index_list]
