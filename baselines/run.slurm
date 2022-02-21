@@ -9,4 +9,4 @@
 #SBATCH --error=%j.err
 
 source activate myenv
-python3 baselines -d PTC_FM
+python3 baselines.py -d PTC_FM
