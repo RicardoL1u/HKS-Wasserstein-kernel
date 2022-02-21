@@ -21,13 +21,13 @@ from grakel.kernels import ShortestPath
 from grakel.kernels import RandomWalk
 from grakel.kernels import WeisfeilerLehman
 
-kernel_list = [ShortestPath,RandomWalk,WeisfeilerLehman]
+kernel_list = [ShortestPath,WeisfeilerLehman,RandomWalk]
 
 def main():
     print("=============================================================")
     print("Graph classification on MUTAG using the shortest path kernel.")
     print("=============================================================")
-    
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
                             choices=['MUTAG', 'PTC_FM'])
