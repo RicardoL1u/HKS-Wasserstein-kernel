@@ -24,9 +24,11 @@ from grakel.kernels import WeisfeilerLehman
 kernel_list = [ShortestPath,WeisfeilerLehman,RandomWalk]
 
 def main():
+    print()
     print("=============================================================")
     print("Graph classification on MUTAG using the shortest path kernel.")
     print("=============================================================")
+    print()
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name (MUTAG or PTC_FM)',
@@ -35,7 +37,14 @@ def main():
       
     # Loads the given dataset
     DATASET = fetch_dataset(args.dataset, verbose=False)
-    G, y = DATASET.data, DATASET.target
+    G_ori, y_ori = DATASET.data, DATASET.target
+    index_list = []
+    for i in range(len(G)):
+        if G[i].n > 3:
+            index_list.append(i)
+    G = [G_ori[i] for i in index_list]
+    y = y_ori[index_list]
+    
 
     for kernel in kernel_list:
         gk = kernel(normalize=True)
