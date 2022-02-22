@@ -20,6 +20,12 @@ method_dict = {
 }
 
 def main():
+    print()
+    print("=============================================================")
+    print("Graph classification using the HKS/WKS and Wassertain kernel.")
+    print("=============================================================")
+    print()
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
                             choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
@@ -172,20 +178,20 @@ def main():
     else:
         print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
     
-    # if args.crossvalidation or args.gridsearch:
-    #     extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    #     if args.crossvalidation:
-    #         extension += '_crossvalidation'
-    #     if args.gridsearch:
-    #         extension += '_gridsearch'
-    #     results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
-    #     n_splits = 10 if args.crossvalidation else 1
-    #     pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
-    #             columns=[['h','C', 'gamma', 'accuracy']], 
-    #             index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
-    #     print(f'Results saved in {results_filename}.')
-    # else:
-    #     print('No results saved to file as --crossvalidation or --gridsearch were not selected.')
+    if args.crossvalidation or args.gridsearch:
+        extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        if args.crossvalidation:
+            extension += '_crossvalidation'
+        if args.gridsearch:
+            extension += '_gridsearch'
+        results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
+        n_splits = 10 if args.crossvalidation else 1
+        pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
+                columns=[['h','C', 'gamma', 'accuracy']], 
+                index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
+        print(f'Results saved in {results_filename}.')
+    else:
+        print('No results saved to file as --crossvalidation or --gridsearch were not selected.')
 
 if __name__ == "__main__":
     main()
