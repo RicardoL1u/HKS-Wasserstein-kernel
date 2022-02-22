@@ -8,5 +8,7 @@
 #SBATCH --output=%j.out
 #SBATCH --error=%j.err
 
-source activate base
-python3 main.py -d PTC_MR --crossvalidation
+source activate myenv
+python3 main.py -d MUTAG --crossvalidation --gridsearch --method 1
+python3 main.py -d PTC_MR --crossvalidation --gridsearch --method 1
+python3 main.py -d ENZYMES --crossvalidation --gridsearch --method 1
