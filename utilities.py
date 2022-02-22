@@ -26,10 +26,7 @@ def custom_grid_search_cv(model, param_grid, precomputed_kernels, y, cv=5):
                 sc = sklearn.model_selection._validation._fit_and_score(sklearn.base.clone(model), K, y, 
                         scorer=sklearn.metrics.make_scorer(sklearn.metrics.accuracy_score), 
                         train=train_index, test=test_index, verbose=0, parameters=p, fit_params=None)
-
-                # TODO: seems the svm is failed to fit the MUTAG
-                # print(sc)
-                # print("what you know")
+                
                 split_results.append(sc["test_scores"])
                 params.append({'K_idx': K_idx, 'params': p})
         results.append(split_results)
@@ -38,7 +35,6 @@ def custom_grid_search_cv(model, param_grid, precomputed_kernels, y, cv=5):
     fin_results = results.mean(axis=0)
     # select the best results
     best_idx = np.argmax(fin_results)
-    print(best_idx)
     # Return the fitted model and the best_parameters
     ret_model = sklearn.base.clone(model).set_params(**params[best_idx]['params'])
     return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx]
@@ -62,16 +58,13 @@ def custom_grid_search_cv1(model, param_grid, precomputed_kernels, y, cv=5):
                         scorer=sklearn.metrics.make_scorer(sklearn.metrics.accuracy_score), 
                         train=train_index, test=test_index, verbose=0, parameters=p, fit_params=None)
 
-                # TODO: seems the svm is failed to fit the MUTAG
-                # print(sc)
-                # print("what you know")
                 split_results.append(sc["test_scores"])
             results.append(split_results)
     # Collect results and average
     results = np.array(results)
-    fin_results = results.mean(axis=0)
+    fin_results = results.mean(axis=1)
     # select the best results
     best_idx = np.argmax(fin_results)
     # Return the fitted model and the best_parameters
     ret_model = sklearn.base.clone(model).set_params(**params[best_idx]['params'])
-    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx],results[best_idx]
+    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx],fin_results,params

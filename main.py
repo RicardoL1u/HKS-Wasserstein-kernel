@@ -55,9 +55,9 @@ def main():
         ]
         hs = np.arange(args.h_min,args.h_max)*100
     else:
-        hs = [500]
+        hs = [900]
         C = [10]
-        gammas = [1.0]
+        gammas = [10]
 
     #---------------------------------
     # Embeddings
@@ -120,7 +120,9 @@ def main():
     best_gamma = []
 
     cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
-
+    
+    fold_result = []
+    param = []
     for train_index, test_index in cv.split(kernel_matrices[0], y):
         K_train = [K[train_index][:, train_index] for K in kernel_matrices]
         K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
@@ -128,16 +130,14 @@ def main():
        
         # Gridsearch
         if args.gridsearch:
-            gs, best_params = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
+            gs, best_params,unit_result,param = utilities.custom_grid_search_cv1(SVC(kernel='precomputed'), 
                     param_grid, K_train, y_train, cv=5)
+            fold_result.append(unit_result)
             # Store best params
             C_ = best_params['params']['C']
             h_,gamma_ = kernel_params[best_params['K_idx']]
             y_pred = gs.predict(K_test[best_params['K_idx']])
         else:
-            print(K_train[0].shape)
-            print(K_test[0].shape)
-            print(kernel_matrices[0].shape)
             gs = SVC(C=C[0], kernel='precomputed').fit(K_train[0], y_train)
             y_pred = gs.predict(K_test[0])
             h_,gamma_, C_ =hs[0], gammas[0], C[0] 
@@ -149,7 +149,19 @@ def main():
         if not args.crossvalidation:
             break
     
-    
+    # find the best params
+    if args.gridsearch and args.crossvalidation:
+        fold_result = np.array(fold_result)
+        print(fold_result.shape)
+        fin_result = fold_result.mean(axis=0)
+        print(fin_result.shape)
+        # select the best results
+        best_idx = np.argmax(fin_result)
+        print('The best params is ',param[best_idx],kernel_params[best_params['K_idx']])
+        print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
+                    np.mean(fold_result[:,best_idx]) * 100,  
+                    np.std(fold_result[:,best_idx]) * 100))
+
     #---------------------------------
     # Printing and logging
     #---------------------------------
@@ -160,20 +172,20 @@ def main():
     else:
         print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
     
-    if args.crossvalidation or args.gridsearch:
-        extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        if args.crossvalidation:
-            extension += '_crossvalidation'
-        if args.gridsearch:
-            extension += '_gridsearch'
-        results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
-        n_splits = 10 if args.crossvalidation else 1
-        pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
-                columns=[['h','C', 'gamma', 'accuracy']], 
-                index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
-        print(f'Results saved in {results_filename}.')
-    else:
-        print('No results saved to file as --crossvalidation or --gridsearch were not selected.')
+    # if args.crossvalidation or args.gridsearch:
+    #     extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    #     if args.crossvalidation:
+    #         extension += '_crossvalidation'
+    #     if args.gridsearch:
+    #         extension += '_gridsearch'
+    #     results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
+    #     n_splits = 10 if args.crossvalidation else 1
+    #     pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
+    #             columns=[['h','C', 'gamma', 'accuracy']], 
+    #             index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
+    #     print(f'Results saved in {results_filename}.')
+    # else:
+    #     print('No results saved to file as --crossvalidation or --gridsearch were not selected.')
 
 if __name__ == "__main__":
     main()
