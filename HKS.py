@@ -116,10 +116,10 @@ def HKS(graph,T,isHeuristics=False):
     eigenvalues = eigenvalues.numpy()
     eigenvectors = eigenvectors.numpy()
 
-    # sorted_eigen = np.sort(eigenvalues)
+    sorted_eigen = np.sort(eigenvalues)
     # print(len(sorted_eigen),lambda2,lambdaLast)
-    # sample_points = get_random_samples(lambda2,lambdaLast,T)
-    sample_points = get_random_samples_li()
+    sample_points = get_random_samples(sorted_eigen[1],sorted_eigen[-1],T)
+    # sample_points = get_random_samples_li()
     hks = np.zeros((len(deg_vector),len(sample_points)))
 
     # HKS part
