@@ -135,6 +135,9 @@ def main():
             h_,gamma_ = kernel_params[best_params['K_idx']]
             y_pred = gs.predict(K_test[best_params['K_idx']])
         else:
+            print(K_train[0].shape)
+            print(K_test[0].shape)
+            print(kernel_matrices[0].shape)
             gs = SVC(C=C[0], kernel='precomputed').fit(K_train[0], y_train)
             y_pred = gs.predict(K_test[0])
             h_,gamma_, C_ =hs[0], gammas[0], C[0] 

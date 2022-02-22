@@ -24,6 +24,8 @@ from grakel.kernels import WeisfeilerLehman
 kernel_list = [ShortestPath,WeisfeilerLehman]
 
 def main():
+    np.random.seed(1205) 
+
     print()
     print("=============================================================")
     print("Graph classification on MUTAG using the shortest path kernel.")
@@ -51,14 +53,12 @@ def main():
     for kernel in kernel_list:
         gk = kernel(normalize=True)
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
-
+        K = gk.fit_transform(G)
         accuracy_scores = []
-        for train_index, test_index in cv.split(G, y):
-            G_train = [G[i] for i in train_index]
-            G_test  = [G[i] for i in test_index]
+        for train_index, test_index in cv.split(K, y):
+            K_train = K[train_index][:,train_index]
+            K_test  = K[test_index][:,train_index]
             y_train, y_test = y[train_index], y[test_index]
-            K_train = gk.fit_transform(G_train)
-            K_test = gk.transform(G_test)
             # Uses the SVM classifier to perform classification
             clf = SVC(kernel="precomputed")
             clf.fit(K_train, y_train)
