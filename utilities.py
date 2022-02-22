@@ -37,7 +37,7 @@ def custom_grid_search_cv(model, param_grid, precomputed_kernels, y, cv=5):
     best_idx = np.argmax(fin_results)
     # Return the fitted model and the best_parameters
     ret_model = sklearn.base.clone(model).set_params(**params[best_idx]['params'])
-    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx]
+    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx],fin_results,params
 
 def custom_grid_search_cv1(model, param_grid, precomputed_kernels, y, cv=5):
     '''

@@ -136,7 +136,7 @@ def main():
        
         # Gridsearch
         if args.gridsearch:
-            gs, best_params,unit_result,param = utilities.custom_grid_search_cv1(SVC(kernel='precomputed'), 
+            gs, best_params,unit_result,param = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
                     param_grid, K_train, y_train, cv=5)
             fold_result.append(unit_result)
             # Store best params
@@ -163,6 +163,7 @@ def main():
         print(fin_result.shape)
         # select the best results
         best_idx = np.argmax(fin_result)
+        print('The best result is ',fold_result[:,best_idx])
         print('The best params is ',param[best_idx],kernel_params[best_params['K_idx']])
         print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
                     np.mean(fold_result[:,best_idx]) * 100,  
