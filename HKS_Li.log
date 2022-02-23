@@ -1,0 +1,51 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings for MUTAG.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+(10, 210)
+(210,)
+The best result is  [0.8516934  0.8399287  0.85151515 0.86345811 0.86345811 0.85775401
+ 0.87575758 0.8456328  0.87058824 0.83529412]
+The best params is  {'K_idx': 4, 'params': {'C': 10.0}} (500, 1.0)
+Mean 10-fold accuracy: 85.55 +- 1.24 %
+Mean 10-fold accuracy: 82.37 +- 8.29 %
+Results saved in results/MUTAG/HKS/results_MUTAG_HKS_2022-02-22 23:04_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings for PTC_MR.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+(10, 210)
+(210,)
+The best result is  [0.58566896 0.57921735 0.54685352 0.59212057 0.58709677 0.58064516
+ 0.58709677 0.58387097 0.59677419 0.56451613]
+The best params is  {'K_idx': 4, 'params': {'C': 10.0}} (500, 0.1)
+Mean 10-fold accuracy: 58.04 +- 1.38 %
+Mean 10-fold accuracy: 59.27 +- 7.77 %
+Results saved in results/PTC_MR/HKS/results_PTC_MR_HKS_2022-02-22 23:06_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings for ENZYMES.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+(10, 210)
+(210,)
+The best result is  [0.32222222 0.33518519 0.33703704 0.35555556 0.33888889 0.33333333
+ 0.32222222 0.30925926 0.33333333 0.33888889]
+The best params is  {'K_idx': 2, 'params': {'C': 100.0}} (500, 0.01)
+Mean 10-fold accuracy: 33.26 +- 1.18 %
+Mean 10-fold accuracy: 64.00 +- 8.34 %
+Results saved in results/ENZYMES/HKS/results_ENZYMES_HKS_2022-02-22 23:18_crossvalidation_gridsearch.csv.
