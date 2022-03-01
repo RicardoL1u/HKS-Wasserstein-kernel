@@ -10,7 +10,7 @@ problem_graphs = []
 problem_labels = []
 cnt = 0
 
-def get_random_samples(lambda2,lambdaLast,T=8):
+def get_random_samples(lambda2,lambdaLast,T=8) -> np.ndarray :
     """
     sample HKS uniformly over the logarithm scaled temporal domain
     
@@ -30,19 +30,19 @@ def get_random_samples(lambda2,lambdaLast,T=8):
     points = np.log(np.linspace(start=np.log(t_min),stop=np.log(t_max),num=T))
     return points
 
-def get_random_samples_li():
+def get_random_samples_li() -> np.ndarray :
     t0 =  0.01
     alpha1 = 2 
     tauScale = 15
     tau = np.arange(0,tauScale,1/16)
     return t0*alpha1**tau
 
-def get_random_samples_based_exp(T=8,lambda_ = 1):
+def get_random_samples_based_exp(T=8,lambda_ = 1) -> np.ndarray :
     np.random.seed(542)
     beta = 1/lambda_
     return np.random.exponential(scale=lambda_,size=(T))
 
-def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
+def get_random_samples_based_exp_dual(T=8,lambda_ = 1) -> np.ndarray :
     np.random.seed(542)
     beta = 1/lambda_
     zero_list = np.zeros((int(T/2)))
@@ -52,7 +52,7 @@ def get_random_samples_based_exp_dual(T=8,lambda_ = 1):
     return np.concatenate((samples_left,samples_right))
 
 
-def WKS(graph,N=200):
+def WKS(graph,N=200) -> np.ndarray :
     # w = 0.
     global cnt
     cnt = cnt + 1
@@ -90,13 +90,13 @@ def WKS(graph,N=200):
 
     return wks
 
-def HKS(graph,T,isHeuristics=False):
+def HKS(graph,T,isHeuristics=False) -> np.ndarray :
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
     Parameters
     ----------
-    graph: igraph.Graph
+    graph: DGL.DGLgraph
 
     Returns
     ----------

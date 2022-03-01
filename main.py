@@ -155,7 +155,10 @@ def main():
         if not args.crossvalidation:
             break
     
-    # find the best params
+    # find the best hyper-params combination
+    # TODO: need to fix actually
+    # the target is to find only one combination of hyperparams to test their performance
+    # the output here could be ignored now
     if args.gridsearch and args.crossvalidation:
         fold_result = np.array(fold_result)
         print(fold_result.shape)
