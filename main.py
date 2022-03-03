@@ -24,7 +24,16 @@ signature_dict = {
     0:signature.HKS,
     1:signature.WKS,
 }
-sampleways_dict
+sampleways_dict = {
+    0:{
+        0:signature.get_random_samples,
+        1:signature.get_random_samples_li,
+        2:signature.get_random_samples_based_exp_dual,
+    },
+    1:{
+        0:signature.get_sample4WKS,
+    }
+}
 
 def main():
     print()
@@ -86,7 +95,7 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],args.sinkhorn) for t in hs]
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],args.sinkhorn) for t in hs]
     
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):

@@ -16,9 +16,10 @@ def eigendecom4graphs(graph):
     deg_matrix = torch.diag(deg_vector)
     graphical_laplacian = deg_matrix - adj_matrix
     eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
-    return eigenvalues.numpy(),eigenvectors.numpy()
+    eigenvalues = np.abs(eigenvalues.numpy())
+    return eigenvalues,eigenvectors.numpy()
 
-def get_random_samples(lambda2,lambdaLast,T=8) -> np.ndarray :
+def get_random_samples(eigenvalues,T=8) -> np.ndarray :
     """
     sample HKS uniformly over the logarithm scaled temporal domain
     
@@ -32,70 +33,74 @@ def get_random_samples(lambda2,lambdaLast,T=8) -> np.ndarray :
     ---
     sample points: numpy.array
     """
-    # print(lambda2,lambdaLast)
-    t_min = 4*np.log(10)/lambdaLast
-    t_max = 4*np.log(10)/lambda2
+    sorted_eigen = np.sort(eigenvalues)
+    t_min = 4*np.log(10)/sorted_eigen[1]
+    t_max = 4*np.log(10)/sorted_eigen[-1]
     points = np.log(np.linspace(start=np.log(t_min),stop=np.log(t_max),num=T))
     return points
 
-def get_random_samples_li() -> np.ndarray :
+def get_random_samples_li(eigenvalues,T=8) -> np.ndarray :
     t0 =  0.01
     alpha1 = 2 
     tauScale = 15
     tau = np.arange(0,tauScale,1/16)
     return t0*alpha1**tau
 
-def get_random_samples_based_exp(T=8,lambda_ = 1) -> np.ndarray :
+def get_random_samples_based_exp(eigenvalues,T=8) -> np.ndarray :
     np.random.seed(542)
-    beta = 1/lambda_
-    return np.random.exponential(scale=lambda_,size=(T))
+    beta = 1/np.mean(eigenvalues)
+    return np.random.exponential(scale=np.mean(eigenvalues),size=(T))
 
-def get_random_samples_based_exp_dual(T=8,lambda_ = 1) -> np.ndarray :
+def get_random_samples_based_exp_dual(eigenvalues,T=8) -> np.ndarray :
     np.random.seed(542)
-    beta = 1/lambda_
+    beta = 1/np.mean(eigenvalues)
     zero_list = np.zeros((int(T/2)))
     samples_left = np.random.exponential(scale=beta,size=(int(T/2)))
     samples_right = np.maximum(50-np.random.exponential(scale=beta,size=(int(T/2))),zero_list)
 
     return np.concatenate((samples_left,samples_right))
 
+def get_sample4WKS(eigenvalues,T=8):
+    sorted_eigen = np.sort(eigenvalues)
+    sortet_log_eigenvalue = np.log(sorted_eigen)
+    sample_points = np.linspace(sortet_log_eigenvalue[1],sortet_log_eigenvalue[-1]/1.02,T)
+    return sample_points
 
-def WKS(graph,N=200) -> np.ndarray :
+
+def WKS(graph,sample_method,T=200) -> np.ndarray :
     # w = 0.
     global cnt
     cnt = cnt + 1
     eigenvalues,eigenvectors = eigendecom4graphs(graph)
 
-    eigenvalues = np.abs(eigenvalues)
     eigenvalues[eigenvalues<1e-6] = 1
-    sorted_eigen = np.sort(eigenvalues)
-    log_eigenvalue = np.log(sorted_eigen)
+    log_eigenvalue = np.log(eigenvalues)
 
-    e_set = np.linspace(log_eigenvalue[1],log_eigenvalue[-1]/1.02,N)
+    sample_points = sample_method(eigenvalues=eigenvalues,T=T)
     wks_variance = 6 * 60 / graph.number_of_nodes()
-    sigma =(e_set[1]-e_set[0])*wks_variance
-    sigma = 1
-    wks = np.zeros((graph.number_of_nodes(),N))
+    sigma =(sample_points[1]-sample_points[0])*wks_variance
+    # sigma = 1
+    wks = np.zeros((graph.number_of_nodes(),T))
     # debugmark = False
-    # for e in e_set:
+    # for e in sample_points:
     #     if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
     #         debugmark = True
     #         print(e)
     #         # break
     # if debugmark:
     #     problem_labels.append(cnt) 
-    #     print(e_set)
+    #     print(sample_points)
     #     print(sigma)
     #     print(graph)
     #     print(sorted_eigen)
     #     print(log_eigenvalue)
     #     problem_graphs.append(graph)
     for i in range(graph.number_of_nodes()):
-        wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in e_set])    
+        wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])    
 
     return wks
 
-def HKS(graph,T,isHeuristics=False) -> np.ndarray :
+def HKS(graph,sample_method,T,isHeuristics=False) -> np.ndarray :
     """
     Compute the Heat Kernel Signature for each node in the given graph
 
@@ -118,7 +123,7 @@ def HKS(graph,T,isHeuristics=False) -> np.ndarray :
     # print(len(sorted_eigen),lambda2,lambdaLast)
     # sample_points = get_random_samples(sorted_eigen[1],sorted_eigen[-1],T)
     # sample_points = get_random_samples_li()
-    sample_points = get_random_samples_based_exp_dual(T,np.mean(eigenvalues))
+    sample_points = sample_method(eigenvalues,T)
     hks = np.zeros((graph.number_of_nodes(),len(sample_points)))
 
     # HKS part
@@ -135,7 +140,7 @@ def GetNodeAttrMat(graph):
     return (graph.ndata['feat']).numpy()
     
 
-def CalculateSignature4Graphs(graphs,method,T):
+def CalculateSignature4Graphs(graphs,signature_method,sample_method,T):
     """
     Calculate generate the matrix the node embeddings for each given graph
 
@@ -149,7 +154,7 @@ def CalculateSignature4Graphs(graphs,method,T):
 
     """
     w = 0.4
-    matrices = [np.concatenate(((1-w)*method(graph,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
+    matrices = [np.concatenate(((1-w)*signature_method(graph,sample_method,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
     if len(problem_graphs) > 0:
         dgl.data.utils.save_graphs('./graph.bin',problem_graphs)
     return matrices
