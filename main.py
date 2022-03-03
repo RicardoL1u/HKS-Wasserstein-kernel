@@ -12,7 +12,7 @@ import sklearn.metrics
 import pandas as pd
 from sklearn.svm import SVC
 import datetime
-import HKS
+import signature
 
 # global parameter
 method_dict = {
@@ -21,8 +21,8 @@ method_dict = {
 }
 
 signature_dict = {
-    0:HKS.HKS,
-    1:HKS.WKS,
+    0:signature.HKS,
+    1:signature.WKS,
 }
 sampleways_dict
 

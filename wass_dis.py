@@ -1,4 +1,4 @@
-import HKS
+import signature
 import numpy as np
 import ot
 
@@ -13,7 +13,7 @@ def pairwise_wasserstein_distance(X,T,method,sinkhorn=False):
     """
     
     # Embed the nodes
-    node_embeddings_matrice = HKS.CalculateSignature4Graphs(X,method,T)
+    node_embeddings_matrice = signature.CalculateSignature4Graphs(X,method,T)
 
     # Compute the Wasserstein distance
     pairwise_distances = _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=sinkhorn, 
