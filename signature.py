@@ -40,10 +40,11 @@ def get_random_samples(eigenvalues,T=8) -> np.ndarray :
     return points
 
 def get_random_samples_li(eigenvalues,T=8) -> np.ndarray :
+    base = (T - 500)/100 + 1
     t0 =  0.01
     alpha1 = 2 
     tauScale = 15
-    tau = np.arange(0,tauScale,1/16)
+    tau = np.arange(0,tauScale,1/(16*base))
     return t0*alpha1**tau
 
 def get_random_samples_based_exp(eigenvalues,T=8) -> np.ndarray :
