@@ -6,7 +6,7 @@ import torch
 import numpy
 from dgl.data.utils import load_graphs
 from zmq import proxy_steerable
-import HKS
+import signature
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestPipeline(unittest.TestCase):
     
@@ -18,7 +18,7 @@ class TestPipeline(unittest.TestCase):
         print(len(glist))
         g = glist[0]
         
-        HKS.WKS(g)
+        signature.WKS(g)
         # for g in glist:        
         #     HKS.WKS(g)
         # print(len(glist))

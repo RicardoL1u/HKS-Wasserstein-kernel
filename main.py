@@ -12,11 +12,27 @@ import sklearn.metrics
 import pandas as pd
 from sklearn.svm import SVC
 import datetime
+import signature
 
 # global parameter
 method_dict = {
     0:'HKS',
     1:'WKS',
+}
+
+signature_dict = {
+    0:signature.HKS,
+    1:signature.WKS,
+}
+sampleways_dict = {
+    0:{
+        0:signature.get_random_samples,
+        1:signature.get_random_samples_li,
+        2:signature.get_random_samples_based_exp_dual,
+    },
+    1:{
+        0:signature.get_sample4WKS,
+    }
 }
 
 def main():
@@ -29,9 +45,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
                             choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
-    parser.add_argument('--method',type = int ,default=0,help='0 for hks,1 for wks')
-    parser.add_argument('--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
-    parser.add_argument('--gridsearch', default=False, action='store_true', help='Enable grid search')
+    parser.add_argument('-m','--method',type = int ,default=0,help='0 for hks,1 for wks')
+    parser.add_argument('-s','--samplemethods',type = int,default=0,help='choose different sample methods')
+    parser.add_argument('-cv','--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
+    parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
     parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
     parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
@@ -69,7 +86,7 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    print(f'Generating {method_dict[args.method]} embeddings for {dataset}.')
+    print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} for {dataset}.')
     data = dgl.data.LegacyTUDataset(name=dataset)
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
@@ -78,7 +95,7 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,args.method,args.sinkhorn) for t in hs]
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],args.sinkhorn) for t in hs]
     
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):
