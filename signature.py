@@ -74,7 +74,8 @@ def WKS(graph,sample_method,T=200) -> np.ndarray :
     eigenvalues,eigenvectors = eigendecom4graphs(graph)
 
     eigenvalues[eigenvalues<1e-6] = 1
-    log_eigenvalue = np.log(np.sort(eigenvalues))
+    log_eigenvalue = np.log(eigenvalues)
+    # log_eigenvalue = np.log(np.sort(eigenvalues))
 
     sample_points = sample_method(eigenvalues=eigenvalues,T=T)
     wks_variance = 6 * 60 / graph.number_of_nodes()
