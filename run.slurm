@@ -15,19 +15,19 @@ python3 main.py -d MUTAG -m 0 -s 1 -cv -gs
 python3 main.py -d PTC_MR -m 0 -s 1 -cv -gs
 python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs
 
-python3 main.py -d MUTAG -m 0 -s 1 -cv -gs -w 0.5
-python3 main.py -d PTC_MR -m 0 -s 1 -cv -gs -w 0.5
-python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs -w 0.5
+# python3 main.py -d MUTAG -m 0 -s 1 -cv -gs -w 0.5
+# python3 main.py -d PTC_MR -m 0 -s 1 -cv -gs -w 0.5
+# python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs -w 0.5
 
-python3 main.py -d MUTAG -m 0 -s 1 -cv -gs -w 0.6
-python3 main.py -d PTC_MR -m 0 -s 1 -cv -gs -w 0.6
-python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs -w 0.6
+# python3 main.py -d MUTAG -m 0 -s 1 -cv -gs -w 0.6
+# python3 main.py -d PTC_MR -m 0 -s 1 -cv -gs -w 0.6
+# python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs -w 0.6
 
 # wks 
 python3 main.py -d MUTAG -m 1 -s 0 -cv -gs -w 0.5
 python3 main.py -d PTC_MR -m 1 -s 0 -cv -gs -w 0.5
 python3 main.py -d ENZYMES -m 1 -s 0 -cv -gs -w 0.5 
 
-python3 main.py -d MUTAG -m 1 -s 0 -cv -gs -w 0.6
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -gs -w 0.6
-python3 main.py -d ENZYMES -m 1 -s 0 -cv -gs -w 0.6 
+# python3 main.py -d MUTAG -m 1 -s 0 -cv -gs -w 0.6
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -gs -w 0.6
+# python3 main.py -d ENZYMES -m 1 -s 0 -cv -gs -w 0.6 
