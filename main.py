@@ -46,6 +46,7 @@ def main():
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
                             choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
     parser.add_argument('-m','--method',type = int ,default=0,help='0 for hks,1 for wks')
+    parser.add_argument('-w','--weight',type = float ,default=0.4,help='the relative important metric between generated node signature and node feature')
     parser.add_argument('-s','--samplemethods',type = int,default=0,help='choose different sample methods')
     parser.add_argument('-cv','--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
@@ -95,7 +96,7 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],args.sinkhorn) for t in hs]
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],args.weight,args.sinkhorn) for t in hs]
     
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):
