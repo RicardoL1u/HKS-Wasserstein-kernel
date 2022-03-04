@@ -1,0 +1,66 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2afd3edf43a0> with w=0.6 for MUTAG.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 81.87 +- 9.00 %
+Results saved in results/MUTAG/HKS/results_MUTAG_HKS_2022-03-04 17:30_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b2d432fd3a0> with w=0.6 for PTC_MR.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 58.74 +- 7.95 %
+Results saved in results/PTC_MR/HKS/results_PTC_MR_HKS_2022-03-04 17:34_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b5b26582700> with w=0.6 for MUTAG.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 87.25 +- 5.39 %
+Results saved in results/MUTAG/WKS/results_MUTAG_WKS_2022-03-04 17:39_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ab5df9a2700> with w=0.6 for PTC_MR.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 61.64 +- 6.42 %
+Results saved in results/PTC_MR/WKS/results_PTC_MR_WKS_2022-03-04 17:48_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b9b3d193700> with w=0.45 for MUTAG.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 87.25 +- 4.23 %
+Results saved in results/MUTAG/WKS/results_MUTAG_WKS_2022-03-04 17:54_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b8253140700> with w=0.45 for PTC_MR.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: True.
+Mean 10-fold accuracy: 63.97 +- 4.80 %
+Results saved in results/PTC_MR/WKS/results_PTC_MR_WKS_2022-03-04 18:02_crossvalidation_gridsearch.csv.
