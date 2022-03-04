@@ -24,8 +24,8 @@ source activate myenv
 # python3 main.py -d ENZYMES -m 0 -s 1 -cv -gs -w 0.6
 
 # dual exp
-python3 main.py -d MUTAG -m 0 -s 3 -cv -gs -w 0.4
-python3 main.py -d PTC_MR -m 0 -s 3 -cv -gs -w 0.4
+# python3 main.py -d MUTAG -m 0 -s 3 -cv -gs -w 0.4
+# python3 main.py -d PTC_MR -m 0 -s 3 -cv -gs -w 0.4
 # python3 main.py -d ENZYMES -m 0 -s 2 -cv -gs -w 0.6
 
 # wks 
