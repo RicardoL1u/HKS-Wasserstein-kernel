@@ -87,7 +87,7 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} for {dataset}.')
+    print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} with w={args.weight} for {dataset}.')
     data = dgl.data.LegacyTUDataset(name=dataset)
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
