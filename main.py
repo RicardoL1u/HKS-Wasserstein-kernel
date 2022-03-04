@@ -29,11 +29,12 @@ sampleways_dict = {
         0:signature.get_random_samples,
         1:signature.get_random_samples_li,
         2:signature.get_random_samples_based_exp_dual,
-        3:signature.get_sample4WKS
+        # 3:signature.get_sample4WKS
     },
     1:{
         0:signature.get_sample4WKS,
-        1:signature.get_random_samples_based_exp_dual
+        1:signature.get_random_samples_li,
+        2:signature.get_random_samples_based_exp_dual
     }
 }
 
