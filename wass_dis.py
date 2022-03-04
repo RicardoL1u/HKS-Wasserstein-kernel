@@ -7,7 +7,7 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight,sink
     Pairwise computation of the Wasserstein distance between embeddings of the 
     graphs in X.
     args:
-        X (List[ig.graphs]): List of graphs
+        X (List[DGL.DGLGraph]): List of graphs
         T (int): the num of sample points for HKS
         sinkhorn (bool): Indicates whether sinkhorn approximation should be used
     """
