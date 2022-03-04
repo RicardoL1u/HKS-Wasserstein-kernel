@@ -82,7 +82,7 @@ def WKS(graph,sample_method,T=200) -> np.ndarray :
     wks_variance = 6 * 60 / graph.number_of_nodes()
     sigma =(sample_points[1]-sample_points[0])*wks_variance
     sigma = 1
-    wks = np.zeros((graph.number_of_nodes(),T))
+    wks = np.zeros((graph.number_of_nodes(),len(sample_points)))
     # debugmark = False
     # for e in sample_points:
     #     if np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) == 0:
