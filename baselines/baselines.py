@@ -10,6 +10,8 @@
 import argparse
 
 import numpy as np
+import sys
+sys.path.append("..")
 import utilities
 import sklearn.model_selection
 
@@ -54,8 +56,6 @@ def main():
     # Transform to Kernel
     # Here the flags come into play
     if args.gridsearch:
-        # Gammas in eps(-gamma*M):
-        gammas = np.logspace(-4,1,num=6)  
         # iterate over the iterations too
         param_grid = [
             # C is the hype parameter of SVM
@@ -68,12 +68,7 @@ def main():
         gk = kernel(normalize=True)
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
         M = gk.fit_transform(G)
-        kernel_matrices = []
-        kernel_params = []
-        for g in gammas:
-            K = np.exp(-g*M)
-            kernel_matrices.append(K)
-            kernel_params.append(g)
+        kernel_matrices = [M]
         accuracy_scores = []
 
         for train_index, test_index in cv.split(kernel_matrices[0], y):
@@ -93,8 +88,8 @@ def main():
             else:
                 # Uses the SVM classifier to perform classification
                 clf = SVC(kernel="precomputed")
-                clf.fit(K_train, y_train)
-                y_pred = clf.predict(K_test)
+                clf.fit(K_train[0], y_train)
+                y_pred = clf.predict(K_test[0])
             accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
 
         # Computes and prints the classification accuracy
