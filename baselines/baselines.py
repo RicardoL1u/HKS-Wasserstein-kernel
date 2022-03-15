@@ -10,6 +10,7 @@
 import argparse
 
 import numpy as np
+import utilities
 import sklearn.model_selection
 
 from sklearn.model_selection import train_test_split
@@ -35,6 +36,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
                             choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
+    parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     args = parser.parse_args()
       
     # Loads the given dataset
@@ -49,22 +51,51 @@ def main():
     G = [G_ori[i] for i in index_list]
     y = y_ori[index_list]
     
+    # Transform to Kernel
+    # Here the flags come into play
+    if args.gridsearch:
+        # Gammas in eps(-gamma*M):
+        gammas = np.logspace(-4,1,num=6)  
+        # iterate over the iterations too
+        param_grid = [
+            # C is the hype parameter of SVM
+            # The strength of the regularization is inversely proportional to C. 
+            # Must be strictly positive. The penalty is a squared l2 penalty.
+            {'C': np.logspace(-3,3,num=7)}
+        ]
 
     for kernel in kernel_list:
         gk = kernel(normalize=True)
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
-        K = gk.fit_transform(G)
+        M = gk.fit_transform(G)
+        kernel_matrices = []
+        kernel_params = []
+        for g in gammas:
+            K = np.exp(-g*M)
+            kernel_matrices.append(K)
+            kernel_params.append(g)
         accuracy_scores = []
-        for train_index, test_index in cv.split(K, y):
-            K_train = K[train_index][:,train_index]
-            K_test  = K[test_index][:,train_index]
-            y_train, y_test = y[train_index], y[test_index]
-            # Uses the SVM classifier to perform classification
-            clf = SVC(kernel="precomputed")
-            clf.fit(K_train, y_train)
-            y_pred = clf.predict(K_test)
-            accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
 
+        for train_index, test_index in cv.split(kernel_matrices[0], y):
+            K_train = [K[train_index][:, train_index] for K in kernel_matrices]
+            K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
+            y_train, y_test = y[train_index], y[test_index]
+            
+            
+            # Gridsearch
+            if args.gridsearch:
+                gs, best_params,unit_result,param = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
+                        param_grid, K_train, y_train, cv=5)
+                # Store best params
+                # C_ = best_params['params']['C']
+                # gamma_ = kernel_params[best_params['K_idx']]
+                y_pred = gs.predict(K_test[best_params['K_idx']])
+            else:
+                # Uses the SVM classifier to perform classification
+                clf = SVC(kernel="precomputed")
+                clf.fit(K_train, y_train)
+                y_pred = clf.predict(K_test)
+            accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
 
         # Computes and prints the classification accuracy
         print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
