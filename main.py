@@ -175,23 +175,6 @@ def main():
         accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
         if not args.crossvalidation:
             break
-    
-    # find the best hyper-params combination
-    # TODO: need to fix actually
-    # the target is to find only one combination of hyperparams to test their performance
-    # the output here could be ignored now
-    # if args.gridsearch and args.crossvalidation:
-    #     fold_result = np.array(fold_result)
-    #     print(fold_result.shape)
-    #     fin_result = fold_result.mean(axis=0)
-    #     print(fin_result.shape)
-    #     # select the best results
-    #     best_idx = np.argmax(fin_result)
-    #     print('The best result is ',fold_result[:,best_idx])
-    #     print('The best params is ',param[best_idx],kernel_params[best_params['K_idx']])
-    #     print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
-    #                 np.mean(fold_result[:,best_idx]) * 100,  
-    #                 np.std(fold_result[:,best_idx]) * 100))
 
     #---------------------------------
     # Printing and logging
