@@ -55,8 +55,12 @@ def main():
     parser.add_argument('-cv','--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
-    parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
-    parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
+    parser.add_argument('-hl','--hlen', type = int, required=False, default=5, help = "number of sample points in signature, would be 100*h")
+    parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
+    parser.add_argument('-g','--gamma', type = float, required=False, default=1, help = "Gammas in eps(-gamma*M):")
+
+    # parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
+    # parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
 
     args = parser.parse_args()
     dataset = args.dataset
@@ -81,11 +85,11 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = np.arange(args.h_min,args.h_max)*100
+        hs = np.arange(5,10)*100
     else:
-        hs = [900]
-        C = [10]
-        gammas = [10]
+        hs = [args.hs*100]
+        C = [args.C]
+        gammas = [args.gamma]
 
     #---------------------------------
     # Embeddings
