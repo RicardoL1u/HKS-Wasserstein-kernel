@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("..")
 
 from numpy.testing._private.utils import assert_equal
 import utilities

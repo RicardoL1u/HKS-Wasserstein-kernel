@@ -1,6 +1,7 @@
-from multiprocessing.spawn import import_main_path
 import dgl.data
 import unittest
+import sys
+sys.path.append("..")
 # from sklearn.covariance import graphical_lasso
 import torch
 import numpy as np

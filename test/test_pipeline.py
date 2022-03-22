@@ -1,9 +1,10 @@
 import unittest
+import sys
+sys.path.append("..")
 
 from numpy.testing._private.utils import assert_equal
 import utilities
 import numpy as np
-import igraph as ig
 import signature
 import wass_dis
 from sklearn.model_selection import StratifiedKFold
