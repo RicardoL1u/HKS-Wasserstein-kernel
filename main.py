@@ -5,6 +5,7 @@ from random import shuffle
 import wass_dis
 import utilities
 import numpy as np
+np.random.seed(1205) 
 import sklearn.model_selection
 import dgl.data
 # import igraph as ig
@@ -132,15 +133,10 @@ def main():
     #---------------------------------
     # Run hyperparameter search if needed
     print(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
-    # Load labels
-    # label_file = os.path.join(data_path, 'Labels.txt')
-    
-    # y = np.array(utilities.read_labels(label_file))
 
     # Contains accuracy scores for each cross validation step; the
     # means of this list will be used later on.
     accuracy_scores = []
-    np.random.seed(1205) 
     # Hyperparam logging
     best_C = []
     best_h = []
