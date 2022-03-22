@@ -57,7 +57,7 @@ def main():
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
     parser.add_argument('-hl','--hlen', type = int, required=False, default=5, help = "number of sample points in signature, would be 100*h")
     parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
-    parser.add_argument('-g','--gamma', type = float, required=False, default=1, help = "Gammas in eps(-gamma*M):")
+    parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
 
     # parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
     # parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
