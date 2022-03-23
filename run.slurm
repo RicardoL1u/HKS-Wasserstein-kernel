@@ -11,11 +11,11 @@
 source activate myenv
 
 python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 500
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 600
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 700
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 900
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 1000
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 600
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 700
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 900
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 1000
 
 # python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.30 -hl 800
 # python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.35 -hl 800
