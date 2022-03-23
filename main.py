@@ -87,7 +87,7 @@ def main():
         ]
         hs = np.arange(5,10)*100
     else:
-        hs = [args.hlen*100]
+        hs = [args.hlen]
         C = [args.C]
         gammas = [args.gamma]
 
@@ -96,6 +96,8 @@ def main():
     #---------------------------------
     # Load the data and generate the embeddings 
     print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} with w={args.weight} for {dataset}.')
+    if not args.gridsearch:
+        print(f'with hlen = {args.hlen}, C = {args.C} and gammas = {args.gamma}')
     data = dgl.data.LegacyTUDataset(name=dataset)
     graphs, y = zip(*[graph for graph in data])
     graphs = list(graphs)
