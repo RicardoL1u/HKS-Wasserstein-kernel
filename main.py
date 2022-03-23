@@ -87,7 +87,7 @@ def main():
         ]
         hs = np.arange(5,10)*100
     else:
-        hs = [args.hs*100]
+        hs = [args.hlen*100]
         C = [args.C]
         gammas = [args.gamma]
 
