@@ -13,7 +13,7 @@ source activate myenv
 # bash的登号是严格不能有空格的
 method="WKS"
 method_num=1
-dataset="PTC"
+dataset="PTC_MR"
 rm -r $dataset
 path="exp/fig1:w_versue_hl"
 start=100
