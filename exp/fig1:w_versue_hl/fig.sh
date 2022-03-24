@@ -13,11 +13,11 @@ source activate myenv
 # bash的登号是严格不能有空格的
 method="WKS"
 method_num=1
-dataset="MUTAG"
+dataset="PTC"
 rm -r $dataset
 path="exp/fig1:w_versue_hl"
 start=100
-end=500
+end=1300
 step=100
 
 
