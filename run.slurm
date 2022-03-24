@@ -17,16 +17,27 @@ source activate myenv
 # python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 900
 # python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 1000
 
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.30 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.35 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.40 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.50 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.55 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.60 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.65 -hl 800
-python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.70 -hl 800
-
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.00 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.05 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.10 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.15 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.20 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.25 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.30 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.35 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.40 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.45 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.50 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.55 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.60 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.65 -hl 800
+# python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.70 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.75 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.80 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.85 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.90 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 0.95 -hl 800
+python3 main.py -d PTC_MR -m 1 -s 0 -cv -w 1.00 -hl 800
 
 
 
