@@ -48,7 +48,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
+                            choices=['MUTAG','PTC_MR','ENZYMES'])
     parser.add_argument('-m','--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('-w','--weight',type = float ,default=0.4,help='the relative important metric between generated node signature and node feature')
     parser.add_argument('-s','--samplemethods',type = int,default=0,help='choose different sample methods')
@@ -58,7 +58,7 @@ def main():
     parser.add_argument('-hl','--hlen', type = int, required=False, default=5, help = "number of sample points in signature, would be 100*h")
     parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
     parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
-
+    parser.add_argument('-p','--path', type = str, required=False, default=None, help = "Path for experiment records")
     # parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
     # parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
 
@@ -66,7 +66,10 @@ def main():
     dataset = args.dataset
     
     output_path = os.path.join('output', dataset)
-    results_path = os.path.join('results', dataset)
+    if args.path == None:
+        results_path = os.path.join('results', dataset)
+    else:
+        results_path = os.path.join(args.path, dataset)
     results_path = os.path.join(results_path,method_dict[args.method])
 
     for path in [output_path, results_path]:
