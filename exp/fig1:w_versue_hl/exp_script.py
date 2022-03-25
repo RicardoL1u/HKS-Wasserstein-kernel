@@ -12,6 +12,7 @@ step=0.05
 
 # ===============================
 shutil.rmtree(os.path.join(dataset,method),ignore_errors=True)
+os.makedirs(os.path.join(dataset,method))
 now_path = os.getcwd()
 output_path = os.getcwd()
 method_num = 0

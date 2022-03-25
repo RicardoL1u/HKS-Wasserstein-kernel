@@ -66,16 +66,14 @@ def main():
     args = parser.parse_args()
     dataset = args.dataset
     
-    output_path = os.path.join('output', dataset)
     if args.path == None:
         results_path = os.path.join('results', dataset)
     else:
         results_path = os.path.join(args.path, dataset)
     results_path = os.path.join(results_path,method_dict[args.method])
 
-    for path in [output_path, results_path]:
-        if not os.path.exists(path):
-            os.makedirs(path)
+    if not os.path.exists(results_path):
+        os.makedirs(results_path)
 
     # Transform to Kernel
     # Here the flags come into play

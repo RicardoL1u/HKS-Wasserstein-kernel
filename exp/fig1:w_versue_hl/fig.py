@@ -34,7 +34,7 @@ def main():
     ax.set(xlim=(args.start-args.step, args.end+args.step), xticks=x_axis,
         ylim=(0.55, 0.90), yticks=np.arange(0.55, 0.90, 0.025))
     plt.show()
-    plt.savefig("fig1:varied_w_"+args.dataset+".png", bbox_inches='tight', pad_inches=0)
+    plt.savefig(f"fig1:varied_w_hl=1000_{args.method}_{args.dataset}.png", bbox_inches='tight', pad_inches=0)
 
 if __name__ == "__main__":
     main()
