@@ -1,0 +1,46 @@
+[[20:21:2620:21:26] ] /opt/dgl/src/runtime/tensordispatch.cc/opt/dgl/src/runtime/tensordispatch.cc::4343: : TensorDispatcher: dlopen failed: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+
+[Using backend: pytorch
+Using backend: pytorch
+20:21:26] /opt/dgl/src/runtime/tensordispatch.cc:[4320:21:26: ] TensorDispatcher: dlopen failed: /opt/dgl/src/runtime/tensordispatch.cc/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory:
+43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+Using backend: pytorch
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/PTC_MR/WKS'
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/PTC_MR/WKS'
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/PTC_MR/WKS'
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/fig.py", line 40, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/fig.py", line 32, in main
+    ax.fill_between(x_axis, means-stds, means+stds, alpha=.5, linewidth=0)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/matplotlib/axes/_axes.py", line 5252, in fill_between
+    return self._fill_between_x_or_y(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/matplotlib/axes/_axes.py", line 5173, in _fill_between_x_or_y
+    where = where & ~functools.reduce(
+ValueError: operands could not be broadcast together with shapes (3,) (0,) 
