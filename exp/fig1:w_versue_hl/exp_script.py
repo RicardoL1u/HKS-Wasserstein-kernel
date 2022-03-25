@@ -24,7 +24,7 @@ os.system("pwd")
 sub_procs = []
 for w in np.arange(start,end+step,step):
     w = np.round(w,2)
-    sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m",f'{method_num}',"-w",f'{w}',"-hl",'800','-p',output_path,'-n',f'{w}','-cv']))
+    sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m",f'{method_num}',"-w",f'{w}',"-hl",'1000','-p',output_path,'-n',f'{w}','-cv']))
 
 for p in sub_procs:
     while p.poll() == None:
@@ -32,5 +32,5 @@ for p in sub_procs:
     print("sleep over")
 
 os.chdir(now_path)
-os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
+# os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
 os.system(f'zip -r {method}_{dataset}_w.zip {os.path.join(dataset,method)}/')
