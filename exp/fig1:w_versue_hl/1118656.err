@@ -1,0 +1,144 @@
+[[23:23:3923:23:39] ] /opt/dgl/src/runtime/tensordispatch.cc/opt/dgl/src/runtime/tensordispatch.cc::4343: : TensorDispatcher: dlopen failed: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+
+[Using backend: pytorch
+23:23:39Using backend: pytorch
+] /opt/dgl/src/runtime/tensordispatch.cc:[4323:23:39: ] TensorDispatcher: dlopen failed: /opt/dgl/src/runtime/tensordispatch.cc/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory:
+43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directoryUsing backend: pytorch
+
+[[Using backend: pytorch
+23:23:3923:23:39] ] [[/opt/dgl/src/runtime/tensordispatch.cc/opt/dgl/src/runtime/tensordispatch.cc[23:23:39:23:23:39:] 23:23:3943] 43/opt/dgl/src/runtime/tensordispatch.cc] : /opt/dgl/src/runtime/tensordispatch.cc: :/opt/dgl/src/runtime/tensordispatch.ccTensorDispatcher: dlopen failed: :TensorDispatcher: dlopen failed: 43:/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory43/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory: 43
+: 
+TensorDispatcher: dlopen failed: : TensorDispatcher: dlopen failed: Using backend: pytorch
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directoryTensorDispatcher: dlopen failed: Using backend: pytorch
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+
+[[Using backend: pytorch
+23:23:3923:23:39Using backend: pytorch
+Using backend: pytorch
+] ] /opt/dgl/src/runtime/tensordispatch.cc/opt/dgl/src/runtime/tensordispatch.cc::4343: : TensorDispatcher: dlopen failed: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+
+[[23:23:39Using backend: pytorch
+Using backend: pytorch
+] 23:23:39/opt/dgl/src/runtime/tensordispatch.cc] :/opt/dgl/src/runtime/tensordispatch.cc43:: 43TensorDispatcher: dlopen failed: : /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directoryTensorDispatcher: dlopen failed: 
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+[Using backend: pytorch
+23:23:39Using backend: pytorch
+] /opt/dgl/src/runtime/tensordispatch.cc:[43: 23:23:39TensorDispatcher: dlopen failed: ] /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/opt/dgl/src/runtime/tensordispatch.cc
+:[43: Using backend: pytorch
+23:23:39TensorDispatcher: dlopen failed: ] /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/opt/dgl/src/runtime/tensordispatch.cc
+:[43Using backend: pytorch
+: 23:23:39TensorDispatcher: dlopen failed: ] /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/opt/dgl/src/runtime/tensordispatch.cc
+:[43Using backend: pytorch
+: 23:23:39TensorDispatcher: dlopen failed: ] /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/opt/dgl/src/runtime/tensordispatch.cc
+:[43Using backend: pytorch
+: 23:23:39TensorDispatcher: dlopen failed: ] /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/opt/dgl/src/runtime/tensordispatch.cc
+:[43Using backend: pytorch
+23:23:39: ] TensorDispatcher: dlopen failed: /opt/dgl/src/runtime/tensordispatch.cc/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory:
+43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+[Using backend: pytorch
+23:23:39Using backend: pytorch
+] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 214, in <module>
+    main()
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    main()
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    main()
+    main()
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    os.makedirs(path)
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    main()
+    main()
+    main()
+    os.makedirs(path)
+    os.makedirs(path)
+    os.makedirs(path)
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    os.makedirs(path)
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 78, in main
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    os.makedirs(path)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+    mkdir(name, mode)
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+    mkdir(name, mode)
+    mkdir(name, mode)
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+FileExistsError: [Errno 17] File exists: '/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS'
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
