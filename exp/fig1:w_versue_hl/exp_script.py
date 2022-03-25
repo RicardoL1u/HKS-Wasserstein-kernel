@@ -9,6 +9,7 @@ end=0.15
 step=0.05
 
 # ===============================
+os.removedirs(os.path.join(dataset,method))
 now_path = os.getcwd()
 output_path = os.path.join(os.getcwd(),dataset)
 output_path = os.path.join(output_path,method)
@@ -23,7 +24,7 @@ os.system("pwd")
 
 sub_procs = []
 for w in np.arange(start,end+step,step):
-    sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m",f'{method_num}',"-w",f'{w}',"-hl",'800','-p',output_path]))
+    sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m",f'{method_num}',"-w",f'{w}',"-hl",'800','-p',output_path,'-n',f'{w}']))
     # print(f"python3 main.py -d {dataset} -m {method_num} -w {w} -hl 800 -p {output_path}")
 
 for p in sub_procs:

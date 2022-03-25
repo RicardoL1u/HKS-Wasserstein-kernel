@@ -59,6 +59,7 @@ def main():
     parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
     parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
     parser.add_argument('-p','--path', type = str, required=False, default=None, help = "Path for experiment records")
+    parser.add_argument('-n','--name', type = str, required=False, default=None, help = "name for experiment records")
     # parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
     # parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
 
@@ -192,7 +193,10 @@ def main():
         print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
     
     if args.crossvalidation or args.gridsearch:
-        extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        if args.name != None:
+            extension = args.name+"_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        else:
+            extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         if args.crossvalidation:
             extension += '_crossvalidation'
         if args.gridsearch:
