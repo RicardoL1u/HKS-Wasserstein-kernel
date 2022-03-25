@@ -194,7 +194,7 @@ def main():
     
     if args.crossvalidation or args.gridsearch:
         if args.name != None:
-            extension = args.name+"_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+            extension = "_"+args.name+"_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         else:
             extension = "_"+datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         if args.crossvalidation:
