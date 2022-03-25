@@ -2,6 +2,7 @@ import os
 import numpy as np
 import subprocess
 import time
+import shutil
 method="WKS"
 dataset="PTC_MR"
 start=0.0
@@ -9,7 +10,7 @@ end=0.15
 step=0.05
 
 # ===============================
-os.removedirs(os.path.join(dataset,method))
+shutil.rmtree(os.path.join(dataset,method))
 now_path = os.getcwd()
 output_path = os.path.join(os.getcwd(),dataset)
 output_path = os.path.join(output_path,method)
@@ -34,3 +35,4 @@ for p in sub_procs:
 
 os.chdir(now_path)
 os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
+os.system(f'zip -r {method}_{dataset}_w.zip {output_path}/')
