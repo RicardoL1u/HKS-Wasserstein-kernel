@@ -16,9 +16,9 @@ method_num=1
 dataset="PTC_MR"
 rm -r $dataset
 path="exp/fig1:w_versue_hl"
-start=100
-end=1300
-step=100
+start=0
+end=1
+step=0.05
 
 
 # -------------
@@ -28,8 +28,9 @@ pwd
 
 for ((i=$start; i<=$end; i=i+$step))
 do
-    python3 main.py -d $dataset -m $method_num -s 0 -cv -w 0.45 -hl $i -p $path 
+    echo $i
+    # python3 main.py -d $dataset -m $method_num -s 0 -cv -w 0.45 -hl $i -p $path 
 done
 
 cd $path
-python3 fig.py -d $dataset -m $method -s $start -e $end -step $step
+# python3 fig.py -d $dataset -m $method -s $start -e $end -step $step
