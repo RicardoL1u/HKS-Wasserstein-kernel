@@ -5,6 +5,7 @@ import time
 import shutil
 method="WKS"
 dataset="PTC_MR"
+resultzip = f'{method}_{dataset}_w_hl=1000.zip'
 start=0.0
 end=1.00
 step=0.05
@@ -33,4 +34,4 @@ for p in sub_procs:
 
 os.chdir(now_path)
 # os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
-os.system(f'zip -r {method}_{dataset}_w.zip {os.path.join(dataset,method)}/')
+os.system(f'zip -r {resultzip} {os.path.join(dataset,method)}/')

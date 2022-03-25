@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/exp_script.py", line 12, in <module>
-    os.removedirs(os.path.join(dataset,method))
-  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/os.py", line 243, in removedirs
-    rmdir(name)
-OSError: [Errno 39] Directory not empty: 'PTC_MR/WKS'
