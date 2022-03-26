@@ -1,0 +1,24 @@
+[[15:51:0715:51:07] ] /opt/dgl/src/runtime/tensordispatch.cc/opt/dgl/src/runtime/tensordispatch.cc::4343: : TensorDispatcher: dlopen failed: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+
+[Using backend: pytorch
+Using backend: pytorch
+15:51:07] /opt/dgl/src/runtime/tensordispatch.cc:[4315:51:07: ] TensorDispatcher: dlopen failed: /opt/dgl/src/runtime/tensordispatch.cc/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory:
+43: Using backend: pytorch
+TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+[Using backend: pytorch
+15:51:07] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: RuntimeWarning: overflow encountered in cfloat_scalars
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: RuntimeWarning: invalid value encountered in cfloat_scalars
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:101: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])

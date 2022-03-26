@@ -1,0 +1,40 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ac9dd5705e0> with hl=800 for PTC_MR.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples at 0x2b977cd58ca0> with hl=800 for PTC_MR.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_li at 0x2b18fd1533a0> with hl=800 for PTC_MR.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2afdb4d9c940> with hl=800 for PTC_MR.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_random_samples_li at 0x2b3fd1d323a0> with hl=800 for PTC_MR.
+updating: PTC_MR/ (stored 0%)
+updating: PTC_MR/WKS/ (stored 0%)
+updating: PTC_MR/HKS/ (stored 0%)
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
