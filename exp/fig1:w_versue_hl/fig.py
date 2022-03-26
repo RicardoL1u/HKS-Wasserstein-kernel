@@ -11,6 +11,7 @@ def main():
                             choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-m', '--method', type=str, help='Provide the signature name',
                             choices=['HKS','WKS'])
+    parser.add_argument('--sample', type=int,default=0,required=True , help='Provide the sample number')
     parser.add_argument('-s','--start', type = float, required=True, help = "start value of x")
     parser.add_argument('-e','--end', type = float, required=True, help = "end value of x")
     parser.add_argument('-step','--step', type = float, required=True, help = "end value of x")
@@ -28,13 +29,13 @@ def main():
     plt.style.use('_mpl-gallery')
     # plot
     fig, ax = plt.subplots()
-    fig.set_size_inches(8, 6)
+    fig.set_size_inches(4, 3)
     ax.fill_between(x_axis, means-stds, means+stds, alpha=.5, linewidth=0)
     ax.plot(x_axis, means, linewidth=2)
     ax.set(xlim=(args.start-args.step, args.end+args.step), xticks=x_axis,
         ylim=(0.50, 0.80), yticks=np.arange(0.50, 0.80, 0.025))
     plt.show()
-    plt.savefig(f"fig1:varied_w_hl=1000_{args.method}_{args.dataset}.png", bbox_inches='tight', pad_inches=0)
+    plt.savefig(f"fig1:varied_w_hl=800_{args.method}{args.sample}_{args.dataset}.png", bbox_inches='tight', pad_inches=0)
 
 if __name__ == "__main__":
     main()
