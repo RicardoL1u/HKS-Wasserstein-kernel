@@ -37,7 +37,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG', 'PTC_FM','PTC_FR','PTC_FR','PTC_MM','PTC_MR','ENZYMES'])
+                            choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     args = parser.parse_args()
       
