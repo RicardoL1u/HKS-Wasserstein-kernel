@@ -4,7 +4,7 @@ import subprocess
 import time
 import shutil
 dataset="PTC_MR"
-resultzip = f'{dataset}_w_hl=800.zip'
+resultzip = f'{dataset}_w_hl=800_small.zip'
 
 
 # ===============================
