@@ -88,7 +88,7 @@ def main():
             {'C': np.logspace(-3,3,num=7)}
         ]
         # hs = np.arange(5,10)*100
-        ws = np.arange(6,12)*0.05
+        ws = np.arange(2,8)*0.1
         
     else:
         ws = [args.weight]
