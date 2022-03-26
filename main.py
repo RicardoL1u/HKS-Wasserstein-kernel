@@ -55,7 +55,7 @@ def main():
     parser.add_argument('-cv','--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
-    parser.add_argument('-hl','--hlen', type = int, required=False, default=5, help = "number of sample points in signature, would be 100*h")
+    parser.add_argument('-hl','--hlen', type = int, required=False, default=800, help = "number of sample points in signature, would be 100*h")
     parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
     parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
     parser.add_argument('-p','--path', type = str, required=False, default=None, help = "Path for experiment records")
@@ -87,9 +87,12 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
-        hs = np.arange(5,10)*100
+        # hs = np.arange(5,10)*100
+        ws = np.arange(2,9)*0.1
+        
     else:
-        hs = [args.hlen]
+        ws = [args.weight]
+        # hs = [args.hlen]
         C = [args.C]
         gammas = [args.gamma]
 
@@ -97,7 +100,7 @@ def main():
     # Embeddings
     #---------------------------------
     # Load the data and generate the embeddings 
-    print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} with w={args.weight} for {dataset}.')
+    print(f'Generating {method_dict[args.method]} embeddings by {sampleways_dict[args.method][args.samplemethods]} with hl={args.hlen} for {dataset}.')
     if not args.gridsearch:
         print(f'with hlen = {args.hlen}, C = {args.C} and gammas = {args.gamma}')
     data = dgl.data.LegacyTUDataset(name=dataset)
@@ -108,7 +111,7 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,t,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],args.weight,args.sinkhorn) for t in hs]
+    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],w,args.sinkhorn) for w in ws]
     
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):
@@ -122,13 +125,13 @@ def main():
 
     kernel_matrices = []
     kernel_params = []
-    for i, current_h in enumerate(hs):
+    for i, current_w in enumerate(ws):
         # Generate the full list of kernel matrices from which to select
         M = wasserstein_distances[i]
         for g in gammas:
             K = np.exp(-g*M)
             kernel_matrices.append(K)
-            kernel_params.append((current_h, g))
+            kernel_params.append((current_w, g))
 
     # Check for no hyperparameter:
     if not args.gridsearch:
@@ -147,7 +150,7 @@ def main():
     accuracy_scores = []
     # Hyperparam logging
     best_C = []
-    best_h = []
+    best_w = []
     best_gamma = []
 
     cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
@@ -166,14 +169,14 @@ def main():
             fold_result.append(unit_result)
             # Store best params
             C_ = best_params['params']['C']
-            h_,gamma_ = kernel_params[best_params['K_idx']]
+            w_,gamma_ = kernel_params[best_params['K_idx']]
             y_pred = gs.predict(K_test[best_params['K_idx']])
         else:
             gs = SVC(C=C[0], kernel='precomputed').fit(K_train[0], y_train)
             y_pred = gs.predict(K_test[0])
-            h_,gamma_, C_ =hs[0], gammas[0], C[0] 
+            w_,gamma_, C_ =ws[0], gammas[0], C[0] 
         best_C.append(C_)
-        best_h.append(h_)
+        best_w.append(w_)
         best_gamma.append(gamma_)
 
         accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
@@ -201,8 +204,8 @@ def main():
             extension += '_gridsearch'
         results_filename = os.path.join(results_path, f'results_{dataset}'+f'_{method_dict[args.method]}'+extension+'.csv')
         n_splits = 10 if args.crossvalidation else 1
-        pd.DataFrame(np.array([best_h,best_C, best_gamma, accuracy_scores]).T, 
-                columns=[['h','C', 'gamma', 'accuracy']], 
+        pd.DataFrame(np.array([best_w,best_C, best_gamma, accuracy_scores]).T, 
+                columns=[['w','C', 'gamma', 'accuracy']], 
                 index=['fold_id{}'.format(i) for i in range(n_splits)]).to_csv(results_filename)
         print(f'Results saved in {results_filename}.')
     else:
