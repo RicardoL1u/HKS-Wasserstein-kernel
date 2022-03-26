@@ -1,0 +1,297 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b78f403c940> with w=0.5 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 65.11 +- 4.92 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.5_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b0a57f62940> with w=0.7 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 63.66 +- 5.77 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.7_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b706d84f940> with w=0.45 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 66.00 +- 4.41 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.45_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ac5605ab940> with w=0.75 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 62.51 +- 5.51 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.75_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b8ace670940> with w=0.3 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 62.76 +- 4.95 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.3_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b6a86ff5940> with w=0.25 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 63.05 +- 5.65 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.25_2022-03-26 01:31_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b829e353940> with w=0.8 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 60.74 +- 4.68 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.8_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b4fda535940> with w=0.65 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 63.38 +- 6.51 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.65_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b2d825c0940> with w=0.15 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 61.88 +- 5.92 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.15_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b6cef136940> with w=0.4 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 66.28 +- 4.15 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.4_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b352460a940> with w=0.55 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 64.83 +- 4.92 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.55_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ac5e7f20940> with w=0.6 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 63.67 +- 6.09 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.6_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b20a396e940> with w=0.35 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 65.10 +- 4.75 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.35_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b905e438940> with w=0.85 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 60.45 +- 4.57 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.85_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b47afba4940> with w=0.2 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 63.04 +- 6.13 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.2_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b95c047b940> with w=1.0 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 59.58 +- 4.09 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_1.0_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ba7f2010940> with w=0.9 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 60.45 +- 3.99 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.9_2022-03-26 01:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2aecd8afd940> with w=0.95 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 61.32 +- 4.83 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.95_2022-03-26 01:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b7ee90db940> with w=0.05 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 61.32 +- 6.02 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.05_2022-03-26 01:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b317cd64940> with w=0.0 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 60.74 +- 5.31 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.0_2022-03-26 01:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b7ca3904940> with w=0.1 for PTC_MR.
+with hlen = 1000, C = 1 and gammas = 10
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 61.91 +- 5.89 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.1_2022-03-26 01:33_crossvalidation.csv.
+  adding: PTC_MR/WKS/ (stored 0%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.9_2022-03-26 01:32_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.7_2022-03-26 01:31_crossvalidation.csv (deflated 70%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.0_2022-03-26 01:33_crossvalidation.csv (deflated 70%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.55_2022-03-26 01:32_crossvalidation.csv (deflated 74%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.3_2022-03-26 01:31_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.15_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.2_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.45_2022-03-26 01:31_crossvalidation.csv (deflated 73%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.95_2022-03-26 01:33_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_1.0_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.65_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.1_2022-03-26 01:33_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.35_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.85_2022-03-26 01:32_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.8_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.5_2022-03-26 01:31_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.75_2022-03-26 01:31_crossvalidation.csv (deflated 69%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.05_2022-03-26 01:33_crossvalidation.csv (deflated 71%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.6_2022-03-26 01:32_crossvalidation.csv (deflated 73%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.4_2022-03-26 01:32_crossvalidation.csv (deflated 72%)
+  adding: PTC_MR/WKS/results_PTC_MR_WKS_0.25_2022-03-26 01:31_crossvalidation.csv (deflated 72%)
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
+sleep over
