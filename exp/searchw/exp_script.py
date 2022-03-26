@@ -9,7 +9,8 @@ resultzip = f'{dataset}_w_hl=800.zip'
 
 # ===============================
 shutil.rmtree(dataset,ignore_errors=True)
-os.makedirs(dataset)
+os.makedirs(os.path.join(dataset,"HKS"))
+os.makedirs(os.path.join(dataset,"WKS"))
 now_path = os.getcwd()
 output_path = os.getcwd()
 
