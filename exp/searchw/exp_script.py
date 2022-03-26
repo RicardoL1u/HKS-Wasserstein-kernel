@@ -3,7 +3,7 @@ import numpy as np
 import subprocess
 import time
 import shutil
-dataset="PTC_MR"
+dataset="ENZYMES"
 resultzip = f'{dataset}_w_hl=800_small.zip'
 
 
