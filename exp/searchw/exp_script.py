@@ -3,7 +3,7 @@ import numpy as np
 import subprocess
 import time
 import shutil
-dataset="PROTEINS"
+dataset="NCI1"
 resultzip = f'{dataset}_w_hl=800_small.zip'
 
 
