@@ -28,11 +28,11 @@ def main():
     plt.style.use('_mpl-gallery')
     # plot
     fig, ax = plt.subplots()
-    fig.set_size_inches(4, 4)
+    fig.set_size_inches(8, 6)
     ax.fill_between(x_axis, means-stds, means+stds, alpha=.5, linewidth=0)
     ax.plot(x_axis, means, linewidth=2)
     ax.set(xlim=(args.start-args.step, args.end+args.step), xticks=x_axis,
-        ylim=(0.55, 0.90), yticks=np.arange(0.55, 0.90, 0.025))
+        ylim=(0.50, 0.80), yticks=np.arange(0.50, 0.80, 0.025))
     plt.show()
     plt.savefig(f"fig1:varied_w_hl=1000_{args.method}_{args.dataset}.png", bbox_inches='tight', pad_inches=0)
 
