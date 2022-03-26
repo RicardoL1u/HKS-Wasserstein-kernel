@@ -20,7 +20,7 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list
     wasserstein_distances = []
     # Compute the Wasserstein distance
     for w in weight:
-        wasserstein_distances.append(_compute_wasserstein_distance(np.concatenate(w*node_signature_matrice,(1-w)*node_attr_matrice,axis=2), 
+        wasserstein_distances.append(_compute_wasserstein_distance(np.concatenate((w*node_signature_matrice,(1-w)*node_attr_matrice),axis=2), 
             sinkhorn=sinkhorn, sinkhorn_lambda=1e-2))
     return wasserstein_distances
 
