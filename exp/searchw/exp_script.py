@@ -24,7 +24,7 @@ sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m","0",'-s
 sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m","0",'-s','2',"-hl",'800','-p',output_path,'-n','searchw2','-cv','-gs']))
 
 sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m","1",'-s','0',"-hl",'800','-p',output_path,'-n','searchw0','-cv','-gs']))
-sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m","2",'-s','1',"-hl",'800','-p',output_path,'-n','searchw1','-cv','-gs']))
+sub_procs.append(subprocess.Popen(["python3","main.py","-d",dataset,"-m","1",'-s','1',"-hl",'800','-p',output_path,'-n','searchw1','-cv','-gs']))
 
 
 for p in sub_procs:
