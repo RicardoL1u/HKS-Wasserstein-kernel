@@ -6,9 +6,12 @@ import shutil
 method="HKS"
 sample=2
 dataset="ENZYMES"
-resultzip = f'{method}{sample}_{dataset}_w_hl=800.zip'
-start=0.0
-end=1.00
+C = 100.0
+g = 0.01
+hl = 800
+resultzip = f'{method}{sample}_{dataset}_w_hl={hl}.zip'
+start=0.3
+end=0.70
 step=0.1
 
 # ===============================
@@ -29,7 +32,7 @@ for w in np.arange(start,end+step,step):
     w = np.round(w,2)
     name = '{:1.2f}'.format(w)
     # print(name)
-    os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -w {w} -hl 800 -p {output_path} -n {name}  -cv')
+    os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name}  -cv')
     # sub_procs.append(subprocess.Popen(["python3 main.py -d",dataset,"-m",f'{method_num} -s',f'{sample}',"-w",f'{w}',"-hl",'800 -p',output_path,'-n {:1.2f}'.format(w),'-cv']))
 
 
