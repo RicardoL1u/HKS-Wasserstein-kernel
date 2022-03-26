@@ -25,6 +25,7 @@ class TestDGL(unittest.TestCase):
         self.dataset_analysis("DD")
         self.dataset_analysis("ENZYMES")
     def dataset_analysis(self,dataset:str):
+        print('\n=====================================================\n')
         data = dgl.data.LegacyTUDataset(dataset)
         print(f"{dataset} dataset length : ", len(data.graph_lists))
         graphs, y = zip(*[graph for graph in data])
@@ -40,7 +41,9 @@ class TestDGL(unittest.TestCase):
         print(np.mean(graph_size_list))
         print(np.std(graph_size_list))
         print(np.sum(graph_size_list))
-       
+        print(graphs[0])
+        print(graphs[0].ndata['feat'].shape)
+        print(np.unique(graphs[0].ndata['feat'].numpy(),return_counts=True))
 
 
       
