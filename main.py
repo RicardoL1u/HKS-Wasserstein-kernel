@@ -48,7 +48,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG','PTC_MR','ENZYMES'])
+                            choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-m','--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('-w','--weight',type = float ,default=0.4,help='the relative important metric between generated node signature and node feature')
     parser.add_argument('-s','--samplemethods',type = int,default=0,help='choose different sample methods')

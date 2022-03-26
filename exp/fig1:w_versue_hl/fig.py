@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG','PTC_MR','ENZYMES'])
+                            choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-m', '--method', type=str, help='Provide the signature name',
                             choices=['HKS','WKS'])
     parser.add_argument('-s','--start', type = float, required=True, help = "start value of x")

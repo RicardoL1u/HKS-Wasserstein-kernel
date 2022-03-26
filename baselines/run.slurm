@@ -9,8 +9,11 @@
 #SBATCH --error=%j.err
 
 source activate myenv
-python3 baselines.py -d MUTAG
-python3 baselines.py -d PTC_MR 
 python3 baselines.py -d MUTAG -gs
 python3 baselines.py -d PTC_MR -gs
+python3 baselines.py -d NCI1 -gs
+python3 baselines.py -d PROTEINS -gs
+python3 baselines.py -d DD -gs
+python3 baselines.py -d ENZYMES -gs
+
 
