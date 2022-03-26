@@ -142,7 +142,7 @@ def GetNodeAttrMat(graph):
     return (graph.ndata['feat']).numpy()
     
 
-def CalculateSignature4Graphs(graphs,signature_method,sample_method,weight,T):
+def CalculateSignature4Graphs(graphs,signature_method,sample_method,T):
     """
     Calculate generate the matrix the node embeddings for each given graph
 
@@ -155,8 +155,10 @@ def CalculateSignature4Graphs(graphs,signature_method,sample_method,weight,T):
     feature_matrices: list of matrix of node embeddings
 
     """
-    w = weight
-    matrices = [np.concatenate(((1-w)*signature_method(graph,sample_method,T),w*GetNodeAttrMat(graph)),axis=1) for graph in graphs]
+    matrices = np.array([signature_method(graph,sample_method,T) for graph in graphs])
     if len(problem_graphs) > 0:
         dgl.data.utils.save_graphs('./graph.bin',problem_graphs)
     return matrices
+
+def GraphAttrMatrice(graphs:list):
+    return np.array([GetNodeAttrMat(g) for g in graphs])

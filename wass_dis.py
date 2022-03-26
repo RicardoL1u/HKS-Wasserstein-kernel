@@ -2,7 +2,7 @@ import signature
 import numpy as np
 import ot
 
-def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight,sinkhorn=False):
+def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list,sinkhorn=False):
     """
     Pairwise computation of the Wasserstein distance between embeddings of the 
     graphs in X.
@@ -13,12 +13,16 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight,sink
     """
     
     # Embed the nodes
-    node_embeddings_matrice = signature.CalculateSignature4Graphs(X,signature_method,sample_method,weight,T)
+    
+    node_signature_matrice = signature.CalculateSignature4Graphs(X,signature_method,sample_method,T)
+    node_attr_matrice = signature.GraphAttrMatrice(X)
 
+    wasserstein_distances = []
     # Compute the Wasserstein distance
-    pairwise_distances = _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=sinkhorn, 
-                                     sinkhorn_lambda=1e-2)
-    return pairwise_distances
+    for w in weight:
+        wasserstein_distances.append(_compute_wasserstein_distance(np.concatenate(w*node_signature_matrice,(1-w)*node_attr_matrice,axis=2), 
+            sinkhorn=sinkhorn, sinkhorn_lambda=1e-2))
+    return wasserstein_distances
 
 
 def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False, 

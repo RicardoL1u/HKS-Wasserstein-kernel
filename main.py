@@ -111,7 +111,7 @@ def main():
     
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = [wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],w,args.sinkhorn) for w in ws]
+    wasserstein_distances = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],ws,args.sinkhorn)
     
     # Save Wasserstein distance matrices
     # for i, D_w in enumerate(wasserstein_distances):
