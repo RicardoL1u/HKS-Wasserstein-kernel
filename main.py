@@ -55,7 +55,7 @@ def main():
     parser.add_argument('-cv','--crossvalidation', default=False, action='store_true', help='Enable a 10-fold crossvalidation')
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     parser.add_argument('--sinkhorn', default=False, action='store_true', help='Use sinkhorn approximation')
-    parser.add_argument('-hl','--hlen', type = int, required=False, default=1000, help = "number of sample points in signature, would be 100*h")
+    parser.add_argument('-hl','--hlen', type = int, required=False, default=800, help = "number of sample points in signature, would be 100*h")
     parser.add_argument('-c','--C', type = float, required=False, default=1, help = "the strength of the regularization of SVM is inversely proportionaly to C")
     parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
     parser.add_argument('-p','--path', type = str, required=False, default=None, help = "Path for experiment records")
@@ -90,7 +90,7 @@ def main():
             {'C': np.logspace(-3,3,num=7)}
         ]
         # hs = np.arange(5,10)*100
-        ws = np.arange(0.2,0,81,0.05)
+        ws = np.arange(2,9)*0.1
         
     else:
         ws = [args.weight]
