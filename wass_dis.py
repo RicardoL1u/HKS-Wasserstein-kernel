@@ -16,11 +16,13 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list
     
     node_signature_matrice = signature.CalculateSignature4Graphs(X,signature_method,sample_method,T)
     node_attr_matrice = signature.GraphAttrMatrice(X)
-
     wasserstein_distances = []
     # Compute the Wasserstein distance
     for w in weight:
-        wasserstein_distances.append(_compute_wasserstein_distance(np.concatenate((w*node_signature_matrice,(1-w)*node_attr_matrice),axis=2), 
+        graph_node_embeddings = []
+        for i in range(len(X)):
+            graph_node_embeddings.append(np.concatenate((w*node_signature_matrice[i],(1-w)*node_attr_matrice[i]),axis=1))
+        wasserstein_distances.append(_compute_wasserstein_distance(graph_node_embeddings, 
             sinkhorn=sinkhorn, sinkhorn_lambda=1e-2))
     return wasserstein_distances
 

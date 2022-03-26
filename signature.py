@@ -155,10 +155,11 @@ def CalculateSignature4Graphs(graphs,signature_method,sample_method,T):
     feature_matrices: list of matrix of node embeddings
 
     """
-    matrices = np.array([signature_method(graph,sample_method,T) for graph in graphs])
+    matrices = np.zeros((len(graphs)))
+    matrices = [signature_method(graph,sample_method,T) for graph in graphs]
     if len(problem_graphs) > 0:
         dgl.data.utils.save_graphs('./graph.bin',problem_graphs)
     return matrices
 
 def GraphAttrMatrice(graphs:list):
-    return np.array([GetNodeAttrMat(g) for g in graphs])
+    return [GetNodeAttrMat(g) for g in graphs]
