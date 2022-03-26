@@ -1,3 +1,3 @@
 dataset,method,sample,c,gamma,w,hl,accuracy
 PTC_MR,1,0,1,10,0.4,800,0.662
-ENZYMES,0,2,100,0.01,800,
+ENZYMES,0,2,100,0.01,0.60,800,0.6850
