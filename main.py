@@ -74,8 +74,8 @@ def main():
     else:
         results_path = os.path.join(args.path, dataset)
     results_path = os.path.join(results_path,method_dict[args.method])
-    output_path = os.path.join(results_path,method_dict[args.samplemethods])
-    
+    output_path = os.path.join(output_path,method_dict[args.samplemethods])
+
     for path in [output_path, results_path]:	
         if not os.path.exists(path):
             os.makedirs(path)
@@ -136,9 +136,9 @@ def main():
         filext = 'wasserstein_distance_matrix'
         if args.sinkhorn:
             filext += '_sinkhorn'
-        filext += f'_it{args.samplemethods}_{ws[i]}.npy'
+        filext += f'_it{args.samplemethods}_{ws[i]}_{args.sinkhorn}.npy'
         np.save(os.path.join(output_path,filext), D_w)
-    print('Wasserstein distances computation done. Saved to file.')
+    logging.info('Wasserstein distances computation done. Saved to file.')
     print()
 
     kernel_matrices = []
@@ -161,7 +161,7 @@ def main():
     # Classification
     #---------------------------------
     # Run hyperparameter search if needed
-    print(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
+    logging.info(f'Running SVMs, crossvalidation: {args.crossvalidation}, gridsearch: {args.gridsearch}.')
 
     # Contains accuracy scores for each cross validation step; the
     # means of this list will be used later on.
@@ -200,10 +200,11 @@ def main():
         accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
         if not args.crossvalidation:
             break
-
+    
     #---------------------------------
     # Printing and logging
     #---------------------------------
+    logging.info('gridsearch and crossvalidation done')
     if args.crossvalidation:
         print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
                     np.mean(accuracy_scores) * 100,  
