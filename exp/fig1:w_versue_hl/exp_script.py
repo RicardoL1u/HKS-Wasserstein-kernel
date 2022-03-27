@@ -1,17 +1,15 @@
 import os
 import numpy as np
-import subprocess
-import time
 import shutil
 method="HKS"
 sample=2
-dataset="ENZYMES"
+dataset="PROTEINS"
 C = 100.0
 g = 0.01
 hl = 800
 resultzip = f'{method}{sample}_{dataset}_w_hl={hl}.zip'
-start=0.3
-end=0.70
+start=0.4
+end=0.6
 step=0.1
 
 # ===============================

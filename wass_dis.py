@@ -1,6 +1,7 @@
 import signature
 import numpy as np
 import ot
+import logging
 
 def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list,sinkhorn=False):
     """
@@ -13,17 +14,22 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list
     """
     
     # Embed the nodes
-    
+    logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
+    logging.info("ready to generate node embeddings")
     node_signature_matrice = signature.CalculateSignature4Graphs(X,signature_method,sample_method,T)
     node_attr_matrice = signature.GraphAttrMatrice(X)
+    logging.info("the node embedding have been generated")
     wasserstein_distances = []
     # Compute the Wasserstein distance
     for w in weight:
         graph_node_embeddings = []
         for i in range(len(X)):
             graph_node_embeddings.append(np.concatenate((w*node_signature_matrice[i],(1-w)*node_attr_matrice[i]),axis=1))
+        msg = f"the wass diss with sinkhorn = {sinkhorn} and w = {w}"
+        logging.debug("ready to compute "+msg )
         wasserstein_distances.append(_compute_wasserstein_distance(graph_node_embeddings, 
             sinkhorn=sinkhorn, sinkhorn_lambda=1e-2))
+        logging.debug("have computed "+msg)
     return wasserstein_distances
 
 
