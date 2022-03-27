@@ -1,7 +1,10 @@
 import os
 import shutil
-dataset="NCI1"
-resultzip = f'{dataset}_w_hl=800_no_cv.zip'
+
+from ot import sinkhorn
+dataset="DD"
+sinkhorn = "--sinkorn"
+resultzip = f'{dataset}_w_hl=800_no_cv{sinkhorn}.zip'
 
 
 # ===============================
@@ -17,8 +20,8 @@ os.system("pwd")
 
 # os.system(f'python3 main.py -d {dataset} -m 0 -s 0 -hl 800 -p {output_path} -cv -gs')
 # os.system(f'python3 main.py -d {dataset} -m 0 -s 1 -hl 800 -p {output_path} -cv -gs')
-# os.system(f'python3 main.py -d {dataset} -m 0 -s 2 -hl 800 -p {output_path}  -gs')
-os.system(f'python3 main.py -d {dataset} -m 1 -s 0 -hl 800 -p {output_path}  -gs')
+os.system(f'python3 main.py -d {dataset} -m 0 -s 2 -hl 800 -p {output_path}  -gs {sinkhorn}')
+os.system(f'python3 main.py -d {dataset} -m 1 -s 0 -hl 800 -p {output_path}  -gs {sinkhorn}')
 # os.system(f'python3 main.py -d {dataset} -m 1 -s 1 -hl 800 -p {output_path} -cv -gs')
 
 
