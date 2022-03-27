@@ -1,0 +1,57 @@
+[18:07:18] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 06:07:24: before drop huge graphs, there are 4110 graphs in NCI1
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 230, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 116, in main
+    for i,graph in enumerate(graph):
+UnboundLocalError: local variable 'graph' referenced before assignment
+[18:07:26] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 06:07:28: before drop huge graphs, there are 4110 graphs in NCI1
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 230, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 116, in main
+    for i,graph in enumerate(graph):
+UnboundLocalError: local variable 'graph' referenced before assignment
+[18:07:29] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 06:07:31: before drop huge graphs, there are 4110 graphs in NCI1
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 230, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 116, in main
+    for i,graph in enumerate(graph):
+UnboundLocalError: local variable 'graph' referenced before assignment
+[18:07:33] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 06:07:34: before drop huge graphs, there are 4110 graphs in NCI1
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 230, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 116, in main
+    for i,graph in enumerate(graph):
+UnboundLocalError: local variable 'graph' referenced before assignment
+[18:07:36] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 06:07:37: before drop huge graphs, there are 4110 graphs in NCI1
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 230, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 116, in main
+    for i,graph in enumerate(graph):
+UnboundLocalError: local variable 'graph' referenced before assignment
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-27 16:13_crossvalidation.csv' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
