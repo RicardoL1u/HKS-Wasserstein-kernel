@@ -113,7 +113,7 @@ def main():
     msg = f'before drop huge graphs, there are {len(y_ori)} graphs in {args.dataset}'
     logging.info(msg)
     index_list = []
-    for i,graph in enumerate(graph):
+    for i,graph in enumerate(graphs_ori):
         if graph.number_of_nodes() < 620:
             index_list.append(i)
     graphs = [graphs_ori[i] for i in index_list]
