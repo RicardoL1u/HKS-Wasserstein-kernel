@@ -1,0 +1,17 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b87c2ad7a60> with hl=800 for NCI1.
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: False, gridsearch: True.
+Final accuracy: 77.129 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw/NCI1/WKS/results_NCI1_WKS_2022-03-27 14:50_gridsearch.csv.
+  adding: NCI1/ (stored 0%)
+  adding: NCI1/WKS/ (stored 0%)
+  adding: NCI1/WKS/results_NCI1_WKS_2022-03-27 14:50_gridsearch.csv (deflated 10%)
+  adding: NCI1/HKS/ (stored 0%)
