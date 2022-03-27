@@ -1,0 +1,42 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b1968152700> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 1.0
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 75.83 +- 4.42 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-27 16:13_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6fc5626700> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 1.0
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 76.19 +- 3.70 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-27 16:25_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2af39962a700> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 1.0
+Kernel matrices computed.
+
+Running SVMs, crossvalidation: True, gridsearch: False.
+Mean 10-fold accuracy: 76.01 +- 4.34 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.60_2022-03-27 16:37_crossvalidation.csv.
+  adding: PROTEINS/HKS/ (stored 0%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-27 16:13_crossvalidation.csv (deflated 70%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.60_2022-03-27 16:37_crossvalidation.csv (deflated 71%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-27 16:25_crossvalidation.csv (deflated 70%)

@@ -1,0 +1,24 @@
+[16:01:39] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 04:01:44: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/03/27 04:08:00: the node embedding have been generated
+2022/03/27 04:08:00: ready to compute the wass diss with sinkhorn = False and w = 0.4
+2022/03/27 04:13:54: have computed the wass diss with sinkhorn = False and w = 0.4
+[16:13:57] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 04:13:58: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/03/27 04:19:57: the node embedding have been generated
+2022/03/27 04:19:57: ready to compute the wass diss with sinkhorn = False and w = 0.5
+2022/03/27 04:25:50: have computed the wass diss with sinkhorn = False and w = 0.5
+[16:25:52] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/27 04:25:53: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:137: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/03/27 04:31:40: the node embedding have been generated
+2022/03/27 04:31:40: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/03/27 04:37:31: have computed the wass diss with sinkhorn = False and w = 0.6
