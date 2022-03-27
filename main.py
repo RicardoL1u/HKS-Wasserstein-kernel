@@ -67,15 +67,18 @@ def main():
 
     args = parser.parse_args()
     dataset = args.dataset
-    
+
+    output_path = os.path.join('output', dataset)
     if args.path == None:
         results_path = os.path.join('results', dataset)
     else:
         results_path = os.path.join(args.path, dataset)
     results_path = os.path.join(results_path,method_dict[args.method])
-
-    if not os.path.exists(results_path):
-        os.makedirs(results_path)
+    output_path = os.path.join(results_path,method_dict[args.samplemethods])
+    
+    for path in [output_path, results_path]:	
+        if not os.path.exists(path):
+            os.makedirs(path)
 
     # Transform to Kernel
     # Here the flags come into play
@@ -129,14 +132,14 @@ def main():
     wasserstein_distances = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],ws,args.sinkhorn)
     
     # Save Wasserstein distance matrices
-    # for i, D_w in enumerate(wasserstein_distances):
-    #     filext = 'wasserstein_distance_matrix'
-    #     if args.sinkhorn:
-    #         filext += '_sinkhorn'
-    #     filext += f'_it{i}.npy'
-    #     np.save(os.path.join(output_path,filext), D_w)
-    # print('Wasserstein distances computation done. Saved to file.')
-    # print()
+    for i, D_w in enumerate(wasserstein_distances):
+        filext = 'wasserstein_distance_matrix'
+        if args.sinkhorn:
+            filext += '_sinkhorn'
+        filext += f'_it{args.samplemethods}_{ws[i]}.npy'
+        np.save(os.path.join(output_path,filext), D_w)
+    print('Wasserstein distances computation done. Saved to file.')
+    print()
 
     kernel_matrices = []
     kernel_params = []
