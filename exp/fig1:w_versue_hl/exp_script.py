@@ -4,8 +4,8 @@ import shutil
 method="HKS"
 sample=2
 dataset="PROTEINS"
-C = 100.0
-g = 0.01
+C = 1.0
+g = 1.0
 hl = 800
 resultzip = f'{method}{sample}_{dataset}_w_hl={hl}.zip'
 start=0.4
