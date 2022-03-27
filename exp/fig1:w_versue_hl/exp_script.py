@@ -1,8 +1,6 @@
 import os
 import numpy as np
 import shutil
-
-from ot import sinkhorn
 method="WKS"
 sample=0
 dataset="NCI1"
