@@ -37,3 +37,5 @@ for w in np.arange(start,end+step,step):
 os.chdir(now_path)
 # os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
 os.system(f'zip -r {resultzip} {os.path.join(dataset,method)}/')
+os.system('git add .')
+os.system(f'git commit -a -m \"exp:record for {resultzip}\"')
