@@ -1,7 +1,4 @@
-from distutils.log import debug
 import numpy as np
-# import igraph as ig
-import os
 import dgl
 import torch
 import dgl.data
@@ -10,14 +7,15 @@ problem_graphs = []
 problem_labels = []
 cnt = 0
 
-def eigendecom4graphs(graph):
+def eigendecom4graphs(graph:dgl.DGLGraph):
     adj_matrix = graph.adj()
     deg_vector = graph.out_degrees()
     deg_matrix = torch.diag(deg_vector)
     graphical_laplacian = deg_matrix - adj_matrix
-    eigenvalues,eigenvectors = torch.linalg.eig(graphical_laplacian)
-    eigenvalues = np.abs(eigenvalues.numpy())
-    return eigenvalues,eigenvectors.numpy()
+    graphical_laplacian = graphical_laplacian.numpy()
+    eigenvalues,eigenvectors = np.linalg.eig(graphical_laplacian)
+    eigenvalues = np.abs(eigenvalues)
+    return eigenvalues,eigenvectors
 
 def get_random_samples(eigenvalues,T=8) -> np.ndarray :
     """
