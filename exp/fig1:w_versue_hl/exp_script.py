@@ -1,13 +1,16 @@
 import os
 import numpy as np
 import shutil
+
+from ot import sinkhorn
 method="WKS"
 sample=0
 dataset="NCI1"
 C = 1.0
 g = 10.0
 hl = 800
-resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}.zip'
+sinkhorn = '--sinkhorn'
+resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
 start=0.4
 end=0.6
 step=0.05
@@ -29,9 +32,7 @@ sub_procs = []
 for w in np.arange(start,end+step,step):
     w = np.round(w,2)
     name = '{:1.2f}'.format(w)
-    # print(name)
-    os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name}  -cv')
-    # sub_procs.append(subprocess.Popen(["python3 main.py -d",dataset,"-m",f'{method_num} -s',f'{sample}',"-w",f'{w}',"-hl",'800 -p',output_path,'-n {:1.2f}'.format(w),'-cv']))
+    os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 
 
 os.chdir(now_path)

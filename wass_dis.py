@@ -28,13 +28,13 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list
         msg = f"the wass diss with sinkhorn = {sinkhorn} and w = {w}"
         logging.debug("ready to compute "+msg )
         wasserstein_distances.append(_compute_wasserstein_distance(graph_node_embeddings, 
-            sinkhorn=sinkhorn, sinkhorn_lambda=1e-2))
+            sinkhorn=sinkhorn, sinkhorn_lambda=10))
         logging.debug("have computed "+msg)
     return wasserstein_distances
 
 
 def _compute_wasserstein_distance(node_embeddings_matrice, sinkhorn=False, 
-                                   sinkhorn_lambda=10,isImport=False):
+                                   sinkhorn_lambda=0.01,isImport=False):
     '''
     Generate the Wasserstein distance matrix for the graphs embedded 
     in label_sequences
