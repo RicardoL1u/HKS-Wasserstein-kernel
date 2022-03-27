@@ -10,5 +10,5 @@
 
 source activate myenv
 
-python3 main.py -d DD -m 0 -s 2 -hl 800  -gs --sinkhorn
-python3 main.py -d DD -m 1 -s 0 -hl 800  -gs --sinkhorn
+python3 main.py -d NCI1 -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
+python3 main.py -d NCI1 -m 1 -s 0 -hl 800  -cv -gs --sinkhorn
