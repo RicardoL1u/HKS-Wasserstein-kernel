@@ -9,14 +9,6 @@ import signature
 import logging
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestDGL(unittest.TestCase):
-    # def test_eig(self):
-    #     A = torch.randn(2, 2, dtype=torch.complex128)
-    #     logging.info()
-    #     logging.info(torch.linalg.eig(A))
-    #     A = A.numpy()
-    #     logging.info(numpy.linalg.eig(A))
-    # def test_bug(self):
-    #     sort_eigen = 
     def test_dataset(self):
         self.dataset_analysis("MUTAG")
         self.dataset_analysis("PTC_MR")

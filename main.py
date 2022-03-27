@@ -14,6 +14,8 @@ import pandas as pd
 from sklearn.svm import SVC
 import datetime
 import signature
+import logging
+logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
 
 # global parameter
 method_dict = {
@@ -104,11 +106,24 @@ def main():
     if not args.gridsearch:
         print(f'with hlen = {args.hlen}, C = {args.C} and gammas = {args.gamma}')
     data = dgl.data.LegacyTUDataset(name=dataset)
-    graphs, y = zip(*[graph for graph in data])
-    graphs = list(graphs)
-    y = list(y)
+    graphs_ori, y_ori = zip(*[graph for graph in data])
+    graphs_ori = list(graphs_ori)
+    y_ori = list(y_ori)
+
+    msg = f'before drop huge graphs, there are {len(y_ori)} graphs in {args.dataset}'
+    logging.info(msg)
+    index_list = []
+    for i,graph in enumerate(graph):
+        if graph.number_of_nodes() < 620:
+            index_list.append(i)
+    graphs = [graphs_ori[i] for i in index_list]
+    y = [y_ori[i] for i in index_list]
     y = np.array([unit.item() for unit in y])
-    
+    msg = f'after drop huge graphs, there are {len(y)} graphs in {args.dataset}'
+    logging.info(msg)
+
+
+
     # Load the data and generate the embeddings 
     # Calculate the wass dis with the given number of samples points in HKS
     wasserstein_distances = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],ws,args.sinkhorn)
