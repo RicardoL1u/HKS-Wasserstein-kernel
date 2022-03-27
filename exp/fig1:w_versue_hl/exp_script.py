@@ -1,16 +1,16 @@
 import os
 import numpy as np
 import shutil
-method="HKS"
-sample=2
-dataset="PROTEINS"
+method="WKS"
+sample=0
+dataset="NCI1"
 C = 1.0
-g = 1.0
+g = 10.0
 hl = 800
-resultzip = f'{method}{sample}_{dataset}_w_hl={hl}.zip'
+resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}.zip'
 start=0.4
 end=0.6
-step=0.1
+step=0.05
 
 # ===============================
 shutil.rmtree(os.path.join(dataset,method),ignore_errors=True)
