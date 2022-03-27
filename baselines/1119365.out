@@ -1,0 +1,42 @@
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in MUTAG: 86.64 +- 8.13 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in MUTAG: 81.35 +- 6.01 %
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 62.94 +- 6.47 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 61.47 +- 4.25 %
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in NCI1: 72.72 +- 1.93 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in NCI1: 85.11 +- 1.60 %
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PROTEINS: 75.47 +- 4.33 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PROTEINS: 75.66 +- 3.70 %
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in DD: 80.05 +- 3.75 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in DD: 79.03 +- 3.89 %
+
+=============================================================
+Graph classification on MUTAG using the shortest path kernel.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 40.33 +- 5.77 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 54.34 +- 3.38 %
