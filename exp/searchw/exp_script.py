@@ -28,4 +28,6 @@ os.system(f'python3 main.py -d {dataset} -m 1 -s 0 -hl 800 -p {output_path}  -gs
 
 os.chdir(now_path)
 # os.system(f'python3 fig.py -d {dataset} -m {method} -s {start} -e {end} -step {step}')
-os.system(f'zip -r {resultzip} {dataset}/')
+os.system(f'zip -r {resultzip} {os.path.join(dataset)}/')
+os.system('git add .')
+os.system(f'git commit -a -m \"exp:record for {resultzip}\"')
