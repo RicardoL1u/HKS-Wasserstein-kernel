@@ -3,7 +3,7 @@ import shutil
 
 from ot import sinkhorn
 dataset="DD"
-sinkhorn = "--sinkorn"
+sinkhorn = "--sinkhorn"
 resultzip = f'{dataset}_w_hl=800_no_cv{sinkhorn}.zip'
 
 
