@@ -1,0 +1,9 @@
+[19:48:37] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 07:48:52: before drop huge graphs, there are 1178 graphs in DD
+2022/03/28 07:48:52: after drop huge graphs, there are 1126 graphs in DD
+2022/03/28 07:48:52: ready to load the pre-computed wass distances
+2022/03/28 07:48:53: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 07:48:53: Wasserstein distances computation done. Saved to file.
+2022/03/28 07:48:53: Running SVMs, crossvalidation: False, gridsearch: True.
+2022/03/28 07:49:12: gridsearch and crossvalidation done

@@ -1,0 +1,18 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ad8f472c550> with hl=800 for DD.
+
+Kernel matrices computed.
+
+Final accuracy: 86.726 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw/DD/WKS/results_DD_WKS_2022-03-28 19:49_gridsearch.csv.
+  adding: DD/ (stored 0%)
+  adding: DD/WKS/ (stored 0%)
+  adding: DD/WKS/results_DD_WKS_2022-03-28 19:49_gridsearch.csv (stored 0%)
+  adding: DD/HKS/ (stored 0%)
+  adding: DD/HKS/results_DD_HKS_2022-03-27 23:26_gridsearch.csv (deflated 16%)
