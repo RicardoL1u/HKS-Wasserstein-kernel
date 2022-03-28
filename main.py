@@ -74,7 +74,7 @@ def main():
     else:
         results_path = os.path.join(args.path, dataset)
     results_path = os.path.join(results_path,method_dict[args.method])
-    output_path = os.path.join(output_path,method_dict[args.samplemethods])
+    output_path = os.path.join(output_path,method_dict[args.method])
 
     for path in [output_path, results_path]:	
         if not os.path.exists(path):
