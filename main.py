@@ -136,7 +136,8 @@ def main():
         filext = 'wasserstein_distance_matrix'
         if args.sinkhorn:
             filext += '_sinkhorn'
-        filext += f'_it{args.samplemethods}_{ws[i]}_{args.sinkhorn}.npy'
+        nw = '{:1.2f}'.format(ws[i])
+        filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
         np.save(os.path.join(output_path,filext), D_w)
     logging.info('Wasserstein distances computation done. Saved to file.')
     print()
