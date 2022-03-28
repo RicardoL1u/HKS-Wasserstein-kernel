@@ -1,7 +1,7 @@
 import os
 
 from ot import sinkhorn
-dataset="MUTAG"
+dataset="PROTEINS"
 sinkhorn = ""
 resultzip = f'{dataset}_w_hl=800_no_cv{sinkhorn}.zip'
 
