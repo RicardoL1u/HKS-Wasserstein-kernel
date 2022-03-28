@@ -1,4 +1,5 @@
 import argparse
+from cmath import log
 from math import fabs
 import os
 from random import shuffle
@@ -43,6 +44,7 @@ sampleways_dict = {
 
 def get_wass_distances(args,graphs,output_path,ws)->list:
     pre_wass_dis = []
+    com_wass_dis = []
     pre_wass_index = []
     com_ws = []
     logging.info('ready to load the pre-computed wass distances')
@@ -59,7 +61,8 @@ def get_wass_distances(args,graphs,output_path,ws)->list:
             pre_wass_index.append(False)
             com_ws.append(w)
     logging.info(f'after loading pre-computed wass distances, there are distance with w={com_ws} remained' )
-    com_wass_dis = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],
+    if len(com_ws) > 0:
+        com_wass_dis = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],
                             sampleways_dict[args.method][args.samplemethods],com_ws,args.sinkhorn)
     
     assert len(com_wass_dis) + len(pre_wass_dis) == len(ws), f'there are {len(com_wass_dis)} computed matrix and {len(pre_wass_dis)} pre-com matrix howevr ws number = {len(ws)}'
@@ -83,6 +86,7 @@ def get_wass_distances(args,graphs,output_path,ws)->list:
         nw = '{:1.2f}'.format(com_ws[i])
         filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
         np.save(os.path.join(output_path,filext), D_w)
+        logging.info(f'have saved {filext}')
     logging.info('Wasserstein distances computation done. Saved to file.')
     return wasserstein_distances
 
