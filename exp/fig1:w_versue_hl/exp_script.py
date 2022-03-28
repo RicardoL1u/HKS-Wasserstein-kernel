@@ -1,11 +1,11 @@
 import os
 import numpy as np
 import shutil
-method="WKS"
-sample=0
+method="HKS"
+sample=2
 dataset="PROTEINS"
 C = 10.0
-g = 1.0
+g = 0.1
 hl = 800
 sinkhorn = ''
 resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
