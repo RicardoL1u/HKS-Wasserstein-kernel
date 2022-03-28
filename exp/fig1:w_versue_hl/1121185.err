@@ -1,0 +1,27 @@
+[20:16:14] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 08:16:27: before drop huge graphs, there are 1178 graphs in DD
+2022/03/28 08:16:27: after drop huge graphs, there are 1126 graphs in DD
+2022/03/28 08:16:27: ready to load the pre-computed wass distances
+2022/03/28 08:16:27: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 08:16:27: Wasserstein distances computation done. Saved to file.
+2022/03/28 08:16:27: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 08:16:28: gridsearch and crossvalidation done
+[20:16:29] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 08:16:30: before drop huge graphs, there are 1178 graphs in DD
+2022/03/28 08:16:30: after drop huge graphs, there are 1126 graphs in DD
+2022/03/28 08:16:30: ready to load the pre-computed wass distances
+2022/03/28 08:16:30: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 08:16:30: Wasserstein distances computation done. Saved to file.
+2022/03/28 08:16:31: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 08:16:31: gridsearch and crossvalidation done
+[20:16:32] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 08:16:33: before drop huge graphs, there are 1178 graphs in DD
+2022/03/28 08:16:33: after drop huge graphs, there are 1126 graphs in DD
+2022/03/28 08:16:33: ready to load the pre-computed wass distances
+2022/03/28 08:16:33: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 08:16:33: Wasserstein distances computation done. Saved to file.
+2022/03/28 08:16:33: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 08:16:34: gridsearch and crossvalidation done

@@ -17,3 +17,9 @@ Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/searchw/DD/HK
   adding: DD/HKS/ (stored 0%)
   adding: DD/HKS/results_DD_HKS_2022-03-28 20:09_crossvalidation_gridsearch.csv (deflated 65%)
   adding: DD/HKS/results_DD_HKS_2022-03-27 23:26_gridsearch.csv (deflated 16%)
+[master 2c86665] exp:record for DD_w_hl=800_no_cv--sinkhorn.zip
+ 5 files changed, 47 insertions(+)
+ create mode 100644 exp/searchw/1121175.err
+ create mode 100644 exp/searchw/1121175.out
+ create mode 100644 exp/searchw/DD/HKS/results_DD_HKS_2022-03-28 20:09_crossvalidation_gridsearch.csv
+ create mode 100644 exp/searchw/DD_w_hl=800_no_cv--sinkhorn.zip

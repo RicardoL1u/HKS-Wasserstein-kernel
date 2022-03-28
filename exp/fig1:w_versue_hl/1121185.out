@@ -1,0 +1,42 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b07519101f0> with hl=800 for DD.
+with hlen = 800, C = 1000.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 78.59 +- 3.14 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/DD/HKS/results_DD_HKS_0.40_2022-03-28 20:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b68cfbe61f0> with hl=800 for DD.
+with hlen = 800, C = 1000.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 78.33 +- 3.86 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/DD/HKS/results_DD_HKS_0.50_2022-03-28 20:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b9c45ee11f0> with hl=800 for DD.
+with hlen = 800, C = 1000.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.97 +- 3.65 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/DD/HKS/results_DD_HKS_0.60_2022-03-28 20:16_crossvalidation.csv.
+  adding: DD/HKS/ (stored 0%)
+  adding: DD/HKS/results_DD_HKS_0.40_2022-03-28 20:16_crossvalidation.csv (deflated 65%)
+  adding: DD/HKS/results_DD_HKS_0.50_2022-03-28 20:16_crossvalidation.csv (deflated 63%)
+  adding: DD/HKS/results_DD_HKS_0.60_2022-03-28 20:16_crossvalidation.csv (deflated 66%)
