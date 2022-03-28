@@ -33,7 +33,7 @@ def main():
     ax.fill_between(x_axis, means-stds, means+stds, alpha=.5, linewidth=0)
     ax.plot(x_axis, means, linewidth=2)
     ax.set(xlim=(args.start-args.step, args.end+args.step), xticks=x_axis,
-        ylim=(0.50, 0.80), yticks=np.arange(0.50, 0.80, 0.025))
+        ylim=(0.70, 0.90), yticks=np.arange(0.70, 0.90, 0.025))
     plt.show()
     plt.savefig(f"fig1:varied_w_hl=800_{args.method}{args.sample}_{args.dataset}.png", bbox_inches='tight', pad_inches=0)
 
