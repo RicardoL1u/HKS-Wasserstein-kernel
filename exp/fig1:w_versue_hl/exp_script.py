@@ -3,9 +3,9 @@ import numpy as np
 import shutil
 method="WKS"
 sample=0
-dataset="NCI1"
-C = 1.0
-g = 10.0
+dataset="DD"
+C = 1000.0
+g = 1.0
 hl = 800
 sinkhorn = '--sinkhorn'
 resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
