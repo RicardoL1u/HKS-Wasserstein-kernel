@@ -1,10 +1,10 @@
 import os
 import numpy as np
 import shutil
-method="WKS"
-sample=0
+method="HKS"
+sample=2
 dataset="MUTAG"
-C = 100.0
+C = 10.0
 g = 1.0
 hl = 800
 sinkhorn = ''
