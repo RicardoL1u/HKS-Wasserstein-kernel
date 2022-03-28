@@ -41,6 +41,51 @@ sampleways_dict = {
     }
 }
 
+def get_wass_distances(args,graphs,output_path,ws)->list:
+    pre_wass_dis = []
+    pre_wass_index = []
+    com_ws = []
+    logging.info('ready to load the pre-computed wass distances')
+    for w in ws:
+        filext = 'wasserstein_distance_matrix'
+        if args.sinkhorn:
+            filext += '_sinkhorn'
+        nw = '{:1.2f}'.format(w)
+        filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
+        if os.path.exists(os.path.join(output_path,filext)):
+            pre_wass_index.append(True)
+            pre_wass_dis.append(np.load(os.path.join(output_path,filext)))
+        else:
+            pre_wass_index.append(False)
+            com_ws.append(w)
+    logging.info(f'after loading pre-computed wass distances, there are distance with w={com_ws} remained' )
+    com_wass_dis = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],
+                            sampleways_dict[args.method][args.samplemethods],com_ws,args.sinkhorn)
+    
+    assert len(com_wass_dis) + len(pre_wass_dis) == len(ws), f'there are {len(com_wass_dis)} computed matrix and {len(pre_wass_dis)} pre-com matrix howevr ws number = {len(ws)}'
+    
+    wasserstein_distances = []
+    cnt_pre = 0
+    cnt_com = 0
+    for i,v in enumerate(pre_wass_index):
+        if v:
+            wasserstein_distances.append(pre_wass_dis[cnt_pre])
+            cnt_pre+=1
+        else:
+            wasserstein_distances.append(com_wass_dis[cnt_com])
+            cnt_com+=1
+
+    # Save Wasserstein distance matrices
+    for i, D_w in enumerate(com_wass_dis):
+        filext = 'wasserstein_distance_matrix'
+        if args.sinkhorn:
+            filext += '_sinkhorn'
+        nw = '{:1.2f}'.format(com_ws[i])
+        filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
+        np.save(os.path.join(output_path,filext), D_w)
+    logging.info('Wasserstein distances computation done. Saved to file.')
+    return wasserstein_distances
+
 def main():
     print()
     print("=============================================================")
@@ -93,7 +138,7 @@ def main():
             {'C': np.logspace(-3,3,num=7)}
         ]
         # hs = np.arange(5,10)*100
-        ws = np.arange(4,7)*0.1
+        ws = np.arange(3,8)*0.1
         
     else:
         ws = [args.weight]
@@ -128,18 +173,8 @@ def main():
 
 
     # Load the data and generate the embeddings 
-    # Calculate the wass dis with the given number of samples points in HKS
-    wasserstein_distances = wass_dis.pairwise_wasserstein_distance(graphs,args.hlen,signature_dict[args.method],sampleways_dict[args.method][args.samplemethods],ws,args.sinkhorn)
-    
-    # Save Wasserstein distance matrices
-    for i, D_w in enumerate(wasserstein_distances):
-        filext = 'wasserstein_distance_matrix'
-        if args.sinkhorn:
-            filext += '_sinkhorn'
-        nw = '{:1.2f}'.format(ws[i])
-        filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
-        np.save(os.path.join(output_path,filext), D_w)
-    logging.info('Wasserstein distances computation done. Saved to file.')
+    # Calculate the wass dis with the given w
+    wasserstein_distances = get_wass_distances(args,graphs,output_path,ws)
     print()
 
     kernel_matrices = []
