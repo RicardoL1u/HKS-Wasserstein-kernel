@@ -1,0 +1,94 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2baa2b4a7550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 72.12 +- 2.24 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.30_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2accff15b550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 73.02 +- 2.23 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.40_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b79a9a68550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 74.37 +- 2.03 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.45_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2acada06a550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.09 +- 2.09 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.50_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b7300404550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.35 +- 2.63 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.55_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b9a59216550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.44 +- 3.50 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.60_2022-03-28 23:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ab2a56a0550> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.08 +- 2.85 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/WKS/results_PROTEINS_WKS_0.70_2022-03-28 23:30_crossvalidation.csv.
+  adding: PROTEINS/WKS/ (stored 0%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.40_2022-03-28 23:30_crossvalidation.csv (deflated 73%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.70_2022-03-28 23:30_crossvalidation.csv (deflated 74%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.30_2022-03-28 23:30_crossvalidation.csv (deflated 72%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.45_2022-03-28 23:30_crossvalidation.csv (deflated 73%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.50_2022-03-28 23:30_crossvalidation.csv (deflated 73%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.55_2022-03-28 23:30_crossvalidation.csv (deflated 73%)
+  adding: PROTEINS/WKS/results_PROTEINS_WKS_0.60_2022-03-28 23:30_crossvalidation.csv (deflated 71%)
