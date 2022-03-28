@@ -1,17 +1,17 @@
 import os
 import numpy as np
 import shutil
-method="WKS"
-sample=0
+method="HKS"
+sample=2
 dataset="DD"
 C = 1000.0
-g = 1.0
+g = 0.1
 hl = 800
 sinkhorn = '--sinkhorn'
 resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
 start=0.4
 end=0.6
-step=0.05
+step=0.1
 
 # ===============================
 shutil.rmtree(os.path.join(dataset,method),ignore_errors=True)
