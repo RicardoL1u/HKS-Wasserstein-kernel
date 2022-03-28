@@ -1,0 +1,75 @@
+[23:32:56] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:32:59: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:32:59: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:32:59: ready to load the pre-computed wass distances
+2022/03/28 11:32:59: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:32:59: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:32:59: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:32:59: gridsearch and crossvalidation done
+[23:33:01] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:02: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:02: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:02: ready to load the pre-computed wass distances
+2022/03/28 11:33:02: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:02: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:02: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:02: gridsearch and crossvalidation done
+[23:33:04] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:05: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:05: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:05: ready to load the pre-computed wass distances
+2022/03/28 11:33:05: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:05: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:05: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:05: gridsearch and crossvalidation done
+[23:33:07] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:08: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:08: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:08: ready to load the pre-computed wass distances
+2022/03/28 11:33:08: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:08: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:08: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:08: gridsearch and crossvalidation done
+[23:33:10] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:11: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:11: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:11: ready to load the pre-computed wass distances
+2022/03/28 11:33:11: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:11: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:11: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:11: gridsearch and crossvalidation done
+[23:33:13] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:14: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:14: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:14: ready to load the pre-computed wass distances
+2022/03/28 11:33:14: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:14: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:14: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:14: gridsearch and crossvalidation done
+[23:33:16] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 11:33:17: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 11:33:17: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 11:33:17: ready to load the pre-computed wass distances
+2022/03/28 11:33:17: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/28 11:33:17: Wasserstein distances computation done. Saved to file.
+2022/03/28 11:33:17: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/28 11:33:17: gridsearch and crossvalidation done
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-27 17:50_crossvalidation.csv' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+

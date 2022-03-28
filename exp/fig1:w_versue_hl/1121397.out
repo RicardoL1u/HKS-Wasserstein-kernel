@@ -1,0 +1,94 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b37f8f111f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 74.55 +- 1.61 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.30_2022-03-28 23:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b65839061f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.45 +- 2.78 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-28 23:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2adb1981b1f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.43 +- 2.92 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.45_2022-03-28 23:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b981d9b01f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.69 +- 3.22 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-28 23:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b94aeab01f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.17 +- 2.06 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.55_2022-03-28 23:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6f245f91f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.18 +- 3.20 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.60_2022-03-28 23:33_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b3faf4d41f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 10.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 72.75 +- 2.76 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.70_2022-03-28 23:33_crossvalidation.csv.
+  adding: PROTEINS/HKS/ (stored 0%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.30_2022-03-28 23:32_crossvalidation.csv (deflated 72%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.45_2022-03-28 23:33_crossvalidation.csv (deflated 73%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.60_2022-03-28 23:33_crossvalidation.csv (deflated 70%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.70_2022-03-28 23:33_crossvalidation.csv (deflated 71%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-28 23:33_crossvalidation.csv (deflated 71%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-28 23:33_crossvalidation.csv (deflated 72%)
+  adding: PROTEINS/HKS/results_PROTEINS_HKS_0.55_2022-03-28 23:33_crossvalidation.csv (deflated 74%)
