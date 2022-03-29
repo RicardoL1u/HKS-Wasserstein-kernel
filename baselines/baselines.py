@@ -120,7 +120,7 @@ def main():
                 clf.fit(K_train[0], y_train)
                 y_pred = clf.predict(K_test[0])
             accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
-        logging(f'have conducted {kernel} on {args.dataset}')
+        logging(f'have conducted {str(kernel)} on {args.dataset}')
         # Computes and prints the classification accuracy
         print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
                             np.mean(accuracy_scores) * 100,  
