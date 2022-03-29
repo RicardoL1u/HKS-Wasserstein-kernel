@@ -163,8 +163,7 @@ def main():
     graphs_ori = list(graphs_ori)
     y_ori = list(y_ori)
 
-    msg = f'before drop huge graphs, there are {len(y_ori)} graphs in {args.dataset}'
-    logging.info(msg)
+    logging.info(f'before drop huge graphs, there are {len(y_ori)} graphs in {args.dataset}')
     index_list = []
     for i,graph in enumerate(graphs_ori):
         if graph.number_of_nodes() < 620:
@@ -172,8 +171,7 @@ def main():
     graphs = [graphs_ori[i] for i in index_list]
     y = [y_ori[i] for i in index_list]
     y = np.array([unit.item() for unit in y])
-    msg = f'after drop huge graphs, there are {len(y)} graphs in {args.dataset}'
-    logging.info(msg)
+    logging.info(f'after drop huge graphs, there are {len(y)} graphs in {args.dataset}')
 
 
 

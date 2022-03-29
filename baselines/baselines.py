@@ -27,6 +27,9 @@ from grakel.kernels import WeisfeilerLehman
 from grakel.kernels import GraphletSampling
 from grakel.kernels import GraphHopper
 
+import logging
+logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
+
 kernel_list = [
     # ShortestPath,
     # WeisfeilerLehman,
@@ -48,11 +51,6 @@ kernel_param_dict_list = [
 def main():
     np.random.seed(1205) 
 
-    print()
-    print("=============================================================")
-    print("Graph classification on MUTAG using the shortest path kernel.")
-    print("=============================================================")
-    print()
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
@@ -60,10 +58,18 @@ def main():
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     args = parser.parse_args()
       
+    print()
+    print("=============================================================")
+    print(f"Graph classification on {args.dataset} using the baseline kernels.")
+    print("=============================================================")
+    print()
+
     # Loads the given dataset
+    logging.info(f'loading the {args.dataset} dataset')
     DATASET = fetch_dataset(args.dataset, verbose=False,as_graphs=False)
     G_ori, y_ori = DATASET.data, DATASET.target
     
+    logging.info(f'before drop huge graphs, there are {len(y_ori)} graphs in {args.dataset}')
     index_list = []
     for i in range(len(G_ori)):
         if len(G_ori[i][1]) > 3 and  len(G_ori[i][1]) < 620:
@@ -71,6 +77,8 @@ def main():
             index_list.append(i)
     G = [G_ori[i] for i in index_list]
     y = y_ori[index_list]
+    logging.info(f'after drop huge graphs, there are {len(y)} graphs in {args.dataset}')
+
     
     # Transform to Kernel
     # Here the flags come into play
@@ -84,12 +92,14 @@ def main():
         ]
 
     for i,kernel in enumerate(kernel_list):
+        logging.info(f'read to conduct {kernel} on {args.dataset}')
+        logging.info(f'with gridserach = {args.gridsearch} and crossvalidation = True' )
         gk = kernel(**kernel_param_dict_list[i])
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
         M = gk.fit_transform(G)
         kernel_matrices = [M]
         accuracy_scores = []
-
+        
         for train_index, test_index in cv.split(kernel_matrices[0], y):
             K_train = [K[train_index][:, train_index] for K in kernel_matrices]
             K_test  = [K[test_index][:, train_index] for K in kernel_matrices]
@@ -110,7 +120,7 @@ def main():
                 clf.fit(K_train[0], y_train)
                 y_pred = clf.predict(K_test[0])
             accuracy_scores.append(sklearn.metrics.accuracy_score(y_test, y_pred))
-
+        logging(f'have conducted {kernel} on {args.dataset}')
         # Computes and prints the classification accuracy
         print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
                             np.mean(accuracy_scores) * 100,  
