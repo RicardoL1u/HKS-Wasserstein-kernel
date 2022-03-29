@@ -92,7 +92,7 @@ def main():
         ]
 
     for i,kernel in enumerate(kernel_list):
-        logging.info(f'read to conduct {kernel} on {args.dataset}')
+        logging.info(f'read to conduct {str(kernel)} on {args.dataset}')
         logging.info(f'with gridserach = {args.gridsearch} and crossvalidation = True' )
         gk = kernel(**kernel_param_dict_list[i])
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
