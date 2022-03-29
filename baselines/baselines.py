@@ -8,6 +8,7 @@
 # from __future__ import print_function
 # print(__doc__)
 import argparse
+from asyncio.log import logger
 
 import numpy as np
 import sys
@@ -21,10 +22,28 @@ from sklearn.metrics import accuracy_score
 
 from grakel.datasets import fetch_dataset
 from grakel.kernels import ShortestPath
-from grakel.kernels import RandomWalk
+from grakel.kernels import RandomWalkLabeled
 from grakel.kernels import WeisfeilerLehman
+from grakel.kernels import GraphletSampling
+from grakel.kernels import GraphHopper
 
-kernel_list = [ShortestPath,WeisfeilerLehman]
+kernel_list = [
+    # ShortestPath,
+    # WeisfeilerLehman,
+    GraphletSampling,
+    GraphletSampling,
+    RandomWalkLabeled,
+    # GraphHopper
+]
+
+kernel_param_dict_list = [
+    # {'normalize':True},
+    # {'normalize':True},
+    {'normalize':True,'k':3},
+    {'normalize':True,'k':4},
+    {'normalize':True},
+    # {'normalize':True,'method_type':'fast'}
+]
 
 def main():
     np.random.seed(1205) 
@@ -37,7 +56,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
+                            choices=['MUTAG','PTC_MR',"PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
     args = parser.parse_args()
       
@@ -47,7 +66,7 @@ def main():
     
     index_list = []
     for i in range(len(G_ori)):
-        if len(G_ori[i][1]) > 3:
+        if len(G_ori[i][1]) > 3 and  len(G_ori[i][1]) < 620:
             # [Graphs[i], node_labels[i], edge_labels[i]]
             index_list.append(i)
     G = [G_ori[i] for i in index_list]
@@ -64,8 +83,8 @@ def main():
             {'C': np.logspace(-3,3,num=7)}
         ]
 
-    for kernel in kernel_list:
-        gk = kernel(normalize=True)
+    for i,kernel in enumerate(kernel_list):
+        gk = kernel(**kernel_param_dict_list[i])
         cv = sklearn.model_selection.StratifiedKFold(n_splits=10,shuffle=True)
         M = gk.fit_transform(G)
         kernel_matrices = [M]
@@ -95,7 +114,7 @@ def main():
         # Computes and prints the classification accuracy
         print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
                             np.mean(accuracy_scores) * 100,  
-                            np.std(accuracy_scores) * 100))
+                            np.std(accuracy_scores)/np.sqrt(10) * 100))
 
 if __name__ == "__main__":
     main()
