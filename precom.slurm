@@ -10,9 +10,15 @@
 
 source activate myenv
 
-python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
-python3 main.py -d ENZYMES -m 0 -s 2 -hl 800  -cv -gs 
-python3 main.py -d ENZYMES -m 1 -s 0 -hl 800  -cv -gs 
+# python3 main.py -d MUTAG -m 0 -s 2 -hl 800  -cv -gs 
+# python3 main.py -d MUTAG -m 1 -s 0 -hl 800  -cv -gs
+
+python3 main.py -d PTC_MR -m 0 -s 2 -hl 800  -cv -gs 
+python3 main.py -d PTC_MR -m 1 -s 0 -hl 800  -cv -gs
+
+# python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
+# python3 main.py -d ENZYMES -m 0 -s 2 -hl 800  -cv -gs 
+# python3 main.py -d ENZYMES -m 1 -s 0 -hl 800  -cv -gs 
 
 # python3 main.py -d NCI1 -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
 # python3 main.py -d NCI1 -m 1 -s 0 -hl 800  -cv -gs --sinkhorn
