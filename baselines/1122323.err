@@ -1,0 +1,246 @@
+2022/03/29 05:51:43: loading the PROTEINS dataset
+2022/03/29 05:51:43: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/29 05:51:43: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/29 05:51:43: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PROTEINS
+2022/03/29 05:51:43: with gridserach = True and crossvalidation = True
+2022/03/29 05:52:05: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PROTEINS
+2022/03/29 05:52:05: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PROTEINS
+2022/03/29 05:52:05: with gridserach = True and crossvalidation = True
+2022/03/29 05:53:05: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PROTEINS
+2022/03/29 05:53:05: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PROTEINS
+2022/03/29 05:53:05: with gridserach = True and crossvalidation = True
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/grakel/kernels/kernel.py:201: RuntimeWarning: invalid value encountered in sqrt
+  return km / np.sqrt(np.outer(self._X_diag, self._X_diag))
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/baselines.py", line 130, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/baselines.py", line 111, in main
+    gs, best_params,unit_result,param = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/../utilities.py", line 40, in custom_grid_search_cv
+    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx],fin_results,params
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 190, in fit
+    X, y = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 581, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 964, in check_X_y
+    X = check_array(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+2022/03/29 06:27:06: loading the DD dataset
+2022/03/29 06:27:09: before drop huge graphs, there are 1178 graphs in DD
+2022/03/29 06:27:09: after drop huge graphs, there are 1126 graphs in DD
+2022/03/29 06:27:09: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on DD
+2022/03/29 06:27:09: with gridserach = True and crossvalidation = True
+2022/03/29 06:31:30: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on DD
+2022/03/29 06:31:30: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on DD
+2022/03/29 06:31:30: with gridserach = True and crossvalidation = True
+2022/03/29 06:48:44: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on DD
+2022/03/29 06:48:44: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on DD
+2022/03/29 06:48:44: with gridserach = True and crossvalidation = True
+/var/spool/slurm/d/job1122323/slurm_script: line 16: 39838 Killed                  python3 baselines.py -d DD -gs
+2022/03/29 06:52:08: loading the ENZYMES dataset
+2022/03/29 06:52:08: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/03/29 06:52:08: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/03/29 06:52:08: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/03/29 06:52:08: with gridserach = True and crossvalidation = True
+2022/03/29 06:52:19: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/03/29 06:52:19: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/03/29 06:52:19: with gridserach = True and crossvalidation = True
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/grakel/kernels/graphlet_sampling.py:324: RuntimeWarning: invalid value encountered in true_divide
+  return np.divide(km, np.sqrt(np.outer(self._X_diag, self._X_diag)))
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py:770: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 761, in _score
+    scores = scorer(estimator, X_test, y_test)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 216, in __call__
+    return self._score(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 258, in _score
+    y_pred = method_caller(estimator, "predict", X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 68, in _cached_call
+    return getattr(estimator, method)(*args, **kwargs)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 791, in predict
+    y = super().predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 414, in predict
+    X = self._validate_for_predict(X)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 592, in _validate_for_predict
+    X = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 566, in _validate_data
+    X = check_array(X, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+
+  warnings.warn(
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/baselines.py", line 130, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/baselines.py", line 111, in main
+    gs, best_params,unit_result,param = utilities.custom_grid_search_cv(SVC(kernel='precomputed'), 
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/baselines/../utilities.py", line 40, in custom_grid_search_cv
+    return ret_model.fit(precomputed_kernels[params[best_idx]['K_idx']], y), params[best_idx],fin_results,params
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/svm/_base.py", line 190, in fit
+    X, y = self._validate_data(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py", line 581, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 964, in check_X_y
+    X = check_array(
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').

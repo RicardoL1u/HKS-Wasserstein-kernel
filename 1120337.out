@@ -1,0 +1,16 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2aecc2081550> with hl=800 for DD.
+
+Kernel matrices computed.
+
+Final accuracy: 86.726 %
+Results saved in results/DD/WKS/results_DD_WKS_2022-03-28 04:32_gridsearch.csv.
