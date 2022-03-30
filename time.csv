@@ -1,6 +1,6 @@
-dataset,hks,wks,wassestain disstance
+dataset,hks,wks,wassestain disstance,sinkhorn
 MUTAG,
 PTC_MR,
 PROTEINS,
 ENZYMES,
-DD, 46:04-11:42,,30min24s
+DD, 46:04-11:42,,30min24s,10
