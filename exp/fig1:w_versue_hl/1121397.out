@@ -92,3 +92,17 @@ Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue
   adding: PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-28 23:33_crossvalidation.csv (deflated 71%)
   adding: PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-28 23:33_crossvalidation.csv (deflated 72%)
   adding: PROTEINS/HKS/results_PROTEINS_HKS_0.55_2022-03-28 23:33_crossvalidation.csv (deflated 74%)
+[master da6912c] exp:record for HKS2_PROTEINS_w_c=10.0_g=0.1_hl=800.zip
+ 13 files changed, 258 insertions(+), 22 deletions(-)
+ create mode 100644 exp/fig1:w_versue_hl/1121397.err
+ create mode 100644 exp/fig1:w_versue_hl/1121397.out
+ create mode 100644 exp/fig1:w_versue_hl/HKS2_PROTEINS_w_c=10.0_g=0.1_hl=800.zip
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.30_2022-03-28 23:32_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-27 17:50_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.40_2022-03-28 23:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.45_2022-03-28 23:33_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-27 18:02_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.50_2022-03-28 23:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.55_2022-03-28 23:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.60_2022-03-28 23:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PROTEINS/HKS/results_PROTEINS_HKS_0.70_2022-03-28 23:33_crossvalidation.csv

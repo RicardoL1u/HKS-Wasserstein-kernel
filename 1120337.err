@@ -1,0 +1,29 @@
+[00:19:15] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+Traceback (most recent call last):
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 234, in <module>
+    main()
+  File "/public1/home/scfa1517/HKS-Wasserstein-kernel/main.py", line 77, in main
+    output_path = os.path.join(output_path,method_dict[args.samplemethods])
+KeyError: 2
+[00:19:20] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 12:19:22: before drop huge graphs, there are 1178 graphs in DD
+2022/03/28 12:19:22: after drop huge graphs, there are 1126 graphs in DD
+2022/03/28 12:19:22: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/03/28 01:57:10: the node embedding have been generated
+2022/03/28 01:57:11: ready to compute the wass diss with sinkhorn = True and w = 0.30000000000000004
+2022/03/28 02:28:42: have computed the wass diss with sinkhorn = True and w = 0.30000000000000004
+2022/03/28 02:28:43: ready to compute the wass diss with sinkhorn = True and w = 0.4
+2022/03/28 02:59:51: have computed the wass diss with sinkhorn = True and w = 0.4
+2022/03/28 02:59:52: ready to compute the wass diss with sinkhorn = True and w = 0.5
+2022/03/28 03:30:52: have computed the wass diss with sinkhorn = True and w = 0.5
+2022/03/28 03:30:53: ready to compute the wass diss with sinkhorn = True and w = 0.6000000000000001
+2022/03/28 04:01:34: have computed the wass diss with sinkhorn = True and w = 0.6000000000000001
+2022/03/28 04:01:35: ready to compute the wass diss with sinkhorn = True and w = 0.7000000000000001
+2022/03/28 04:32:05: have computed the wass diss with sinkhorn = True and w = 0.7000000000000001
+2022/03/28 04:32:05: Wasserstein distances computation done. Saved to file.
+2022/03/28 04:32:06: Running SVMs, crossvalidation: False, gridsearch: True.
+2022/03/28 04:32:19: gridsearch and crossvalidation done

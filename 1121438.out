@@ -1,0 +1,22 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2acdecb0d1f0> with hl=800 for NCI1.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 67.81 +- 2.33 %
+Results saved in results/NCI1/HKS/results_NCI1_HKS_2022-03-29 06:55_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b6a2f85a550> with hl=800 for NCI1.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 67.08 +- 2.16 %
+Results saved in results/NCI1/WKS/results_NCI1_WKS_2022-03-29 15:33_crossvalidation_gridsearch.csv.
