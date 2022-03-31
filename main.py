@@ -250,7 +250,7 @@ def main():
     if args.crossvalidation:
         print('Mean 10-fold accuracy: {:2.2f} +- {:2.2f} %'.format(
                     np.mean(accuracy_scores) * 100,  
-                    np.std(accuracy_scores) * 100))
+                    np.std(accuracy_scores)/np.sqrt(10) * 100))
     else:
         print('Final accuracy: {:2.3f} %'.format(np.mean(accuracy_scores)*100))
     
