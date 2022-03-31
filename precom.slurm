@@ -5,7 +5,7 @@
 #SBATCH -N 1
 #SBATCH --mail-type=all
 #SBATCH --mail-user=2018212874@bupt.edu.cn
-#SBATCH --output=PROTEINS_WKS.out
+#SBATCH --output=DD_HKS.out
 #SBATCH --error=%j.err
 
 source activate myenv
@@ -14,9 +14,9 @@ source activate myenv
 # python3 main.py -d MUTAG -m 1 -s 0 -hl 800  -cv -gs
 
 # python3 main.py -d PROTEINS -m 0 -s 2 -hl 800  -cv -gs 
-python3 main.py -d PROTEINS -m 1 -s 0 -hl 800  -cv -gs
+# python3 main.py -d PROTEINS -m 1 -s 0 -hl 800  -cv -gs
 
-# python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs 
+python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs 
 # python3 main.py -d DD -m 1 -s 0 -hl 800  -cv -gs
 
 # python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
