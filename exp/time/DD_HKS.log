@@ -15,3 +15,31 @@
 2022/03/28 02:45:53: Wasserstein distances computation done. Saved to file.
 2022/03/28 02:45:53: Running SVMs, crossvalidation: True, gridsearch: True.
 2022/03/28 02:47:07: gridsearch and crossvalidation done
+
+[22:11:05] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/30 10:11:41: before drop huge graphs, there are 1178 graphs in DD
+2022/03/30 10:11:41: after drop huge graphs, there are 1126 graphs in DD
+2022/03/30 10:11:41: ready to load the pre-computed wass distances
+2022/03/30 10:11:42: after loading pre-computed wass distances, there are distance with w=[0.3, 0.45, 0.55, 0.7] remained
+2022/03/30 10:11:42: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/03/30 10:46:04: the node embedding have been generated
+2022/03/30 10:46:05: ready to compute the wass diss with sinkhorn = True and w = 0.3
+2022/03/30 11:17:29: have computed the wass diss with sinkhorn = True and w = 0.3
+2022/03/30 11:17:30: ready to compute the wass diss with sinkhorn = True and w = 0.45
+2022/03/30 11:47:54: have computed the wass diss with sinkhorn = True and w = 0.45
+2022/03/30 11:47:55: ready to compute the wass diss with sinkhorn = True and w = 0.55
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/ot/bregman.py:517: UserWarning: Sinkhorn did not converge. You might want to increase the number of iterations `numItermax` or the regularization parameter `reg`.
+  warnings.warn("Sinkhorn did not converge. You might want to "
+2022/03/31 12:18:29: have computed the wass diss with sinkhorn = True and w = 0.55
+2022/03/31 12:18:30: ready to compute the wass diss with sinkhorn = True and w = 0.7
+2022/03/31 12:49:10: have computed the wass diss with sinkhorn = True and w = 0.7
+2022/03/31 12:49:10: have saved wasserstein_distance_matrix_sinkhorn_it2_0.30_True.npy
+2022/03/31 12:49:10: have saved wasserstein_distance_matrix_sinkhorn_it2_0.45_True.npy
+2022/03/31 12:49:10: have saved wasserstein_distance_matrix_sinkhorn_it2_0.55_True.npy
+2022/03/31 12:49:10: have saved wasserstein_distance_matrix_sinkhorn_it2_0.70_True.npy
+2022/03/31 12:49:10: Wasserstein distances computation done. Saved to file.
+2022/03/31 12:49:10: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/03/31 12:52:01: gridsearch and crossvalidation done
