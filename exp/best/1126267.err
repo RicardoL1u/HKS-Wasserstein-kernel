@@ -1,0 +1,45 @@
+[13:19:25] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:19:28: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:19:28: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:19:28: ready to load the pre-computed wass distances
+2022/03/31 01:19:28: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:19:28: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:19:28: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:19:28: gridsearch and crossvalidation done
+[13:19:30] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:19:31: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/03/31 01:19:31: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/03/31 01:19:31: ready to load the pre-computed wass distances
+2022/03/31 01:19:31: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:19:31: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:19:31: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:19:31: gridsearch and crossvalidation done
+[13:19:32] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:19:33: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/03/31 01:19:33: after drop huge graphs, there are 600 graphs in ENZYMES
+2022/03/31 01:19:33: ready to load the pre-computed wass distances
+2022/03/31 01:19:33: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:19:33: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:19:33: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:19:33: gridsearch and crossvalidation done
+[13:19:35] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:19:36: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/31 01:19:36: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/31 01:19:36: ready to load the pre-computed wass distances
+2022/03/31 01:19:36: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:19:36: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:19:36: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:19:37: gridsearch and crossvalidation done
+[13:19:38] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:19:40: before drop huge graphs, there are 1178 graphs in DD
+2022/03/31 01:19:40: after drop huge graphs, there are 1126 graphs in DD
+2022/03/31 01:19:40: ready to load the pre-computed wass distances
+2022/03/31 01:19:40: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:19:40: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:19:40: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:19:40: gridsearch and crossvalidation done

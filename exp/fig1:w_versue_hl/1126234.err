@@ -1,0 +1,201 @@
+[13:11:45] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:11:50: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:50: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:50: ready to load the pre-computed wass distances
+2022/03/31 01:11:50: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:11:50: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:11:50: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:11:50: gridsearch and crossvalidation done
+[13:11:52] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:11:53: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:53: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:53: ready to load the pre-computed wass distances
+2022/03/31 01:11:53: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:11:53: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:11:53: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:11:53: gridsearch and crossvalidation done
+[13:11:55] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:11:56: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:56: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:56: ready to load the pre-computed wass distances
+2022/03/31 01:11:56: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:11:56: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:11:56: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:11:56: gridsearch and crossvalidation done
+[13:11:57] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:11:58: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:58: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:11:58: ready to load the pre-computed wass distances
+2022/03/31 01:11:58: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:11:58: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:11:58: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:11:58: gridsearch and crossvalidation done
+[13:12:00] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:01: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:01: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:01: ready to load the pre-computed wass distances
+2022/03/31 01:12:01: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:01: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:01: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:01: gridsearch and crossvalidation done
+[13:12:03] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:03: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:03: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:03: ready to load the pre-computed wass distances
+2022/03/31 01:12:04: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:04: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:04: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:04: gridsearch and crossvalidation done
+[13:12:05] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:06: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:06: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:06: ready to load the pre-computed wass distances
+2022/03/31 01:12:06: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:06: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:06: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:06: gridsearch and crossvalidation done
+[13:12:08] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:09: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:09: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:09: ready to load the pre-computed wass distances
+2022/03/31 01:12:09: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:09: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:09: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:09: gridsearch and crossvalidation done
+[13:12:10] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:11: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:11: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:11: ready to load the pre-computed wass distances
+2022/03/31 01:12:11: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:11: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:11: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:11: gridsearch and crossvalidation done
+[13:12:13] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:14: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:14: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:14: ready to load the pre-computed wass distances
+2022/03/31 01:12:14: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:14: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:14: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:14: gridsearch and crossvalidation done
+[13:12:15] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:16: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:16: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:16: ready to load the pre-computed wass distances
+2022/03/31 01:12:16: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:16: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:16: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:16: gridsearch and crossvalidation done
+[13:12:18] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:19: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:19: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:19: ready to load the pre-computed wass distances
+2022/03/31 01:12:19: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:19: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:19: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:19: gridsearch and crossvalidation done
+[13:12:20] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:21: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:21: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:21: ready to load the pre-computed wass distances
+2022/03/31 01:12:21: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:21: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:21: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:21: gridsearch and crossvalidation done
+[13:12:23] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:24: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:24: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:24: ready to load the pre-computed wass distances
+2022/03/31 01:12:24: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:24: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:24: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:24: gridsearch and crossvalidation done
+[13:12:25] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:26: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:26: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:26: ready to load the pre-computed wass distances
+2022/03/31 01:12:26: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:26: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:26: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:26: gridsearch and crossvalidation done
+[13:12:28] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:29: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:29: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:29: ready to load the pre-computed wass distances
+2022/03/31 01:12:29: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:29: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:29: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:29: gridsearch and crossvalidation done
+[13:12:31] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:31: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:31: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:31: ready to load the pre-computed wass distances
+2022/03/31 01:12:32: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:32: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:32: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:32: gridsearch and crossvalidation done
+[13:12:33] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:34: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:34: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:34: ready to load the pre-computed wass distances
+2022/03/31 01:12:34: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:34: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:34: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:34: gridsearch and crossvalidation done
+[13:12:36] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:37: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:37: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:37: ready to load the pre-computed wass distances
+2022/03/31 01:12:37: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:37: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:37: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:37: gridsearch and crossvalidation done
+[13:12:38] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:39: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:39: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:39: ready to load the pre-computed wass distances
+2022/03/31 01:12:39: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:39: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:39: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:39: gridsearch and crossvalidation done
+[13:12:41] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 01:12:42: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:42: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 01:12:42: ready to load the pre-computed wass distances
+2022/03/31 01:12:42: after loading pre-computed wass distances, there are distance with w=[] remained
+2022/03/31 01:12:42: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:12:42: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/03/31 01:12:42: gridsearch and crossvalidation done
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.30_2022-03-28 21:13_crossvalidation.csv' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
