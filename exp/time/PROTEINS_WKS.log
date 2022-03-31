@@ -1,0 +1,34 @@
+[21:59:56] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/28 09:59:57: before drop huge graphs, there are 1113 graphs in PROTEINS
+2022/03/28 09:59:57: after drop huge graphs, there are 1112 graphs in PROTEINS
+2022/03/28 09:59:57: ready to load the pre-computed wass distances
+2022/03/28 09:59:57: after loading pre-computed wass distances, there are distance with w=[0.3, 0.4, 0.45, 0.5, 0.55, 0.6, 0.7] remained
+2022/03/28 09:59:57: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/03/28 10:12:33: the node embedding have been generated
+2022/03/28 10:12:33: ready to compute the wass diss with sinkhorn = False and w = 0.3
+2022/03/28 10:18:27: have computed the wass diss with sinkhorn = False and w = 0.3
+2022/03/28 10:18:28: ready to compute the wass diss with sinkhorn = False and w = 0.4
+2022/03/28 10:24:21: have computed the wass diss with sinkhorn = False and w = 0.4
+2022/03/28 10:24:21: ready to compute the wass diss with sinkhorn = False and w = 0.45
+2022/03/28 10:30:15: have computed the wass diss with sinkhorn = False and w = 0.45
+2022/03/28 10:30:15: ready to compute the wass diss with sinkhorn = False and w = 0.5
+2022/03/28 10:36:10: have computed the wass diss with sinkhorn = False and w = 0.5
+2022/03/28 10:36:10: ready to compute the wass diss with sinkhorn = False and w = 0.55
+2022/03/28 10:42:03: have computed the wass diss with sinkhorn = False and w = 0.55
+2022/03/28 10:42:03: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/03/28 10:47:55: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/03/28 10:47:55: ready to compute the wass diss with sinkhorn = False and w = 0.7
+2022/03/28 10:53:47: have computed the wass diss with sinkhorn = False and w = 0.7
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.30_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.40_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.45_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.50_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.55_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.60_False.npy
+2022/03/28 10:53:47: have saved wasserstein_distance_matrix_it0_0.70_False.npy
+2022/03/28 10:53:47: Wasserstein distances computation done. Saved to file.
+2022/03/28 10:53:47: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/03/28 10:58:23: gridsearch and crossvalidation done
