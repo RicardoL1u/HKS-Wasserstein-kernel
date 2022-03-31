@@ -3,7 +3,7 @@ import numpy as np
 import shutil
 method="WKS"
 sample=0
-dataset="PTC_MR"
+dataset="MUTAG"
 C = 1.0
 g = 10
 hl = 800
