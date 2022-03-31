@@ -1,0 +1,30 @@
+MUTAG_HKS.log
+Mean Time: 0:00:25.0 +- 0.00 sec
+Mean Time: 0:00:04.29 +- 0.45 sec
+MUTAG_WKS.log
+Mean Time: 0:01:01.0 +- 0.00 sec
+Mean Time: 0:00:04.26 +- 0.44 sec
+PTC_MR_HKS.log
+Mean Time: 0:00:39.0 +- 0.00 sec
+Mean Time: 0:00:11.81 +- 0.39 sec
+PTC_MR_WKS.log
+Mean Time: 0:01:27.0 +- 0.00 sec
+Mean Time: 0:00:12.14 +- 0.47 sec
+PROTEINS_HKS.log
+Mean Time: 0:05:12.5 +- 0.50 sec
+Mean Time: 0:05:42.76 +- 10.08 sec
+PROTEINS_WKS.log
+Mean Time: 0:12:53.5 +- 17.50 sec
+Mean Time: 0:05:52.9 +- 12.61 sec
+ENZYMES_HKS.log
+Mean Time: 0:02:19.0 +- 0.00 sec
+Mean Time: 0:01:24.38 +- 0.79 sec
+ENZYMES_WKS.log
+Mean Time: 0:05:44.0 +- 0.00 sec
+Mean Time: 0:01:24.76 +- 1.27 sec
+DD_HKS.log
+Mean Time: 0:34:42.33 +- 18.12 sec
+Mean Time: 0:31:25.67 +- 126.22 sec
+DD_WKS.log
+Mean Time: 1:32:54.0 +- 294.00 sec
+Mean Time: 0:30:35.0 +- 43.89 sec
