@@ -274,3 +274,50 @@ Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue
   adding: PTC_MR/WKS/results_PTC_MR_WKS_0.90_2022-03-31 12:20_crossvalidation.csv (deflated 71%)
   adding: PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-03-31 12:19_crossvalidation.csv (deflated 70%)
   adding: PTC_MR/WKS/results_PTC_MR_WKS_0.25_2022-03-31 12:19_crossvalidation.csv (deflated 70%)
+[master dce2cd8] exp:record for WKS0_PTC_MR_w_c=10.0_g=0.1_hl=800.zip
+ 46 files changed, 713 insertions(+), 231 deletions(-)
+ create mode 100644 exp/fig1:w_versue_hl/1125996.err
+ create mode 100644 exp/fig1:w_versue_hl/1125996.out
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-03-26 01:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.05_2022-03-26 01:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.05_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.10_2022-03-26 01:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.10_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.15_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.15_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.20_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.20_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.25_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.25_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.30_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.30_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.35_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.35_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.40_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.40_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.45_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.45_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.50_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.50_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.55_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.55_2022-03-31 12:19_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.60_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.60_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.65_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.65_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.70_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.70_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.75_2022-03-26 01:31_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.75_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.80_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.80_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.85_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.85_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.90_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.90_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.95_2022-03-26 01:33_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_0.95_2022-03-31 12:20_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-03-31 12:20_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/PTC_MR/WKS/results_PTC_MR_WKS_1.0_2022-03-26 01:32_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/WKS0_PTC_MR_w_c=10.0_g=0.1_hl=800.zip
