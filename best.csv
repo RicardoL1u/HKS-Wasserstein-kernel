@@ -2,5 +2,5 @@ dataset,method,sample,c,gamma,w,hl,accuracy,sinkhorn
 MUTAG,1,0,100,1.0,0.6,800,0.9091,False
 PTC_MR,1,0,1,10,0.4,800,0.662,False
 ENZYMES,0,2,100,0.01,0.60,800,0.6850,False
-PROTEINS,0,2,1.0,10.0,0.50,800,0.7769,False
+PROTEINS,0,2,10.0,0.1,0.50,800,0.7769,False
 DD,1,0,1000,1.0,0.50,800,0.7868,True
