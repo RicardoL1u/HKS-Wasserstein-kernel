@@ -1,0 +1,9 @@
+[18:38:20] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 06:38:22: before drop huge graphs, there are 1178 graphs in DD
+2022/03/31 06:38:22: after drop huge graphs, there are 1126 graphs in DD
+2022/03/31 06:38:22: ready to load the pre-computed wass distances
+2022/03/31 06:38:23: after loading pre-computed wass distances, there are distance with w=[0.0, 1.0, 0.1, 0.2, 0.8, 0.9] remained
+2022/03/31 06:38:23: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])

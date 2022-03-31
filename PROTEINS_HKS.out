@@ -1,0 +1,11 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b514aae31f0> with hl=800 for PROTEINS.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 75.27 +- 1.09 %
+Results saved in results/PROTEINS/HKS/results_PROTEINS_HKS_2022-03-31 18:02_crossvalidation_gridsearch.csv.

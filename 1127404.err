@@ -27,3 +27,29 @@ Using backend: pytorch
 2022/03/31 05:24:33: ready to compute the wass diss with sinkhorn = False and w = 0.75
 2022/03/31 05:30:26: have computed the wass diss with sinkhorn = False and w = 0.75
 2022/03/31 05:30:26: ready to compute the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 05:36:20: have computed the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 05:36:20: ready to compute the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 05:42:14: have computed the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 05:42:14: ready to compute the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 05:48:11: have computed the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 05:48:11: ready to compute the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 05:54:15: have computed the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 05:54:15: ready to compute the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 06:00:36: have computed the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.00_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.05_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.10_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.15_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.20_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.25_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.35_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.65_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.75_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.80_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.85_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.90_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_0.95_False.npy
+2022/03/31 06:00:36: have saved wasserstein_distance_matrix_it0_1.00_False.npy
+2022/03/31 06:00:36: Wasserstein distances computation done. Saved to file.
+2022/03/31 06:00:37: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/03/31 06:13:25: gridsearch and crossvalidation done
