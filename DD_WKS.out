@@ -1,0 +1,11 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b34365c1550> with hl=800 for DD.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 78.33 +- 1.37 %
+Results saved in results/DD/WKS/results_DD_WKS_2022-03-31 23:11_crossvalidation_gridsearch.csv.
