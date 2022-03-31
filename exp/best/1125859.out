@@ -76,3 +76,8 @@ Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/best/results/
   adding: public1/home/scfa1517/HKS-Wasserstein-kernel/exp/best/results/MUTAG/ (stored 0%)
   adding: public1/home/scfa1517/HKS-Wasserstein-kernel/exp/best/results/MUTAG/WKS/ (stored 0%)
   adding: public1/home/scfa1517/HKS-Wasserstein-kernel/exp/best/results/MUTAG/WKS/results_MUTAG_WKS_0.60_2022-03-31 11:55_crossvalidation.csv (deflated 77%)
+[master d2177ad] exp:record for best.zip
+ 4 files changed, 128 insertions(+)
+ create mode 100644 exp/best/1125859.err
+ create mode 100644 exp/best/1125859.out
+ rewrite exp/best/best.zip (79%)
