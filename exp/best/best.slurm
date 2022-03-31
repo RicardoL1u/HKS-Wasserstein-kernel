@@ -10,4 +10,5 @@
 
 source activate myenv
 
-python3 main.py -d MUTAG -m 1 -s 0 -c 100 -g 1.0 -w 0.6 -path ./
+# python3 main.py -d MUTAG -m 1 -s 0 -c 100 -g 1.0 -w 0.6 -path ./
+python3 exp_script.py
