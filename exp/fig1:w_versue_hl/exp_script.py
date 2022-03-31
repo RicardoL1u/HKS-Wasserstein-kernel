@@ -4,8 +4,8 @@ import shutil
 method="WKS"
 sample=0
 dataset="MUTAG"
-C = 1.0
-g = 10
+C = 100.0
+g = 1.0
 hl = 800
 sinkhorn = ''
 resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
