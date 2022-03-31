@@ -1,9 +1,9 @@
 import os
 import numpy as np
 import shutil
-method="HKS"
-sample=2
-dataset="PROTEINS"
+method="WKS"
+sample=0
+dataset="PTC_MR"
 C = 10.0
 g = 0.1
 hl = 800
@@ -12,7 +12,10 @@ resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
 start=0.4
 end=0.6
 step=0.1
-ws = [0.3,0.4,0.45,0.50,0.55,0.60,0.70]
+ws = [0.00,0.05,0.10,0.15,0.20,0.25,
+              0.30,0.35,0.40,0.45,0.50,0.55,
+              0.60,0.65,0.70,0.75,0.80,0.85,
+              0.90,0.95,1.00]
 # ===============================
 shutil.rmtree(os.path.join(dataset,method),ignore_errors=True)
 os.makedirs(os.path.join(dataset,method))
