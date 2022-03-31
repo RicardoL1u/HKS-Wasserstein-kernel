@@ -1,0 +1,15 @@
+2022/03/28 12:19:22: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/03/28 01:57:10: the node embedding have been generated
+2022/03/28 01:57:11: ready to compute the wass diss with sinkhorn = True and w = 0.30000000000000004
+2022/03/28 02:28:42: have computed the wass diss with sinkhorn = True and w = 0.30000000000000004
+2022/03/28 02:28:43: ready to compute the wass diss with sinkhorn = True and w = 0.4
+2022/03/28 02:59:51: have computed the wass diss with sinkhorn = True and w = 0.4
+2022/03/28 02:59:52: ready to compute the wass diss with sinkhorn = True and w = 0.5
+2022/03/28 03:30:52: have computed the wass diss with sinkhorn = True and w = 0.5
+2022/03/28 03:30:53: ready to compute the wass diss with sinkhorn = True and w = 0.6000000000000001
+2022/03/28 04:01:34: have computed the wass diss with sinkhorn = True and w = 0.6000000000000001
+2022/03/28 04:01:35: ready to compute the wass diss with sinkhorn = True and w = 0.7000000000000001
+2022/03/28 04:32:05: have computed the wass diss with sinkhorn = True and w = 0.7000000000000001
+2022/03/28 04:32:05: Wasserstein distances computation done. Saved to file.
