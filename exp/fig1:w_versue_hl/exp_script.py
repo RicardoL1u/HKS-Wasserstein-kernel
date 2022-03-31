@@ -4,8 +4,8 @@ import shutil
 method="WKS"
 sample=0
 dataset="PTC_MR"
-C = 10.0
-g = 0.1
+C = 1.0
+g = 10
 hl = 800
 sinkhorn = ''
 resultzip = f'{method}{sample}_{dataset}_w_c={C}_g={g}_hl={hl}{sinkhorn}.zip'
