@@ -1,0 +1,146 @@
+[12:57:00] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 12:57:03: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 12:57:03: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 12:57:03: ready to load the pre-computed wass distances
+2022/03/31 12:57:03: after loading pre-computed wass distances, there are distance with w=[0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0] remained
+2022/03/31 12:57:03: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/03/31 12:57:28: the node embedding have been generated
+2022/03/31 12:57:28: ready to compute the wass diss with sinkhorn = False and w = 0.0
+2022/03/31 12:57:32: have computed the wass diss with sinkhorn = False and w = 0.0
+2022/03/31 12:57:32: ready to compute the wass diss with sinkhorn = False and w = 0.05
+2022/03/31 12:57:37: have computed the wass diss with sinkhorn = False and w = 0.05
+2022/03/31 12:57:37: ready to compute the wass diss with sinkhorn = False and w = 0.1
+2022/03/31 12:57:41: have computed the wass diss with sinkhorn = False and w = 0.1
+2022/03/31 12:57:41: ready to compute the wass diss with sinkhorn = False and w = 0.15
+2022/03/31 12:57:45: have computed the wass diss with sinkhorn = False and w = 0.15
+2022/03/31 12:57:45: ready to compute the wass diss with sinkhorn = False and w = 0.2
+2022/03/31 12:57:50: have computed the wass diss with sinkhorn = False and w = 0.2
+2022/03/31 12:57:50: ready to compute the wass diss with sinkhorn = False and w = 0.25
+2022/03/31 12:57:54: have computed the wass diss with sinkhorn = False and w = 0.25
+2022/03/31 12:57:54: ready to compute the wass diss with sinkhorn = False and w = 0.3
+2022/03/31 12:57:58: have computed the wass diss with sinkhorn = False and w = 0.3
+2022/03/31 12:57:58: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/03/31 12:58:02: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/03/31 12:58:02: ready to compute the wass diss with sinkhorn = False and w = 0.4
+2022/03/31 12:58:07: have computed the wass diss with sinkhorn = False and w = 0.4
+2022/03/31 12:58:07: ready to compute the wass diss with sinkhorn = False and w = 0.45
+2022/03/31 12:58:11: have computed the wass diss with sinkhorn = False and w = 0.45
+2022/03/31 12:58:11: ready to compute the wass diss with sinkhorn = False and w = 0.5
+2022/03/31 12:58:15: have computed the wass diss with sinkhorn = False and w = 0.5
+2022/03/31 12:58:15: ready to compute the wass diss with sinkhorn = False and w = 0.55
+2022/03/31 12:58:20: have computed the wass diss with sinkhorn = False and w = 0.55
+2022/03/31 12:58:20: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/03/31 12:58:24: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/03/31 12:58:24: ready to compute the wass diss with sinkhorn = False and w = 0.65
+2022/03/31 12:58:28: have computed the wass diss with sinkhorn = False and w = 0.65
+2022/03/31 12:58:28: ready to compute the wass diss with sinkhorn = False and w = 0.7
+2022/03/31 12:58:32: have computed the wass diss with sinkhorn = False and w = 0.7
+2022/03/31 12:58:32: ready to compute the wass diss with sinkhorn = False and w = 0.75
+2022/03/31 12:58:37: have computed the wass diss with sinkhorn = False and w = 0.75
+2022/03/31 12:58:37: ready to compute the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 12:58:41: have computed the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 12:58:41: ready to compute the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 12:58:45: have computed the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 12:58:45: ready to compute the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 12:58:49: have computed the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 12:58:49: ready to compute the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 12:58:54: have computed the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 12:58:54: ready to compute the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 12:58:58: have computed the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.00_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.05_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.10_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.15_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.20_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.25_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.30_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.35_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.40_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.45_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.50_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.55_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.60_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.65_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.70_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.75_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.80_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.85_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.90_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_0.95_False.npy
+2022/03/31 12:58:58: have saved wasserstein_distance_matrix_it2_1.00_False.npy
+2022/03/31 12:58:58: Wasserstein distances computation done. Saved to file.
+2022/03/31 12:58:58: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/03/31 12:59:52: gridsearch and crossvalidation done
+[12:59:54] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/03/31 12:59:55: before drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 12:59:55: after drop huge graphs, there are 188 graphs in MUTAG
+2022/03/31 12:59:55: ready to load the pre-computed wass distances
+2022/03/31 12:59:55: after loading pre-computed wass distances, there are distance with w=[0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0] remained
+2022/03/31 12:59:55: ready to generate node embeddings
+/public1/home/scfa1517/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/03/31 01:00:56: the node embedding have been generated
+2022/03/31 01:00:56: ready to compute the wass diss with sinkhorn = False and w = 0.05
+2022/03/31 01:01:00: have computed the wass diss with sinkhorn = False and w = 0.05
+2022/03/31 01:01:00: ready to compute the wass diss with sinkhorn = False and w = 0.1
+2022/03/31 01:01:05: have computed the wass diss with sinkhorn = False and w = 0.1
+2022/03/31 01:01:05: ready to compute the wass diss with sinkhorn = False and w = 0.15
+2022/03/31 01:01:09: have computed the wass diss with sinkhorn = False and w = 0.15
+2022/03/31 01:01:09: ready to compute the wass diss with sinkhorn = False and w = 0.2
+2022/03/31 01:01:13: have computed the wass diss with sinkhorn = False and w = 0.2
+2022/03/31 01:01:13: ready to compute the wass diss with sinkhorn = False and w = 0.25
+2022/03/31 01:01:18: have computed the wass diss with sinkhorn = False and w = 0.25
+2022/03/31 01:01:18: ready to compute the wass diss with sinkhorn = False and w = 0.3
+2022/03/31 01:01:22: have computed the wass diss with sinkhorn = False and w = 0.3
+2022/03/31 01:01:22: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/03/31 01:01:26: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/03/31 01:01:26: ready to compute the wass diss with sinkhorn = False and w = 0.4
+2022/03/31 01:01:30: have computed the wass diss with sinkhorn = False and w = 0.4
+2022/03/31 01:01:30: ready to compute the wass diss with sinkhorn = False and w = 0.45
+2022/03/31 01:01:35: have computed the wass diss with sinkhorn = False and w = 0.45
+2022/03/31 01:01:35: ready to compute the wass diss with sinkhorn = False and w = 0.5
+2022/03/31 01:01:39: have computed the wass diss with sinkhorn = False and w = 0.5
+2022/03/31 01:01:39: ready to compute the wass diss with sinkhorn = False and w = 0.55
+2022/03/31 01:01:43: have computed the wass diss with sinkhorn = False and w = 0.55
+2022/03/31 01:01:43: ready to compute the wass diss with sinkhorn = False and w = 0.65
+2022/03/31 01:01:47: have computed the wass diss with sinkhorn = False and w = 0.65
+2022/03/31 01:01:47: ready to compute the wass diss with sinkhorn = False and w = 0.7
+2022/03/31 01:01:52: have computed the wass diss with sinkhorn = False and w = 0.7
+2022/03/31 01:01:52: ready to compute the wass diss with sinkhorn = False and w = 0.75
+2022/03/31 01:01:56: have computed the wass diss with sinkhorn = False and w = 0.75
+2022/03/31 01:01:56: ready to compute the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 01:02:00: have computed the wass diss with sinkhorn = False and w = 0.8
+2022/03/31 01:02:00: ready to compute the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 01:02:05: have computed the wass diss with sinkhorn = False and w = 0.85
+2022/03/31 01:02:05: ready to compute the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 01:02:09: have computed the wass diss with sinkhorn = False and w = 0.9
+2022/03/31 01:02:09: ready to compute the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 01:02:13: have computed the wass diss with sinkhorn = False and w = 0.95
+2022/03/31 01:02:13: ready to compute the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 01:02:17: have computed the wass diss with sinkhorn = False and w = 1.0
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.05_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.10_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.15_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.20_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.25_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.30_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.35_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.40_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.45_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.50_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.55_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.65_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.70_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.75_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.80_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.85_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.90_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_0.95_False.npy
+2022/03/31 01:02:18: have saved wasserstein_distance_matrix_it0_1.00_False.npy
+2022/03/31 01:02:18: Wasserstein distances computation done. Saved to file.
+2022/03/31 01:02:18: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/03/31 01:03:10: gridsearch and crossvalidation done
