@@ -5,7 +5,7 @@
 #SBATCH -N 1
 #SBATCH --mail-type=all
 #SBATCH --mail-user=2018212874@bupt.edu.cn
-#SBATCH --output=MUTAG_PRE.out
+#SBATCH --output=PROTEINS_HKS.out
 #SBATCH --error=%j.err
 
 source activate myenv
