@@ -274,3 +274,36 @@ Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue
   adding: MUTAG/WKS/results_MUTAG_WKS_0.70_2022-03-31 13:12_crossvalidation.csv (deflated 73%)
   adding: MUTAG/WKS/results_MUTAG_WKS_0.65_2022-03-31 13:12_crossvalidation.csv (deflated 74%)
   adding: MUTAG/WKS/results_MUTAG_WKS_0.55_2022-03-31 13:12_crossvalidation.csv (deflated 74%)
+[master 546a722] exp:record for WKS0_MUTAG_w_c=1.0_g=10_hl=800.zip
+ 32 files changed, 755 insertions(+), 77 deletions(-)
+ create mode 100644 exp/fig1:w_versue_hl/1126234.err
+ create mode 100644 exp/fig1:w_versue_hl/1126234.out
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-03-31 13:11_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.05_2022-03-31 13:11_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.10_2022-03-31 13:11_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.15_2022-03-31 13:11_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.20_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.25_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.30_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.30_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.35_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.40_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.40_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.45_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.45_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.50_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.50_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.55_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.55_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.60_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.60_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.65_2022-03-31 13:12_crossvalidation.csv
+ delete mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.70_2022-03-28 21:13_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.70_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.75_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.80_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.85_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.90_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.95_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-03-31 13:12_crossvalidation.csv
+ create mode 100644 exp/fig1:w_versue_hl/WKS0_MUTAG_w_c=1.0_g=10_hl=800.zip

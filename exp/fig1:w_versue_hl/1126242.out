@@ -1,0 +1,276 @@
+/public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl
+/public1/home/scfa1517/HKS-Wasserstein-kernel
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b8f5b099550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 80.85 +- 1.53 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-03-31 13:15_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b7d7a244550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 85.06 +- 1.84 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.05_2022-03-31 13:15_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2aabd997e550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.16 +- 1.43 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.10_2022-03-31 13:15_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b7598138550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 86.64 +- 1.61 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.15_2022-03-31 13:15_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ac68ec50550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 86.67 +- 1.59 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.20_2022-03-31 13:15_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b2d6c5fd550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.22 +- 1.35 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.25_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b0db76b0550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.78 +- 1.51 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.30_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ad17308c550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 88.83 +- 1.59 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.35_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b8a5ebe3550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 88.86 +- 1.56 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.40_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ab766aae550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.78 +- 1.05 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.45_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b1dff0b3550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.78 +- 1.29 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.50_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ad6f8052550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 88.83 +- 1.16 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.55_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b6e3322b550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 89.88 +- 0.52 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.60_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b19a7f82550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 90.94 +- 0.79 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.65_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2abc8cf9d550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 89.88 +- 0.91 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.70_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ae9dbb8e550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 88.30 +- 0.99 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.75_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b56404bd550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 87.72 +- 1.38 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.80_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b9fcf607550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 85.58 +- 2.03 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.85_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2b1a8df45550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 86.17 +- 1.70 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.90_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2ad7e6194550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 84.53 +- 1.78 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_0.95_2022-03-31 13:16_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x2adc73422550> with hl=800 for MUTAG.
+with hlen = 800, C = 100.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 83.48 +- 1.77 %
+Results saved in /public1/home/scfa1517/HKS-Wasserstein-kernel/exp/fig1:w_versue_hl/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-03-31 13:16_crossvalidation.csv.
+updating: MUTAG/WKS/ (stored 0%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.10_2022-03-31 13:15_crossvalidation.csv (deflated 75%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.90_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.00_2022-03-31 13:15_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.40_2022-03-31 13:16_crossvalidation.csv (deflated 75%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.45_2022-03-31 13:16_crossvalidation.csv (deflated 76%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.15_2022-03-31 13:15_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.70_2022-03-31 13:16_crossvalidation.csv (deflated 76%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.85_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.50_2022-03-31 13:16_crossvalidation.csv (deflated 75%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.95_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.05_2022-03-31 13:15_crossvalidation.csv (deflated 73%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.20_2022-03-31 13:15_crossvalidation.csv (deflated 75%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.75_2022-03-31 13:16_crossvalidation.csv (deflated 76%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.25_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.30_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.35_2022-03-31 13:16_crossvalidation.csv (deflated 74%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_1.00_2022-03-31 13:16_crossvalidation.csv (deflated 73%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.60_2022-03-31 13:16_crossvalidation.csv (deflated 77%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.80_2022-03-31 13:16_crossvalidation.csv (deflated 75%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.65_2022-03-31 13:16_crossvalidation.csv (deflated 77%)
+  adding: MUTAG/WKS/results_MUTAG_WKS_0.55_2022-03-31 13:16_crossvalidation.csv (deflated 76%)
