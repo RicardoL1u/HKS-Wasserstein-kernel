@@ -15,9 +15,10 @@ if not os.path.exists(output_path):
     os.mkdir(output_path)
 
 os.system("pwd")
-os.chdir("../..")
+os.chdir("../w")
 os.system("pwd")
 best_pd = pd.read_csv("best.csv")
+os.chdir('../..')
 
 for index,row in best_pd.iterrows():
     if row["sinkhorn"] == True:
@@ -25,12 +26,16 @@ for index,row in best_pd.iterrows():
     else:
         sinkhorn = ''
     dataset = row['dataset']
-    method_num = row['method']
-    sample = row['sample']
-    C = row['c']
+    if row['method'] == 'HKS':
+        method_num = 0
+        sample = 2
+    else:
+        method_num = 1
+        sample = 0
+    C = row['C']
     g = row['gamma']
     w = row['w']
-    hl = row['hl']
+    hl = 800
     name = '{:1.2f}'.format(w)
     os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 
