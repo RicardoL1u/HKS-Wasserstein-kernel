@@ -14,8 +14,10 @@ class TestDGL(unittest.TestCase):
         graphs = list(graphs)
         y = np.array([unit.item() for unit in y])
         # print(signature.GetNodeAttrMat(graphs[0]))
-        print(np.unique(signature.GetNodeAttrMat(graphs[0]),return_counts=True))
+        AttrMat = signature.GetNodeAttrMat(graphs[0])
+        print(np.unique(AttrMat,return_counts=True))
         print(graphs[0])
+        print(AttrMat.shape)
         # max_type = 0
         # min_type = 123456789
         # for g in graphs:

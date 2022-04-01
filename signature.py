@@ -138,8 +138,9 @@ def HKS(graph,sample_method,T,isHeuristics=False) -> np.ndarray :
 
 def GetNodeAttrMat(graph):
     ret = (graph.ndata['feat']).numpy()
-    if ret.shape[1] == 1:
+    if ret.shape[1] == 1: ## special for proteins
         ret = np.squeeze(ret.astype(int))
+        ret = np.abs(ret)
         ret = np.eye(799)[ret]
     return ret
     
