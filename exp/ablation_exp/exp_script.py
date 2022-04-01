@@ -15,7 +15,7 @@ if not os.path.exists(output_path):
     os.mkdir(output_path)
 
 os.system("pwd")
-best_pd = pd.read_csv("best.csv")
+best_pd = pd.read_csv("para.csv")
 os.chdir("../..")
 os.system("pwd")
 
@@ -26,7 +26,10 @@ for index,row in best_pd.iterrows():
         sinkhorn = ''
     dataset = row['dataset']
     method_num = row['method']
-    sample = row['sample']
+    if method_num == 0:
+        sample = 2
+    else:
+        sample = 0
     C = row['c']
     g = row['gamma']
     hl = row['hl']

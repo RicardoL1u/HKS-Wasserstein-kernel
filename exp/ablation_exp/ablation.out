@@ -5,143 +5,284 @@
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7fe828cfb1f0> with hl=800 for MUTAG.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f7531998430> with hl=800 for MUTAG.
+with hlen = 800, C = 1000.0 and gammas = 0.01
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 78.68 +- 2.01 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/results_MUTAG_HKS_0.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f7b41184430> with hl=800 for MUTAG.
+with hlen = 800, C = 1000.0 and gammas = 0.01
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 79.77 +- 2.69 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/results_MUTAG_HKS_1.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7ffb6992e1f0> with hl=800 for MUTAG.
 with hlen = 800, C = 100.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 80.85 +- 1.53 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7fea367ed1f0> with hl=800 for MUTAG.
+Generating WKS embeddings by <function get_sample4WKS at 0x7fafed5de1f0> with hl=800 for MUTAG.
 with hlen = 800, C = 100.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 83.48 +- 1.77 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7f17937831f0> with hl=800 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f4c48276430> with hl=800 for PTC_MR.
+with hlen = 800, C = 1000.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 57.00 +- 2.23 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/HKS/results_PTC_MR_HKS_0.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7fb4df420430> with hl=800 for PTC_MR.
+with hlen = 800, C = 1000.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 58.71 +- 1.65 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/HKS/results_PTC_MR_HKS_1.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7fc53e0ec1f0> with hl=800 for PTC_MR.
 with hlen = 800, C = 1.0 and gammas = 10.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 59.58 +- 1.29 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7f3827a521f0> with hl=800 for PTC_MR.
+Generating WKS embeddings by <function get_sample4WKS at 0x7fa34eaad1f0> with hl=800 for PTC_MR.
 with hlen = 800, C = 1.0 and gammas = 10.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 63.36 +- 1.90 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f22b1329430> with hl=800 for ENZYMES.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7fd64ab44430> with hl=800 for ENZYMES.
 with hlen = 800, C = 100.0 and gammas = 0.01
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 64.83 +- 1.64 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_0.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_0.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f783ad6e430> with hl=800 for ENZYMES.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f88dd929430> with hl=800 for ENZYMES.
 with hlen = 800, C = 100.0 and gammas = 0.01
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 28.00 +- 1.58 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_1.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_1.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7ff02ca80430> with hl=800 for PROTEINS.
+Generating WKS embeddings by <function get_sample4WKS at 0x7f49549c11f0> with hl=800 for ENZYMES.
+with hlen = 800, C = 100.0 and gammas = 0.01
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 64.83 +- 1.64 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/WKS/results_ENZYMES_WKS_0.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7f190d2361f0> with hl=800 for ENZYMES.
+with hlen = 800, C = 100.0 and gammas = 0.01
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 23.50 +- 0.90 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/WKS/results_ENZYMES_WKS_1.00_2022-04-01 16:42_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f30851de430> with hl=800 for PROTEINS.
 with hlen = 800, C = 10.0 and gammas = 0.1
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 75.00 +- 1.06 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_0.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_0.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f2b89f54430> with hl=800 for PROTEINS.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f8d99c47430> with hl=800 for PROTEINS.
 with hlen = 800, C = 10.0 and gammas = 0.1
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 71.22 +- 1.16 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_1.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_1.00_2022-04-01 16:42_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7fd1146c91f0> with hl=800 for DD.
+Generating WKS embeddings by <function get_sample4WKS at 0x7f7dbf4d41f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 10.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 60.43 +- 0.20 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/WKS/results_PROTEINS_WKS_0.00_2022-04-01 16:43_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7fbb04b781f0> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 10.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 71.67 +- 0.72 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/WKS/results_PROTEINS_WKS_1.00_2022-04-01 16:43_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f8ad1335430> with hl=800 for DD.
+with hlen = 800, C = 1000.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 69.36 +- 0.94 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/HKS/results_DD_HKS_0.00_2022-04-01 16:43_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7fdc3af53430> with hl=800 for DD.
+with hlen = 800, C = 1000.0 and gammas = 0.1
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 74.51 +- 0.96 %
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/HKS/results_DD_HKS_1.00_2022-04-01 16:43_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7f73ec9bb1f0> with hl=800 for DD.
 with hlen = 800, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 70.78 +- 0.89 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_0.00_2022-04-01 11:48_crossvalidation.csv.
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_0.00_2022-04-01 16:43_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating WKS embeddings by <function get_sample4WKS at 0x7f3b588e41f0> with hl=800 for DD.
+Generating WKS embeddings by <function get_sample4WKS at 0x7fca5fdd41f0> with hl=800 for DD.
 with hlen = 800, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 74.78 +- 1.12 %
-Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_1.00_2022-04-01 11:48_crossvalidation.csv.
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 70%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 65%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 68%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 73%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 74%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/ (stored 0%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 74%)
-  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 73%)
-[master 2d054d5] exp:record for ablation.zip
- 2 files changed, 143 insertions(+)
- create mode 100644 exp/ablation_exp/ablation.out
- rewrite exp/ablation_exp/ablation.zip (74%)
+Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_1.00_2022-04-01 16:43_crossvalidation.csv.
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 70%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 71%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 65%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 68%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 73%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 74%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/ (stored 0%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 74%)
+updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 73%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/HKS/ (stored 0%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/HKS/results_PTC_MR_HKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 71%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/HKS/results_PTC_MR_HKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 71%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 70%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PTC_MR/WKS/results_PTC_MR_WKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 71%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 71%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/HKS/results_PROTEINS_HKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 71%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/WKS/ (stored 0%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/WKS/results_PROTEINS_WKS_0.00_2022-04-01 16:43_crossvalidation.csv (deflated 75%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/PROTEINS/WKS/results_PROTEINS_WKS_1.00_2022-04-01 16:43_crossvalidation.csv (deflated 73%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/HKS/ (stored 0%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/HKS/results_DD_HKS_0.00_2022-04-01 16:43_crossvalidation.csv (deflated 65%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/HKS/results_DD_HKS_1.00_2022-04-01 16:43_crossvalidation.csv (deflated 67%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_0.00_2022-04-01 16:43_crossvalidation.csv (deflated 68%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/DD/WKS/results_DD_WKS_1.00_2022-04-01 16:43_crossvalidation.csv (deflated 65%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 74%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/HKS/results_ENZYMES_HKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/WKS/ (stored 0%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/WKS/results_ENZYMES_WKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 74%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/ENZYMES/WKS/results_ENZYMES_WKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/ (stored 0%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/results_MUTAG_HKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 75%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/results_MUTAG_HKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 74%)
+  adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
