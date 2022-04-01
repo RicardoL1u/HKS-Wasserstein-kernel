@@ -1,0 +1,37 @@
+
+=============================================================
+Graph classification on MUTAG using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in MUTAG: 86.64 +- 2.57 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in MUTAG: 81.35 +- 1.90 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 66.49 +- 0.72 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 75.99 +- 3.09 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in MUTAG: 82.98 +- 3.23 %
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 62.94 +- 2.05 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 61.47 +- 1.34 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.62 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 56.18 +- 0.77 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 57.35 +- 1.27 %
+
+=============================================================
+Graph classification on PROTEINS using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PROTEINS: 76.34 +- 0.82 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PROTEINS: 75.90 +- 1.01 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PROTEINS: 68.26 +- 0.57 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PROTEINS: 69.16 +- 1.12 %
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 40.33 +- 1.83 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 54.34 +- 1.07 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 23.41 +- 0.81 %
