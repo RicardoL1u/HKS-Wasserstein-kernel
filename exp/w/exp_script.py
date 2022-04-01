@@ -27,7 +27,7 @@ ws = [0.00,1.00,0.05,0.10,0.15,0.20,0.25,
 for index,row in best_pd.iterrows():
     if row['dataset'] != 'DD':
         continue
-    if row["sinkhorn"] == True:
+    if row["sinkhorn"] == 'True':
         sinkhorn = '--sinkhorn'
     else:
         sinkhorn = ''
@@ -42,7 +42,7 @@ for index,row in best_pd.iterrows():
     hl = row['hl']
     for w in ws:
         name = '{:1.2f}'.format(w)
-        os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
+        print(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 
 os.chdir(now_path)
 os.system(f'zip -r {resultzip} {output_path}')
