@@ -11,3 +11,29 @@ Using backend: pytorch
 2022/04/01 03:45:34: ready to compute the wass diss with sinkhorn = True and w = 0.05
 2022/04/01 04:16:39: have computed the wass diss with sinkhorn = True and w = 0.05
 2022/04/01 04:16:40: ready to compute the wass diss with sinkhorn = True and w = 0.15
+2022/04/01 04:47:20: have computed the wass diss with sinkhorn = True and w = 0.15
+2022/04/01 04:47:21: ready to compute the wass diss with sinkhorn = True and w = 0.25
+2022/04/01 05:18:20: have computed the wass diss with sinkhorn = True and w = 0.25
+2022/04/01 05:18:21: ready to compute the wass diss with sinkhorn = True and w = 0.35
+2022/04/01 05:48:24: have computed the wass diss with sinkhorn = True and w = 0.35
+2022/04/01 05:48:25: ready to compute the wass diss with sinkhorn = True and w = 0.65
+/public1/home/scfa1517/anaconda3/envs/myenv/lib/python3.9/site-packages/ot/bregman.py:517: UserWarning: Sinkhorn did not converge. You might want to increase the number of iterations `numItermax` or the regularization parameter `reg`.
+  warnings.warn("Sinkhorn did not converge. You might want to "
+2022/04/01 06:18:26: have computed the wass diss with sinkhorn = True and w = 0.65
+2022/04/01 06:18:26: ready to compute the wass diss with sinkhorn = True and w = 0.75
+2022/04/01 06:48:38: have computed the wass diss with sinkhorn = True and w = 0.75
+2022/04/01 06:48:39: ready to compute the wass diss with sinkhorn = True and w = 0.85
+2022/04/01 07:19:34: have computed the wass diss with sinkhorn = True and w = 0.85
+2022/04/01 07:19:35: ready to compute the wass diss with sinkhorn = True and w = 0.95
+2022/04/01 07:55:15: have computed the wass diss with sinkhorn = True and w = 0.95
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.05_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.15_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.25_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.35_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.65_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.75_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.85_True.npy
+2022/04/01 07:55:16: have saved wasserstein_distance_matrix_sinkhorn_it2_0.95_True.npy
+2022/04/01 07:55:16: Wasserstein distances computation done. Saved to file.
+2022/04/01 07:55:16: Running SVMs, crossvalidation: True, gridsearch: True.
+2022/04/01 08:04:04: gridsearch and crossvalidation done
