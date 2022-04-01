@@ -146,3 +146,7 @@ Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/best/results/DD/WKS/re
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/best/results/MUTAG/HKS/results_MUTAG_HKS_0.30_2022-04-01 22:49_crossvalidation.csv (deflated 75%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/best/results/MUTAG/WKS/ (stored 0%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/best/results/MUTAG/WKS/results_MUTAG_WKS_0.60_2022-04-01 22:49_crossvalidation.csv (deflated 76%)
+[master a939794] exp:record for best.zip
+ 3 files changed, 158 insertions(+), 88 deletions(-)
+ rewrite exp/best/best.out (70%)
+ rewrite exp/best/best.zip (89%)
