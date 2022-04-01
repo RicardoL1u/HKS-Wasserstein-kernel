@@ -4847,3 +4847,8 @@ Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/w/results/PROTEINS/WKS
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/w/results/MUTAG/WKS/results_MUTAG_WKS_0.90_2022-04-01 18:25_crossvalidation.csv (deflated 74%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/w/results/MUTAG/WKS/results_MUTAG_WKS_0.20_2022-04-01 18:26_crossvalidation.csv (deflated 76%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/w/results/MUTAG/WKS/results_MUTAG_WKS_0.65_2022-04-01 18:26_crossvalidation.csv (deflated 75%)
+[master c622c54] exp:record for w.zip
+ 4 files changed, 4850 insertions(+), 1 deletion(-)
+ delete mode 100644 exp/w/ablation.zip
+ create mode 100644 exp/w/w.log
+ create mode 100644 exp/w/w.zip
