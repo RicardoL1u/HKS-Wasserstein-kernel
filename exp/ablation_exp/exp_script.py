@@ -15,9 +15,9 @@ if not os.path.exists(output_path):
     os.mkdir(output_path)
 
 os.system("pwd")
+best_pd = pd.read_csv("best.csv")
 os.chdir("../..")
 os.system("pwd")
-best_pd = pd.read_csv("best.csv")
 
 for index,row in best_pd.iterrows():
     if row["sinkhorn"] == True:
