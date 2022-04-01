@@ -141,3 +141,7 @@ Results saved in /home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/D
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/ (stored 0%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 11:48_crossvalidation.csv (deflated 74%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 11:48_crossvalidation.csv (deflated 73%)
+[master 2d054d5] exp:record for ablation.zip
+ 2 files changed, 143 insertions(+)
+ create mode 100644 exp/ablation_exp/ablation.out
+ rewrite exp/ablation_exp/ablation.zip (74%)
