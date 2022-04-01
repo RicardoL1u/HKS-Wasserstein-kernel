@@ -137,7 +137,11 @@ def HKS(graph,sample_method,T,isHeuristics=False) -> np.ndarray :
     return hks
 
 def GetNodeAttrMat(graph):
-    return (graph.ndata['feat']).numpy()
+    ret = (graph.ndata['feat']).numpy()
+    if ret.shape[1] == 1:
+        ret = np.squeeze(ret.astype(int))
+        ret = np.eye(799)[ret]
+    return ret
     
 
 def CalculateSignature4Graphs(graphs,signature_method,sample_method,T):

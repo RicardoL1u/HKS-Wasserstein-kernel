@@ -12,7 +12,7 @@ class TestDGL(unittest.TestCase):
     def test_dataset(self):
         self.dataset_analysis("MUTAG")
         self.dataset_analysis("PTC_MR")
-        self.dataset_analysis("NCI1")
+        # self.dataset_analysis("NCI1")
         self.dataset_analysis("PROTEINS")
         self.dataset_analysis("DD")
         self.dataset_analysis("ENZYMES")
