@@ -31,8 +31,8 @@ import logging
 logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
 
 kernel_list = [
-    # ShortestPath,
-    # WeisfeilerLehman,
+    ShortestPath,
+    WeisfeilerLehman,
     GraphletSampling,
     GraphletSampling,
     RandomWalkLabeled,
@@ -40,8 +40,8 @@ kernel_list = [
 ]
 
 kernel_param_dict_list = [
-    # {'normalize':True},
-    # {'normalize':True},
+    {'normalize':True},
+    {'normalize':True},
     {'normalize':True,'k':3},
     {'normalize':True,'k':4},
     {'normalize':True},
