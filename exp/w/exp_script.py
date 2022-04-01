@@ -25,7 +25,7 @@ ws = [0.00,1.00,0.05,0.10,0.15,0.20,0.25,
               0.90,0.95]
 
 for index,row in best_pd.iterrows():
-    if row['dataset'] == 'DD':
+    if row['dataset'] != 'DD':
         continue
     if row["sinkhorn"] == True:
         sinkhorn = '--sinkhorn'
