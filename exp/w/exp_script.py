@@ -2,7 +2,7 @@ import os
 import pandas as pd
 # dataset="PROTEINS"
 # sinkhorn = ""
-resultzip = 'ablation.zip'
+resultzip = 'w.zip'
 
 
 # ===============================
