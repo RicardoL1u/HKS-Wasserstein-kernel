@@ -286,3 +286,5 @@ updating: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/HKS/results_MUTAG_HKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_0.00_2022-04-01 16:42_crossvalidation.csv (deflated 74%)
   adding: home/ricardo/HKS-Wasserstein-kernel/exp/ablation_exp/results/MUTAG/WKS/results_MUTAG_WKS_1.00_2022-04-01 16:42_crossvalidation.csv (deflated 73%)
+[master d520db2] exp:record for ablation.zip
+ 3 files changed, 191 insertions(+), 47 deletions(-)
