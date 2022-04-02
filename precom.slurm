@@ -16,6 +16,9 @@ source activate myenv
 python3 main.py -d BZR -m 0 -s 2 -hl 800  -cv -gs 
 python3 main.py -d BZR -m 1 -s 0 -hl 800  -cv -gs
 
+python3 main.py -d COX2 -m 0 -s 2 -hl 800  -cv -gs 
+python3 main.py -d COX2 -m 1 -s 0 -hl 800  -cv -gs
+
 # python3 main.py -d DD -m 0 -s 2 -hl 800  -cv -gs --sinkhorn
 # python3 main.py -d DD -m 1 -s 0 -hl 800  -cv -gs --sinkhorn
 
