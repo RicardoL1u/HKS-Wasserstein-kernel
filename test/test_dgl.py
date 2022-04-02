@@ -10,12 +10,14 @@ import logging
 # 继承 unittest.TestCase 就创建了一个测试样例。
 class TestDGL(unittest.TestCase):
     def test_dataset(self):
-        self.dataset_analysis("MUTAG")
-        self.dataset_analysis("PTC_MR")
-        # self.dataset_analysis("NCI1")
-        self.dataset_analysis("PROTEINS")
-        self.dataset_analysis("DD")
-        self.dataset_analysis("ENZYMES")
+        # self.dataset_analysis("MUTAG")
+        # self.dataset_analysis("PTC_MR")
+        self.dataset_analysis("PROTEINS_full")
+        self.dataset_analysis('BZR')
+        self.dataset_analysis('COX2')
+        # self.dataset_analysis("PROTEINS")
+        # self.dataset_analysis("DD")
+        # self.dataset_analysis("ENZYMES")
     def dataset_analysis(self,dataset:str):
         logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
         logging.debug('\n=====================================================\n')

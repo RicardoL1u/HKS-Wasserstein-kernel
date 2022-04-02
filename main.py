@@ -99,7 +99,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
-                            choices=['MUTAG','PTC_MR',"NCI1","PROTEINS","DD",'ENZYMES'])
+                            choices=['MUTAG','PTC_MR',"PROTEINS","DD",'ENZYMES','COX2','BZR','PROTEINS_full'])
     parser.add_argument('-m','--method',type = int ,default=0,help='0 for hks,1 for wks')
     parser.add_argument('-w','--weight',type = float ,default=0.4,help='the relative important metric between generated node signature and node feature')
     parser.add_argument('-s','--samplemethods',type = int,default=0,help='choose different sample methods')
@@ -143,10 +143,10 @@ def main():
         ]
         # hs = np.arange(5,10)*100
         # ws = [0.00,1.00,0.10,0.20,0.30,0.40,0.50,0.60,0.70,0.80,0.90]
-        ws = [0.00,1.00,0.05,0.10,0.15,0.20,0.25,
-              0.30,0.35,0.40,0.45,0.50,0.55,
-              0.60,0.65,0.70,0.75,0.80,0.85,
-              0.90,0.95]
+        # ws = [0.00,1.00,0.05,0.10,0.15,0.20,0.25,
+        #       0.30,0.35,0.40,0.45,0.50,0.55,
+        #       0.60,0.65,0.70,0.75,0.80,0.85,
+        #       0.90,0.95]
         # ws = [0.4,0.5,0.6]
         
     else:
