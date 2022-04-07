@@ -23,7 +23,7 @@ ws = [0.00,0.05,0.10,0.15,0.20,0.25,
               0.90,0.95,1.00]
 
 for index,row in best_pd.iterrows():
-    if row['dataset'] != 'PTC_MR':
+    if row['dataset'] != 'PROTEINS':
         continue
     if row["sinkhorn"] == 'True':
         sinkhorn = '--sinkhorn'
