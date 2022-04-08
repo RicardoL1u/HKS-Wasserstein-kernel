@@ -79,14 +79,14 @@ def get_wass_distances(args,graphs,output_path,ws)->list:
             cnt_com+=1
 
     # Save Wasserstein distance matrices
-    for i, D_w in enumerate(com_wass_dis):
-        filext = 'wasserstein_distance_matrix'
-        if args.sinkhorn:
-            filext += '_sinkhorn'
-        nw = '{:1.2f}'.format(com_ws[i])
-        filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
-        np.save(os.path.join(output_path,filext), D_w)
-        logging.info(f'have saved {filext}')
+    # for i, D_w in enumerate(com_wass_dis):
+    #     filext = 'wasserstein_distance_matrix'
+    #     if args.sinkhorn:
+    #         filext += '_sinkhorn'
+    #     nw = '{:1.2f}'.format(com_ws[i])
+    #     filext += f'_it{args.samplemethods}_{nw}_{args.sinkhorn}.npy'
+    #     np.save(os.path.join(output_path,filext), D_w)
+    #     logging.info(f'have saved {filext}')
     logging.info('Wasserstein distances computation done. Saved to file.')
     return wasserstein_distances
 
