@@ -39,8 +39,7 @@ for index,row in best_pd.iterrows():
     for hl in hls:
         name = '{:1.2f}'.format(w)
         os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
-        if hl < 500:
-            time.sleep(60)
+        time.sleep(60)
 
 os.chdir(now_path)
 os.system(f'zip -r {resultzip} {output_path}')
