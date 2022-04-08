@@ -1,0 +1,113 @@
+/public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl
+/public1/home/scfa2295/HKS-Wasserstein-kernel/exp/w
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b1d292700d0> with hl=100 for PROTEINS.
+with hlen = 100, C = 1.0 and gammas = 1.0
+Downloading /public1/home/scfa2295/.dgl/PROTEINS.zip from https://www.chrsmrrs.com/graphkerneldatasets/PROTEINS.zip...
+Extracting file to /public1/home/scfa2295/.dgl/PROTEINS
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.34 +- 1.53 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:25_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ba63a704160> with hl=200 for PROTEINS.
+with hlen = 200, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.62 +- 1.32 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:32_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b7150c00160> with hl=300 for PROTEINS.
+with hlen = 300, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.34 +- 1.05 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:40_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ba936002160> with hl=400 for PROTEINS.
+with hlen = 400, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.71 +- 1.35 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:48_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b312afbd160> with hl=500 for PROTEINS.
+with hlen = 500, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.07 +- 1.13 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:58_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b81eedb4160> with hl=600 for PROTEINS.
+with hlen = 600, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.07 +- 0.93 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 14:08_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ac750f79160> with hl=700 for PROTEINS.
+with hlen = 700, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.43 +- 0.82 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 14:19_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ae2283c0160> with hl=800 for PROTEINS.
+with hlen = 800, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.62 +- 1.04 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 14:30_crossvalidation.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b22b4682160> with hl=900 for PROTEINS.
+with hlen = 900, C = 1.0 and gammas = 1.0
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.25 +- 0.82 %
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 14:43_crossvalidation.csv.

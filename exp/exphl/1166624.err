@@ -1,0 +1,416 @@
+/public1/home/scfa2295/anaconda3/lib/python3.9/site-packages/ruamel_yaml/constructor.py:283: DuplicateKeyFutureWarning: while constructing a mapping
+  in "/public1/home/scfa2295/.condarc", line 1, column 1
+found duplicate key "show_channel_urls" with value "True" (original value: "True")
+  in "/public1/home/scfa2295/.condarc", line 4, column 1
+
+To suppress this check see:
+    http://yaml.readthedocs.io/en/latest/api.html#duplicate-keys
+
+Duplicate keys will become an error in future releases, and are errors
+by default when using the new API.
+
+  warnings.warn(DuplicateKeyFutureWarning(*args))
+[14:46:09] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:46:12: Starting new HTTPS connection (1): www.chrsmrrs.com:443
+2022/04/08 02:46:14: https://www.chrsmrrs.com:443 "GET /graphkerneldatasets/PTC_MR.zip HTTP/1.1" 200 34315
+2022/04/08 02:46:15: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:15: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:15: ready to load the pre-computed wass distances
+2022/04/08 02:46:15: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:46:15: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:46:19: the node embedding have been generated
+2022/04/08 02:46:19: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:46:29: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:46:29: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:46:29: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:46:29: gridsearch and crossvalidation done
+[14:46:31] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:46:32: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:32: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:32: ready to load the pre-computed wass distances
+2022/04/08 02:46:32: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:46:32: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:46:41: the node embedding have been generated
+2022/04/08 02:46:42: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:46:52: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:46:52: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:46:52: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:46:52: gridsearch and crossvalidation done
+[14:46:54] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:46:54: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:54: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:46:54: ready to load the pre-computed wass distances
+2022/04/08 02:46:54: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:46:54: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:47:13: the node embedding have been generated
+2022/04/08 02:47:13: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:47:24: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:47:24: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:47:24: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:47:24: gridsearch and crossvalidation done
+[14:47:26] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:47:27: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:47:27: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:47:27: ready to load the pre-computed wass distances
+2022/04/08 02:47:27: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:47:27: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:47:45: the node embedding have been generated
+2022/04/08 02:47:45: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:47:56: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:47:56: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:47:56: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:47:56: gridsearch and crossvalidation done
+[14:47:58] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:47:59: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:47:59: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:47:59: ready to load the pre-computed wass distances
+2022/04/08 02:47:59: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:47:59: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:48:21: the node embedding have been generated
+2022/04/08 02:48:21: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:48:32: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:48:32: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:48:32: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:48:32: gridsearch and crossvalidation done
+[14:48:34] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:48:35: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:48:35: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:48:35: ready to load the pre-computed wass distances
+2022/04/08 02:48:35: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:48:35: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:49:02: the node embedding have been generated
+2022/04/08 02:49:02: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:49:14: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:49:14: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:49:14: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:49:14: gridsearch and crossvalidation done
+[14:49:15] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:49:16: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:49:16: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:49:16: ready to load the pre-computed wass distances
+2022/04/08 02:49:16: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:49:16: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:49:47: the node embedding have been generated
+2022/04/08 02:49:47: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:49:58: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:49:58: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:49:58: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:49:58: gridsearch and crossvalidation done
+[14:50:00] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:50:01: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:50:01: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:50:01: ready to load the pre-computed wass distances
+2022/04/08 02:50:01: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:50:01: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:50:36: the node embedding have been generated
+2022/04/08 02:50:36: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:50:48: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:50:48: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:50:48: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:50:48: gridsearch and crossvalidation done
+[14:50:49] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:50:50: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:50:50: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:50:50: ready to load the pre-computed wass distances
+2022/04/08 02:50:50: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:50:50: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:51:30: the node embedding have been generated
+2022/04/08 02:51:30: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:51:42: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:51:42: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:51:42: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:51:42: gridsearch and crossvalidation done
+[14:51:44] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:51:44: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:51:44: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:51:44: ready to load the pre-computed wass distances
+2022/04/08 02:51:44: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:51:44: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:52:31: the node embedding have been generated
+2022/04/08 02:52:31: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:52:43: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:52:43: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:52:43: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:52:43: gridsearch and crossvalidation done
+[14:52:45] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:52:46: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:52:46: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:52:46: ready to load the pre-computed wass distances
+2022/04/08 02:52:46: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:52:46: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:53:35: the node embedding have been generated
+2022/04/08 02:53:35: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:53:48: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:53:48: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:53:48: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:53:48: gridsearch and crossvalidation done
+[14:53:49] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:53:50: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:53:50: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:53:50: ready to load the pre-computed wass distances
+2022/04/08 02:53:50: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:53:50: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:54:44: the node embedding have been generated
+2022/04/08 02:54:44: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:54:57: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:54:57: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:54:57: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:54:57: gridsearch and crossvalidation done
+[14:54:59] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:55:00: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:55:00: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:55:00: ready to load the pre-computed wass distances
+2022/04/08 02:55:00: after loading pre-computed wass distances, there are distance with w=[0.35] remained
+2022/04/08 02:55:00: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:135: ComplexWarning: Casting complex values to real discards the imaginary part
+  hks[i] = np.array([np.sum(np.exp(-eigenvalues*t)*eigenvectors[i]*eigenvectors[i]) for t in sample_points])
+2022/04/08 02:55:56: the node embedding have been generated
+2022/04/08 02:55:56: ready to compute the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:56:09: have computed the wass diss with sinkhorn = False and w = 0.35
+2022/04/08 02:56:09: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:56:09: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:56:09: gridsearch and crossvalidation done
+[14:56:11] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:56:12: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:56:12: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:56:12: ready to load the pre-computed wass distances
+2022/04/08 02:56:12: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 02:56:12: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 02:56:25: the node embedding have been generated
+2022/04/08 02:56:25: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:56:34: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:56:34: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:56:34: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:56:34: gridsearch and crossvalidation done
+[14:56:36] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:56:37: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:56:37: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:56:37: ready to load the pre-computed wass distances
+2022/04/08 02:56:37: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 02:56:37: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 02:57:01: the node embedding have been generated
+2022/04/08 02:57:01: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:57:12: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:57:12: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:57:12: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:57:12: gridsearch and crossvalidation done
+[14:57:14] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:57:15: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:57:15: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:57:15: ready to load the pre-computed wass distances
+2022/04/08 02:57:15: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 02:57:15: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 02:57:50: the node embedding have been generated
+2022/04/08 02:57:50: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:58:01: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:58:01: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:58:01: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:58:01: gridsearch and crossvalidation done
+[14:58:02] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:58:03: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:58:03: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:58:03: ready to load the pre-computed wass distances
+2022/04/08 02:58:03: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 02:58:03: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 02:58:51: the node embedding have been generated
+2022/04/08 02:58:51: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:59:02: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 02:59:02: Wasserstein distances computation done. Saved to file.
+2022/04/08 02:59:02: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 02:59:02: gridsearch and crossvalidation done
+[14:59:04] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 02:59:05: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:59:05: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 02:59:05: ready to load the pre-computed wass distances
+2022/04/08 02:59:05: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 02:59:05: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:00:02: the node embedding have been generated
+2022/04/08 03:00:02: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:00:14: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:00:14: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:00:14: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:00:14: gridsearch and crossvalidation done
+[15:00:15] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:00:16: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:00:16: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:00:16: ready to load the pre-computed wass distances
+2022/04/08 03:00:16: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:00:16: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:01:24: the node embedding have been generated
+2022/04/08 03:01:24: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:01:36: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:01:36: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:01:36: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:01:36: gridsearch and crossvalidation done
+[15:01:37] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:01:38: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:01:38: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:01:38: ready to load the pre-computed wass distances
+2022/04/08 03:01:38: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:01:38: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:02:57: the node embedding have been generated
+2022/04/08 03:02:57: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:03:09: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:03:09: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:03:09: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:03:09: gridsearch and crossvalidation done
+[15:03:10] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:03:11: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:03:11: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:03:11: ready to load the pre-computed wass distances
+2022/04/08 03:03:11: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:03:11: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:04:39: the node embedding have been generated
+2022/04/08 03:04:39: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:04:51: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:04:51: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:04:51: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:04:51: gridsearch and crossvalidation done
+[15:04:53] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:04:54: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:04:54: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:04:54: ready to load the pre-computed wass distances
+2022/04/08 03:04:54: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:04:54: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:06:59: the node embedding have been generated
+2022/04/08 03:06:59: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:07:13: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:07:13: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:07:13: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:07:13: gridsearch and crossvalidation done
+[15:07:14] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:07:15: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:07:15: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:07:15: ready to load the pre-computed wass distances
+2022/04/08 03:07:15: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:07:15: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:09:40: the node embedding have been generated
+2022/04/08 03:09:40: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:09:52: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:09:52: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:09:52: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:09:52: gridsearch and crossvalidation done
+[15:09:54] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:09:55: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:09:55: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:09:55: ready to load the pre-computed wass distances
+2022/04/08 03:09:55: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:09:55: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:11:52: the node embedding have been generated
+2022/04/08 03:11:52: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:12:05: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:12:05: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:12:05: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:12:05: gridsearch and crossvalidation done
+[15:12:07] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:12:08: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:12:08: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:12:08: ready to load the pre-computed wass distances
+2022/04/08 03:12:08: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:12:08: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:14:19: the node embedding have been generated
+2022/04/08 03:14:19: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:14:32: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:14:32: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:14:32: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:14:32: gridsearch and crossvalidation done
+[15:14:34] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/08 03:14:34: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:14:34: after drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/08 03:14:34: ready to load the pre-computed wass distances
+2022/04/08 03:14:34: after loading pre-computed wass distances, there are distance with w=[0.6] remained
+2022/04/08 03:14:34: ready to generate node embeddings
+/public1/home/scfa2295/HKS-Wasserstein-kernel/signature.py:99: ComplexWarning: Casting complex values to real discards the imaginary part
+  wks[i] = np.array([np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))*eigenvectors[i]*eigenvectors[i])/np.sum(np.exp(-(e-log_eigenvalue)*(e-log_eigenvalue)/(2*sigma*sigma))) for e in sample_points])
+2022/04/08 03:16:57: the node embedding have been generated
+2022/04/08 03:16:57: ready to compute the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:17:11: have computed the wass diss with sinkhorn = False and w = 0.6
+2022/04/08 03:17:11: Wasserstein distances computation done. Saved to file.
+2022/04/08 03:17:11: Running SVMs, crossvalidation: True, gridsearch: False.
+2022/04/08 03:17:11: gridsearch and crossvalidation done
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <scfa2295@ia0103.para.bscc>) not allowed
