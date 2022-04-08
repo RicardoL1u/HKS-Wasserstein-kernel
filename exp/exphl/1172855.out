@@ -5,157 +5,157 @@
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b566019a160> with hl=100 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b1f60a14160> with hl=100 for PTC_MR.
 with hlen = 100, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 61.02 +- 1.82 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:50_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:43_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6145b68160> with hl=200 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2aefb18ce160> with hl=200 for PTC_MR.
 with hlen = 200, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 56.42 +- 1.93 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:51_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:44_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ac67a04f160> with hl=300 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ae09e787160> with hl=300 for PTC_MR.
 with hlen = 300, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 60.76 +- 2.27 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:53_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:45_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ab6f3092160> with hl=400 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6b5c124160> with hl=400 for PTC_MR.
 with hlen = 400, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 54.66 +- 2.10 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:54_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:47_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b7b35a64160> with hl=500 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b38c42b2160> with hl=500 for PTC_MR.
 with hlen = 500, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 56.13 +- 2.36 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:56_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:49_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b9bf5778160> with hl=600 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ab171ca6160> with hl=600 for PTC_MR.
 with hlen = 600, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 56.97 +- 1.66 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:57_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:50_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6b8068b160> with hl=700 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6182609160> with hl=700 for PTC_MR.
 with hlen = 700, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 57.87 +- 2.95 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:57_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:52_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b6cff174160> with hl=800 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b86d11d1160> with hl=800 for PTC_MR.
 with hlen = 800, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 57.55 +- 2.07 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:58_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:54_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ab0bffab160> with hl=900 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b60c6a94160> with hl=900 for PTC_MR.
 with hlen = 900, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 59.28 +- 2.06 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:59_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:56_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2af031c06160> with hl=1000 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b677b4d4160> with hl=1000 for PTC_MR.
 with hlen = 1000, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 58.15 +- 2.25 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:00_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:58_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b677c19b160> with hl=1100 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2ae062f5f160> with hl=1100 for PTC_MR.
 with hlen = 1100, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 57.86 +- 2.36 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:01_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:00_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b89528c5160> with hl=1200 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b1b3bd2c160> with hl=1200 for PTC_MR.
 with hlen = 1200, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 59.33 +- 2.27 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:03_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:02_crossvalidation.csv.
 
 =============================================================
 Graph classification using the HKS/WKS and Wassertain kernel.
 =============================================================
 
-Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2af0d04fe160> with hl=1300 for PTC_MR.
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x2b7293d91160> with hl=1300 for PTC_MR.
 with hlen = 1300, C = 1000.0 and gammas = 1.0
 
 Kernel matrices computed.
 
 Mean 10-fold accuracy: 60.44 +- 1.45 %
-Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:04_crossvalidation.csv.
+Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:04_crossvalidation.csv.
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/ (stored 0%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/ (stored 0%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/WKS/ (stored 0%)
@@ -173,18 +173,19 @@ Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/WKS/results_PTC_MR_WKS_0.60_2022-04-08 15:09_crossvalidation.csv (deflated 70%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/WKS/results_PTC_MR_WKS_0.60_2022-04-08 14:56_crossvalidation.csv (deflated 71%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/ (stored 0%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:03_crossvalidation.csv (deflated 73%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:54_crossvalidation.csv (deflated 71%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:57_crossvalidation.csv (deflated 68%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:56_crossvalidation.csv (deflated 71%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:04_crossvalidation.csv (deflated 70%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:00_crossvalidation.csv (deflated 72%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:58_crossvalidation.csv (deflated 70%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:50_crossvalidation.csv (deflated 69%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 17:01_crossvalidation.csv (deflated 70%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:53_crossvalidation.csv (deflated 71%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:51_crossvalidation.csv (deflated 71%)
-  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 16:59_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:04_crossvalidation.csv (deflated 70%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:45_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:02_crossvalidation.csv (deflated 73%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:56_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:50_crossvalidation.csv (deflated 72%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:43_crossvalidation.csv (deflated 69%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:44_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:47_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:58_crossvalidation.csv (deflated 72%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:49_crossvalidation.csv (deflated 71%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 20:00_crossvalidation.csv (deflated 70%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:54_crossvalidation.csv (deflated 70%)
+  adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PTC_MR/HKS/results_PTC_MR_HKS_0.35_2022-04-08 19:52_crossvalidation.csv (deflated 68%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/ (stored 0%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/ (stored 0%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:40_crossvalidation.csv (deflated 70%)
@@ -196,8 +197,3 @@ Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 14:08_crossvalidation.csv (deflated 72%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:58_crossvalidation.csv (deflated 71%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/exphl/results/PROTEINS/HKS/results_PROTEINS_HKS_0.25_2022-04-08 13:32_crossvalidation.csv (deflated 71%)
-[exphl 59fdc16] exp:record for results.zip
- 3 files changed, 405 insertions(+)
- create mode 100644 exp/exphl/1169227.err
- create mode 100644 exp/exphl/1169227.out
- create mode 100644 exp/exphl/results.zip
