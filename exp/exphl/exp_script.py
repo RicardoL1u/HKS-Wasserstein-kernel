@@ -19,7 +19,7 @@ os.chdir('../..')
 hls = [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300]
 
 for index,row in best_pd.iterrows():
-    if row['dataset'] != 'PROTEINS':
+    if row['dataset'] != 'PTC_MR':
         continue
     if row["sinkhorn"] == 'True':
         sinkhorn = '--sinkhorn'
