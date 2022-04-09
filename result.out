@@ -1,0 +1,110 @@
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f4831b898b0> with hl=800 for MUTAG.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 88.30 +- 1.79 %
+Results saved in results/MUTAG/HKS/results_MUTAG_HKS_2022-04-09 23:26_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7fef64e3e670> with hl=800 for MUTAG.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 89.88 +- 1.39 %
+Results saved in results/MUTAG/WKS/results_MUTAG_WKS_2022-04-09 23:27_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f5d782808b0> with hl=800 for PTC_MR.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 56.40 +- 2.46 %
+Results saved in results/PTC_MR/HKS/results_PTC_MR_HKS_2022-04-09 23:29_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7f43a76ad670> with hl=800 for PTC_MR.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 62.79 +- 1.74 %
+Results saved in results/PTC_MR/WKS/results_PTC_MR_WKS_2022-04-09 23:31_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7fdd717e78b0> with hl=800 for PROTEINS.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.35 +- 0.87 %
+Results saved in results/PROTEINS/HKS/results_PROTEINS_HKS_2022-04-09 23:44_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7f4a028f4670> with hl=800 for PROTEINS.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 76.89 +- 1.02 %
+Results saved in results/PROTEINS/WKS/results_PROTEINS_WKS_2022-04-09 23:58_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f3bdc4248b0> with hl=800 for ENZYMES.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 65.33 +- 2.37 %
+Results saved in results/ENZYMES/HKS/results_ENZYMES_HKS_2022-04-10 00:04_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7f8f9c6df670> with hl=800 for ENZYMES.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 67.33 +- 1.11 %
+Results saved in results/ENZYMES/WKS/results_ENZYMES_WKS_2022-04-10 00:09_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating HKS embeddings by <function get_random_samples_based_exp_dual at 0x7f8fbac3e8b0> with hl=800 for DD.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 78.95 +- 1.10 %
+Results saved in results/DD/HKS/results_DD_HKS_2022-04-10 00:22_crossvalidation_gridsearch.csv.
+
+=============================================================
+Graph classification using the HKS/WKS and Wassertain kernel.
+=============================================================
+
+Generating WKS embeddings by <function get_sample4WKS at 0x7fe32417f670> with hl=800 for DD.
+
+Kernel matrices computed.
+
+Mean 10-fold accuracy: 77.97 +- 1.35 %
+Results saved in results/DD/WKS/results_DD_WKS_2022-04-10 00:33_crossvalidation_gridsearch.csv.
