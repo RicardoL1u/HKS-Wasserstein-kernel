@@ -36,7 +36,7 @@ for dataset in dataset_list:
             C = row['C']
             g = row['gamma']
             hl = 800
-            for w in [0.00]: 
+            for w in [1.00]: 
                 name = '{:1.2f}'.format(w)
                 os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 
