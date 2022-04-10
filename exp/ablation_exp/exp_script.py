@@ -41,6 +41,6 @@ for dataset in dataset_list:
                 os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} -c {C} -g {g} -w {w} -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 
 os.chdir(now_path)
-os.system(f'zip -r {resultzip} {output_path}')
-os.system('git add .')
-os.system(f'git commit -a -m \"exp:record for {resultzip}\"')
+# os.system(f'zip -r {resultzip} {output_path}')
+# os.system('git add .')
+# os.system(f'git commit -a -m \"exp:record for {resultzip}\"')
