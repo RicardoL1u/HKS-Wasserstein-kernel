@@ -26,7 +26,6 @@ from grakel.kernels import ShortestPath
 from grakel.kernels import RandomWalkLabeled
 from grakel.kernels import WeisfeilerLehman
 from grakel.kernels import GraphletSampling
-from grakel.kernels import GraphHopper
 
 import logging
 logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
@@ -36,7 +35,7 @@ kernel_list = [
     WeisfeilerLehman,
     GraphletSampling,
     # GraphletSampling,
-    RandomWalkLabeled,
+    # RandomWalkLabeled,
     # GraphHopper
 ]
 
@@ -45,7 +44,7 @@ kernel_param_dict_list = [
     {'normalize':True},
     {'normalize':True,'k':3},
     # {'normalize':True,'k':4},
-    {'normalize':True},
+    # {'normalize':True},
     # {'normalize':True,'method_type':'fast'}
 ]
 
