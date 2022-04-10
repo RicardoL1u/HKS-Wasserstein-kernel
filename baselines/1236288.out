@@ -1,0 +1,50 @@
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 62.06 +- 2.80 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 63.82 +- 1.50 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.06 +- 1.19 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 56.18 +- 2.14 %
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 61.76 +- 2.46 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 61.47 +- 2.14 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.35 +- 0.47 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 57.65 +- 0.85 %
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 60.59 +- 1.73 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 62.35 +- 1.90 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.06 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 57.65 +- 0.95 %
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 58.53 +- 1.97 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 62.06 +- 3.29 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.06 +- 0.74 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 56.47 +- 2.35 %
+
+=============================================================
+Graph classification on PTC_MR using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 62.94 +- 2.05 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 61.47 +- 1.34 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.62 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 56.18 +- 0.77 %
+Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 57.35 +- 1.27 %
