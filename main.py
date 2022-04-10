@@ -6,7 +6,7 @@ from random import shuffle
 import wass_dis
 import utilities
 import numpy as np
-np.random.seed(12050) 
+np.random.seed(1205) 
 import sklearn.model_selection
 import dgl.data
 # import igraph as ig
