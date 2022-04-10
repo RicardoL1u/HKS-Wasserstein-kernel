@@ -6,7 +6,6 @@ from random import shuffle
 import wass_dis
 import utilities
 import numpy as np
-np.random.seed(1205) 
 import sklearn.model_selection
 import dgl.data
 # import igraph as ig
@@ -111,11 +110,15 @@ def main():
     parser.add_argument('-g','--gamma', type = float, required=False, default=10, help = "Gammas in eps(-gamma*M):")
     parser.add_argument('-p','--path', type = str, required=False, default=None, help = "Path for experiment records")
     parser.add_argument('-n','--name', type = str, required=False, default=None, help = "name for experiment records")
+    parser.add_argument('--seed',type = int, required=False, default=1205, help = 'random number seed')
     # parser.add_argument('--h_min', type = int, required=False, default=5, help = "(Min) number of sample points in HKS, would be 2^n")
     # parser.add_argument('--h_max', type = int, required=False, default=10, help = "(Max) number of sample points in HKS, would be 2^n")
 
     args = parser.parse_args()
     dataset = args.dataset
+
+    np.random.seed(args.seed) 
+
 
     output_path = os.path.join('output', dataset)
     if args.path == None:
