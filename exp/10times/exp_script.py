@@ -32,7 +32,7 @@ for dataset in dataset_list:
         hl = 800
         for seed in [7,77,77,4396,1205,443]:
             name ='seed_{:04d}'.format(seed)
-            os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample}  -gs -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
+            os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} --seed {seed} -gs -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 os.chdir(now_path)
 os.system(f'zip -r {resultzip} {output_path}')
 os.system('git add .')
