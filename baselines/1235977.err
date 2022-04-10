@@ -1,0 +1,99 @@
+2022/04/10 11:16:31: loading the MUTAG dataset
+2022/04/10 11:16:31: before drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:16:31: after drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:16:31: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:16:31: with gridserach = True and crossvalidation = True
+2022/04/10 11:16:33: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:16:33: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:16:33: with gridserach = True and crossvalidation = True
+2022/04/10 11:16:33: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:16:33: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:16:33: with gridserach = True and crossvalidation = True
+2022/04/10 11:16:34: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:16:34: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:16:34: with gridserach = True and crossvalidation = True
+2022/04/10 11:16:36: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:16:36: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:16:36: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:15: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:17:17: loading the MUTAG dataset
+2022/04/10 11:17:17: before drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:17:17: after drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:17:17: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:17:17: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:18: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:17:18: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:17:18: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:18: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:17:18: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:18: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:19: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:19: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:19: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:21: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:21: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:17:21: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:50: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:17:51: loading the MUTAG dataset
+2022/04/10 11:17:51: before drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:17:51: after drop huge graphs, there are 188 graphs in MUTAG
+2022/04/10 11:17:51: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:17:51: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:52: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/10 11:17:52: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:17:52: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:53: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
+2022/04/10 11:17:53: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:53: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:54: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:54: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:54: with gridserach = True and crossvalidation = True
+2022/04/10 11:17:55: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on MUTAG
+2022/04/10 11:17:55: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:17:55: with gridserach = True and crossvalidation = True
+2022/04/10 11:18:25: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on MUTAG
+2022/04/10 11:18:26: loading the PTC_MR dataset
+2022/04/10 11:18:26: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/10 11:18:26: after drop huge graphs, there are 340 graphs in PTC_MR
+2022/04/10 11:18:26: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:18:26: with gridserach = True and crossvalidation = True
+2022/04/10 11:18:29: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:18:29: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:18:29: with gridserach = True and crossvalidation = True
+2022/04/10 11:18:30: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:18:30: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:18:30: with gridserach = True and crossvalidation = True
+2022/04/10 11:18:32: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:18:32: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR
+2022/04/10 11:18:32: with gridserach = True and crossvalidation = True
+2022/04/10 11:19:20: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR
+2022/04/10 11:19:21: loading the PTC_MR dataset
+2022/04/10 11:19:21: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/10 11:19:21: after drop huge graphs, there are 340 graphs in PTC_MR
+2022/04/10 11:19:21: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:19:21: with gridserach = True and crossvalidation = True
+2022/04/10 11:19:25: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:19:25: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:19:25: with gridserach = True and crossvalidation = True
+2022/04/10 11:19:25: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:19:25: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:19:25: with gridserach = True and crossvalidation = True
+2022/04/10 11:19:27: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:19:27: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR
+2022/04/10 11:19:27: with gridserach = True and crossvalidation = True
+2022/04/10 11:20:15: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR
+2022/04/10 11:20:16: loading the PTC_MR dataset
+2022/04/10 11:20:16: before drop huge graphs, there are 344 graphs in PTC_MR
+2022/04/10 11:20:16: after drop huge graphs, there are 340 graphs in PTC_MR
+2022/04/10 11:20:16: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:20:16: with gridserach = True and crossvalidation = True
+2022/04/10 11:20:19: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/10 11:20:19: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:20:19: with gridserach = True and crossvalidation = True
+2022/04/10 11:20:20: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
+2022/04/10 11:20:20: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:20:20: with gridserach = True and crossvalidation = True
+2022/04/10 11:20:22: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on PTC_MR
+2022/04/10 11:20:22: read to conduct <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR
+2022/04/10 11:20:22: with gridserach = True and crossvalidation = True
+2022/04/10 11:21:09: have conducted <class 'grakel.kernels.random_walk.RandomWalkLabeled'> on PTC_MR

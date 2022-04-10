@@ -1,0 +1,5 @@
+2022/04/10 11:22:12: loading the ENZYMES dataset
+2022/04/10 11:22:12: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/04/10 11:22:12: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/04/10 11:22:12: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:22:12: with gridserach = True and crossvalidation = True
