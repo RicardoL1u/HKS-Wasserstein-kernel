@@ -24,7 +24,7 @@ for dataset in dataset_list:
             method_num = 1
             sample = 0
         hl = 800
-        for seed in [7,77,77,4396,1205]:
+        for seed in [7,77,777,4396,1205]:
             name ='seed_{:04d}'.format(seed)
             os.system(f'python3 main.py -d {dataset} -m {method_num} -s {sample} --seed {seed} -gs -hl {hl} -p {output_path} -n {name} -cv {sinkhorn}')
 os.chdir(now_path)
