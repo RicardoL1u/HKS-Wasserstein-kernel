@@ -1,10 +1,10 @@
 import os
 
-dataset = 'MUTAG'
+dataset = 'PTC_MR'
 
 seeds = [
     # 7,
-    # 77,
+    77,
     777,
     4396,
     1205
