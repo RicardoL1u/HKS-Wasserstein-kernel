@@ -34,8 +34,8 @@ kernel_list = [
     ShortestPath,
     WeisfeilerLehman,
     GraphletSampling,
-    # GraphletSampling,
-    # RandomWalkLabeled,
+    GraphletSampling,
+    RandomWalkLabeled,
     # GraphHopper
 ]
 
@@ -43,8 +43,8 @@ kernel_param_dict_list = [
     {'normalize':True},
     {'normalize':True},
     {'normalize':True,'k':3},
-    # {'normalize':True,'k':4},
-    # {'normalize':True},
+    {'normalize':True,'k':4},
+    {'normalize':True},
     # {'normalize':True,'method_type':'fast'}
 ]
 

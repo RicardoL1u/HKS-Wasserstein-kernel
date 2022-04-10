@@ -1,7 +1,7 @@
 import os
 
 # datasets = ['MUTAG','PTC_MR']
-dataset = 'ENZYMES'
+dataset = 'PTC_MR'
 
 seeds = [
     7,
