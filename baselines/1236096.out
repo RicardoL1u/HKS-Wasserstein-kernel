@@ -1,0 +1,40 @@
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 42.82 +- 2.08 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 52.17 +- 1.88 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 22.73 +- 1.08 %
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 40.81 +- 1.89 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 53.03 +- 2.21 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 22.08 +- 1.02 %
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 41.81 +- 1.78 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 52.32 +- 1.76 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 21.57 +- 1.06 %
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 41.11 +- 2.46 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 51.33 +- 1.65 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 21.75 +- 0.80 %
+
+=============================================================
+Graph classification on ENZYMES using the baseline kernels.
+=============================================================
+
+Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in ENZYMES: 40.33 +- 1.83 %
+Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in ENZYMES: 54.34 +- 1.07 %
+Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in ENZYMES: 23.41 +- 0.81 %

@@ -3,3 +3,58 @@
 2022/04/10 11:22:12: after drop huge graphs, there are 598 graphs in ENZYMES
 2022/04/10 11:22:12: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
 2022/04/10 11:22:12: with gridserach = True and crossvalidation = True
+2022/04/10 11:22:27: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:22:27: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:22:27: with gridserach = True and crossvalidation = True
+2022/04/10 11:22:30: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:22:30: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:22:30: with gridserach = True and crossvalidation = True
+2022/04/10 11:22:40: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:22:41: loading the ENZYMES dataset
+2022/04/10 11:22:41: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/04/10 11:22:41: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/04/10 11:22:41: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:22:41: with gridserach = True and crossvalidation = True
+2022/04/10 11:22:56: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:22:56: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:22:56: with gridserach = True and crossvalidation = True
+2022/04/10 11:22:59: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:22:59: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:22:59: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:09: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:23:10: loading the ENZYMES dataset
+2022/04/10 11:23:10: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/04/10 11:23:10: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/04/10 11:23:10: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:23:10: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:26: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:23:26: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:23:26: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:29: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:23:29: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:23:29: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:39: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:23:40: loading the ENZYMES dataset
+2022/04/10 11:23:41: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/04/10 11:23:41: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/04/10 11:23:41: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:23:41: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:55: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:23:55: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:23:55: with gridserach = True and crossvalidation = True
+2022/04/10 11:23:58: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:23:58: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:23:58: with gridserach = True and crossvalidation = True
+2022/04/10 11:24:08: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:24:09: loading the ENZYMES dataset
+2022/04/10 11:24:09: before drop huge graphs, there are 600 graphs in ENZYMES
+2022/04/10 11:24:09: after drop huge graphs, there are 598 graphs in ENZYMES
+2022/04/10 11:24:09: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:24:09: with gridserach = True and crossvalidation = True
+2022/04/10 11:24:24: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/10 11:24:24: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:24:24: with gridserach = True and crossvalidation = True
+2022/04/10 11:24:27: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
+2022/04/10 11:24:27: read to conduct <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
+2022/04/10 11:24:27: with gridserach = True and crossvalidation = True
+2022/04/10 11:24:37: have conducted <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> on ENZYMES
