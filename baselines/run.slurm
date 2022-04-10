@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 #SBATCH --job-name=test
 #SBATCH --partition=v5_192
