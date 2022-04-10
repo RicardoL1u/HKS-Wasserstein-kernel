@@ -1,12 +1,6 @@
 import os
-import pandas as pd
+
 resultzip = '5times.zip'
-
-
-# ===============================
-# shutil.rmtree(dataset,ignore_errors=True)
-# os.makedirs(os.path.join(dataset,"HKS"))
-# os.makedirs(os.path.join(dataset,"WKS"))
 
 dataset_list = ['MUTAG','PTC_MR','ENZYMES','PROTEINS','DD']
 method_list = ['HKS','WKS']

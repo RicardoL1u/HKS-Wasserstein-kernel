@@ -15,11 +15,12 @@ import sys
 sys.path.append("..")
 import utilities
 import sklearn.model_selection
+import pandas as pd
 
-from sklearn.model_selection import train_test_split
+column_list = ['Method','fold0','fold1','fold2','fold3','fold4',
+                        'fold5','fold6','fold7','fold8','fold9',]
+
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
-
 from grakel.datasets import fetch_dataset
 from grakel.kernels import ShortestPath
 from grakel.kernels import RandomWalkLabeled
@@ -49,14 +50,17 @@ kernel_param_dict_list = [
 ]
 
 def main():
-    np.random.seed(1205) 
 
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--dataset', type=str, help='Provide the dataset name',
                             choices=['MUTAG','PTC_MR',"PROTEINS","DD",'ENZYMES'])
     parser.add_argument('-gs','--gridsearch', default=False, action='store_true', help='Enable grid search')
+    parser.add_argument('--seed',type = int, required=False, default=1205, help = 'random number seed')
+
     args = parser.parse_args()
+
+    np.random.seed(args.seed) 
       
     print()
     print("=============================================================")
@@ -90,6 +94,8 @@ def main():
             # Must be strictly positive. The penalty is a squared l2 penalty.
             {'C': np.logspace(-3,3,num=7)}
         ]
+
+    data = [] # store baseline results
 
     for i,kernel in enumerate(kernel_list):
         logging.info(f'read to conduct {str(kernel)} on {args.dataset}')
@@ -125,6 +131,14 @@ def main():
         print('Mean 10-fold accuracy of '+str(kernel)+' in '+args.dataset+': {:2.2f} +- {:2.2f} %'.format(
                             np.mean(accuracy_scores) * 100,  
                             np.std(accuracy_scores)/np.sqrt(10) * 100))
+        data_unit = [str(kernel)]
+        data_unit.extend(accuracy_scores)
+        data.append(data_unit)
+
+    df = pd.DataFrame(data,columns=column_list)
+    file ='_seed_{:04d}.csv'.format(args.seed)
+    file = args.dataset + file
+    df.to_csv(file)
 
 if __name__ == "__main__":
     main()
