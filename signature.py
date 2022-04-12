@@ -136,7 +136,9 @@ def HKS(graph,sample_method,T,isHeuristics=False) -> np.ndarray :
 
     return hks
 
-def GetNodeAttrMat(graph):
+def GetNodeAttrMat(graph:dgl.DGLGraph):
+    if len(graph.node_attr_schemes()) == 0:
+        return np.zeros((graph.number_of_nodes(),1))
     ret = (graph.ndata['feat']).numpy()
     if ret.shape[1] == 1: ## special for proteins
         ret = np.squeeze(ret.astype(int))
