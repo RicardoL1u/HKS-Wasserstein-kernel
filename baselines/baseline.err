@@ -1,9 +1,9 @@
 2022/04/01 11:43:31: loading the MUTAG dataset
 2022/04/01 11:43:32: before drop huge graphs, there are 188 graphs in MUTAG
 2022/04/01 11:43:32: after drop huge graphs, there are 188 graphs in MUTAG
-2022/04/01 11:43:32: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/01 11:43:32: read to conduct SP kernel on MUTAG
 2022/04/01 11:43:32: with gridserach = True and crossvalidation = True
-2022/04/01 11:43:33: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on MUTAG
+2022/04/01 11:43:33: have conducted SP kernel on MUTAG
 2022/04/01 11:43:33: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
 2022/04/01 11:43:33: with gridserach = True and crossvalidation = True
 2022/04/01 11:43:33: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on MUTAG
@@ -19,9 +19,9 @@
 2022/04/01 11:44:07: loading the PTC_MR dataset
 2022/04/01 11:44:08: before drop huge graphs, there are 344 graphs in PTC_MR
 2022/04/01 11:44:08: after drop huge graphs, there are 340 graphs in PTC_MR
-2022/04/01 11:44:08: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/01 11:44:08: read to conduct SP kernel on PTC_MR
 2022/04/01 11:44:08: with gridserach = True and crossvalidation = True
-2022/04/01 11:44:11: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on PTC_MR
+2022/04/01 11:44:11: have conducted SP kernel on PTC_MR
 2022/04/01 11:44:11: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
 2022/04/01 11:44:11: with gridserach = True and crossvalidation = True
 2022/04/01 11:44:12: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PTC_MR
@@ -37,9 +37,9 @@
 2022/04/01 11:45:18: loading the PROTEINS dataset
 2022/04/01 11:45:19: before drop huge graphs, there are 1113 graphs in PROTEINS
 2022/04/01 11:45:19: after drop huge graphs, there are 1112 graphs in PROTEINS
-2022/04/01 11:45:19: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on PROTEINS
+2022/04/01 11:45:19: read to conduct SP kernel on PROTEINS
 2022/04/01 11:45:19: with gridserach = True and crossvalidation = True
-2022/04/01 11:45:55: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on PROTEINS
+2022/04/01 11:45:55: have conducted SP kernel on PROTEINS
 2022/04/01 11:45:55: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PROTEINS
 2022/04/01 11:45:55: with gridserach = True and crossvalidation = True
 2022/04/01 11:46:01: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on PROTEINS
@@ -74,9 +74,9 @@ ValueError: Input contains NaN, infinity or a value too large for dtype('float64
 2022/04/01 12:22:52: loading the DD dataset
 2022/04/01 12:22:55: before drop huge graphs, there are 1178 graphs in DD
 2022/04/01 12:22:55: after drop huge graphs, there are 1126 graphs in DD
-2022/04/01 12:22:55: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on DD
+2022/04/01 12:22:55: read to conduct SP kernel on DD
 2022/04/01 12:22:55: with gridserach = True and crossvalidation = True
-2022/04/01 12:31:27: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on DD
+2022/04/01 12:31:27: have conducted SP kernel on DD
 2022/04/01 12:31:27: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on DD
 2022/04/01 12:31:27: with gridserach = True and crossvalidation = True
 2022/04/01 12:31:40: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on DD
@@ -92,9 +92,9 @@ ValueError: Input contains NaN, infinity or a value too large for dtype('float64
 2022/04/01 12:56:39: loading the ENZYMES dataset
 2022/04/01 12:56:39: before drop huge graphs, there are 600 graphs in ENZYMES
 2022/04/01 12:56:39: after drop huge graphs, there are 598 graphs in ENZYMES
-2022/04/01 12:56:39: read to conduct <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/01 12:56:39: read to conduct SP kernel on ENZYMES
 2022/04/01 12:56:39: with gridserach = True and crossvalidation = True
-2022/04/01 12:56:54: have conducted <class 'grakel.kernels.shortest_path.ShortestPath'> on ENZYMES
+2022/04/01 12:56:54: have conducted SP kernel on ENZYMES
 2022/04/01 12:56:54: read to conduct <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES
 2022/04/01 12:56:54: with gridserach = True and crossvalidation = True
 2022/04/01 12:56:57: have conducted <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> on ENZYMES

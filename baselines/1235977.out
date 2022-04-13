@@ -3,7 +3,7 @@
 Graph classification on MUTAG using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in MUTAG: 80.88 +- 3.07 %
+Mean 10-fold accuracy of SP kernel in MUTAG: 80.88 +- 3.07 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in MUTAG: 83.01 +- 2.45 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 66.49 +- 0.72 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 76.11 +- 2.25 %
@@ -13,7 +13,7 @@ Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> 
 Graph classification on MUTAG using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in MUTAG: 86.75 +- 2.15 %
+Mean 10-fold accuracy of SP kernel in MUTAG: 86.75 +- 2.15 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in MUTAG: 83.01 +- 2.06 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 66.49 +- 0.72 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 76.02 +- 2.64 %
@@ -23,7 +23,7 @@ Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> 
 Graph classification on MUTAG using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in MUTAG: 86.64 +- 2.57 %
+Mean 10-fold accuracy of SP kernel in MUTAG: 86.64 +- 2.57 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in MUTAG: 81.35 +- 1.90 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 66.49 +- 0.72 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in MUTAG: 75.99 +- 3.09 %
@@ -33,7 +33,7 @@ Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> 
 Graph classification on PTC_MR using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 60.59 +- 1.73 %
+Mean 10-fold accuracy of SP kernel in PTC_MR: 60.59 +- 1.73 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 62.35 +- 1.90 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
 Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 56.76 +- 1.77 %
@@ -42,7 +42,7 @@ Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> 
 Graph classification on PTC_MR using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 58.53 +- 1.97 %
+Mean 10-fold accuracy of SP kernel in PTC_MR: 58.53 +- 1.97 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 62.06 +- 3.29 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.74 %
 Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 57.65 +- 1.33 %
@@ -51,7 +51,7 @@ Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> 
 Graph classification on PTC_MR using the baseline kernels.
 =============================================================
 
-Mean 10-fold accuracy of <class 'grakel.kernels.shortest_path.ShortestPath'> in PTC_MR: 62.94 +- 2.05 %
+Mean 10-fold accuracy of SP kernel in PTC_MR: 62.94 +- 2.05 %
 Mean 10-fold accuracy of <class 'grakel.kernels.weisfeiler_lehman.WeisfeilerLehman'> in PTC_MR: 61.47 +- 1.34 %
 Mean 10-fold accuracy of <class 'grakel.kernels.graphlet_sampling.GraphletSampling'> in PTC_MR: 57.65 +- 0.62 %
 Mean 10-fold accuracy of <class 'grakel.kernels.random_walk.RandomWalkLabeled'> in PTC_MR: 58.24 +- 0.81 %
