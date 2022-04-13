@@ -18,7 +18,7 @@ def pairwise_wasserstein_distance(X,T,signature_method,sample_method,weight:list
     # logging.info("ready to generate node embeddings")
     node_signature_matrice = signature.CalculateSignature4Graphs(X,signature_method,sample_method,T)
     node_attr_matrice = signature.GraphAttrMatrice(X)
-    logging.info("the node embedding have been generated")
+    # logging.info("the node embedding have been generated")
     wasserstein_distances = []
     # Compute the Wasserstein distance
     for w in weight:
