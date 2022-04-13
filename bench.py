@@ -72,12 +72,12 @@ if __name__ == '__main__':
             # For Python>=3.5 one can also write:
             logging.info('SP test')
             cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=10))
-            logging.info('RW test')
-            cost.append(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
-            logging.info('GL3 test')
-            cost.append(timeit.timeit("test0(g0,g1,GL3)", globals=locals(),number=10))
-            logging.info('GL4 test')
-            cost.append(timeit.timeit("test0(g0,g1,GL4)", globals=locals(),number=10))
+            # logging.info('RW test')
+            # cost.append(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
+            # logging.info('GL3 test')
+            # cost.append(timeit.timeit("test0(g0,g1,GL3)", globals=locals(),number=10))
+            # logging.info('GL4 test')
+            # cost.append(timeit.timeit("test0(g0,g1,GL4)", globals=locals(),number=10))
 
             g0 = get_dglGraph(adj0)
             g1 = get_dglGraph(adj1)
