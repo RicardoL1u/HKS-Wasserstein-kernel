@@ -56,7 +56,7 @@ if __name__ == '__main__':
     GL4 = grakel.kernels.GraphletSampling(normalize=True,k=4)
 
     data = []
-    ns = [10,int(10**1.5),100,int(100**2.5),1000]
+    ns = [10,int(10**1.5),100,int(100**2.5)]
     # ns = [10]
     for n in ns:
         for i in range(5):
