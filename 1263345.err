@@ -1,0 +1,90 @@
+[00:02:26] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/14 12:02:30: This is 0-th graph with node number = 10
+2022/04/14 12:02:30: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:30: HKS test
+2022/04/14 12:02:30: WKS test
+2022/04/14 12:02:30: This is data-point is [10, 0.0019, 0.2682, 0.3852]
+2022/04/14 12:02:30: This is 0-th graph with node number = 17
+2022/04/14 12:02:30: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:30: HKS test
+2022/04/14 12:02:31: WKS test
+2022/04/14 12:02:31: This is data-point is [17, 0.0026, 0.3029, 0.6386]
+2022/04/14 12:02:31: This is 0-th graph with node number = 31
+2022/04/14 12:02:31: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:31: HKS test
+2022/04/14 12:02:32: WKS test
+2022/04/14 12:02:33: This is data-point is [31, 0.0083, 0.4771, 1.1232]
+2022/04/14 12:02:33: This is 0-th graph with node number = 56
+2022/04/14 12:02:33: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:33: HKS test
+2022/04/14 12:02:34: WKS test
+2022/04/14 12:02:36: This is data-point is [56, 0.027, 0.7736, 1.9753]
+2022/04/14 12:02:36: This is 0-th graph with node number = 100
+2022/04/14 12:02:36: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:36: HKS test
+2022/04/14 12:02:37: WKS test
+2022/04/14 12:02:41: This is data-point is [100, 0.0957, 1.3155, 3.6439]
+2022/04/14 12:02:41: This is 0-th graph with node number = 177
+2022/04/14 12:02:41: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:41: HKS test
+2022/04/14 12:02:44: WKS test
+2022/04/14 12:02:50: This is data-point is [177, 0.2802, 2.4042, 6.314]
+2022/04/14 12:02:50: This is 0-th graph with node number = 316
+2022/04/14 12:02:50: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:02:51: HKS test
+2022/04/14 12:02:56: WKS test
+2022/04/14 12:03:08: This is data-point is [316, 0.8106, 4.7509, 12.1846]
+2022/04/14 12:03:08: This is 0-th graph with node number = 562
+2022/04/14 12:03:09: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:03:12: HKS test
+2022/04/14 12:03:21: WKS test
+2022/04/14 12:03:46: This is data-point is [562, 2.9292, 9.4761, 24.4464]
+2022/04/14 12:03:46: This is 0-th graph with node number = 1000
+2022/04/14 12:03:49: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:03:59: HKS test
+2022/04/14 12:04:17: WKS test
+2022/04/14 12:05:14: This is data-point is [1000, 10.5039, 17.9257, 57.2195]
+2022/04/14 12:05:14: This is 0-th graph with node number = 1778
+2022/04/14 12:05:23: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:06:11: HKS test
+2022/04/14 12:06:49: WKS test
+2022/04/14 12:08:21: This is data-point is [1778, 47.2979, 38.032, 92.3077]
+2022/04/14 12:08:21: This is 0-th graph with node number = 3162
+2022/04/14 12:08:49: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:12:08: HKS test
+2022/04/14 12:13:40: WKS test
+2022/04/14 12:17:03: This is data-point is [3162, 197.3005, 92.0052, 203.3229]
+2022/04/14 12:17:03: This is 0-th graph with node number = 5623
+2022/04/14 12:18:32: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/14 12:33:10: HKS test
+RESULT MIGHT BE INACURATE
+Max number of iteration reached, currently 100000. Sometimes iterations go on in cycle even though the solution has been reached, to check if it's the case here have a look at the minimal reduced cost. If it is very close to machine precision, you might actually have the correct solution, if not try setting the maximum number of iterations a bit higher
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/ot/lp/__init__.py:495: UserWarning: numItermax reached before optimality. Try to increase numItermax.
+  check_result(result_code)
+2022/04/14 12:37:27: WKS test
+2022/04/14 12:45:56: This is data-point is [5623, 872.663, 257.3593, 508.8777]
