@@ -56,10 +56,10 @@ if __name__ == '__main__':
     GL4 = grakel.kernels.GraphletSampling(normalize=True,k=4)
 
     data = []
-    ns = [10,int(10**1.25),int(10**1.5),int(10**1.75),100,int(10**2.25),int(10**2.5),int(10**2.75),1000,int(10**3.25),int(10**3.5)]
+    ns = [10,int(10**1.25),int(10**1.5),int(10**1.75),100,int(10**2.25),int(10**2.5),int(10**2.75),1000,int(10**3.25),int(10**3.5),int(10**3.75)]
     # ns = [10]
     for n in ns:
-        for i in range(5):
+        for i in range(1):
             data_unit = [n]
             cost = []
             logging.info(f'This is {i}-th graph with node number = {n}')
