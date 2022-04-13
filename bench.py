@@ -47,7 +47,7 @@ def testHKS(g0,g1):
 if __name__ == '__main__':
     import timeit
 
-    column_list = ['n','SP','RW','GL3','GL4','HKS','WKS']
+    column_list = ['n','SP','HKS','WKS']
     
 
     SP = grakel.kernels.ShortestPath(normalize=True,with_labels=False)
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     GL4 = grakel.kernels.GraphletSampling(normalize=True,k=4)
 
     data = []
-    ns = [10,int(10**1.5),100,int(10**2.5)]
+    ns = [10,int(10**1.5),100,int(10**2.5),500,1000]
     # ns = [10]
     for n in ns:
         for i in range(5):
@@ -91,7 +91,7 @@ if __name__ == '__main__':
             data_unit.extend(cost)
             data.append(data_unit)
             logging.info(f'This is data-point is {data_unit}')
+        df = pd.DataFrame(data,columns=column_list)
+        df.to_csv('bench_mean.csv')
     
-    df = pd.DataFrame(data,columns=column_list)
-    df.to_csv('bench_mean.csv')
 
