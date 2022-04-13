@@ -619,3 +619,11 @@ Results saved in /public1/home/scfa2295/HKS-Wasserstein-kernel/exp/10times/resul
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/10times/results/MUTAG/HKS/results_MUTAG_HKS_seed_0777_2022-04-10 21:54:29_crossvalidation_gridsearch.csv (deflated 66%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/10times/results/MUTAG/HKS/results_MUTAG_HKS_seed_4396_2022-04-10 21:55:26_crossvalidation_gridsearch.csv (deflated 67%)
   adding: public1/home/scfa2295/HKS-Wasserstein-kernel/exp/10times/results/MUTAG/HKS/results_MUTAG_HKS_seed_0077_2022-04-10 21:53:33_crossvalidation_gridsearch.csv (deflated 65%)
+[master 57230f2] exp:record for 5times.zip
+ 8 files changed, 1094 insertions(+), 22 deletions(-)
+ rewrite baselines/PTC_MR_seed_0777.csv (75%)
+ rewrite baselines/PTC_MR_seed_1205.csv (75%)
+ rewrite baselines/PTC_MR_seed_4396.csv (75%)
+ create mode 100644 exp/10times/1234253.err
+ create mode 100644 exp/10times/1234253.out
+ create mode 100644 exp/10times/5times.zip

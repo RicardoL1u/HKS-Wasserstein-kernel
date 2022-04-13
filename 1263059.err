@@ -1,0 +1,125 @@
+[21:19:43] /opt/dgl/src/runtime/tensordispatch.cc:43: TensorDispatcher: dlopen failed: /public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/tensoradapter/pytorch/libtensoradapter_pytorch_1.10.2.so: cannot open shared object file: No such file or directory
+Using backend: pytorch
+2022/04/13 09:19:48: This is 0-th graph with node number = 10
+2022/04/13 09:19:48: SP test
+/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/dgl/base.py:45: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  return warnings.warn(message, category=category, stacklevel=1)
+2022/04/13 09:19:48: HKS test
+2022/04/13 09:19:50: WKS test
+2022/04/13 09:19:54: This is data-point is [10, 0.0084, 1.6281, 3.9126]
+2022/04/13 09:19:54: This is 1-th graph with node number = 10
+2022/04/13 09:19:54: SP test
+2022/04/13 09:19:54: HKS test
+2022/04/13 09:19:55: WKS test
+2022/04/13 09:19:59: This is data-point is [10, 0.0036, 1.474, 3.9135]
+2022/04/13 09:19:59: This is 2-th graph with node number = 10
+2022/04/13 09:19:59: SP test
+2022/04/13 09:19:59: HKS test
+2022/04/13 09:20:01: WKS test
+2022/04/13 09:20:04: This is data-point is [10, 0.0036, 1.4502, 3.9314]
+2022/04/13 09:20:04: This is 3-th graph with node number = 10
+2022/04/13 09:20:04: SP test
+2022/04/13 09:20:04: HKS test
+2022/04/13 09:20:06: WKS test
+2022/04/13 09:20:10: This is data-point is [10, 0.0036, 1.4693, 3.9168]
+2022/04/13 09:20:10: This is 4-th graph with node number = 10
+2022/04/13 09:20:10: SP test
+2022/04/13 09:20:10: HKS test
+2022/04/13 09:20:11: WKS test
+2022/04/13 09:20:15: This is data-point is [10, 0.0036, 1.4647, 3.9151]
+2022/04/13 09:20:15: This is 0-th graph with node number = 31
+2022/04/13 09:20:15: SP test
+2022/04/13 09:20:15: HKS test
+2022/04/13 09:20:20: WKS test
+2022/04/13 09:20:31: This is data-point is [31, 0.0274, 4.4637, 11.1832]
+2022/04/13 09:20:31: This is 1-th graph with node number = 31
+2022/04/13 09:20:31: SP test
+2022/04/13 09:20:31: HKS test
+2022/04/13 09:20:35: WKS test
+2022/04/13 09:20:47: This is data-point is [31, 0.0277, 4.4501, 11.1143]
+2022/04/13 09:20:47: This is 2-th graph with node number = 31
+2022/04/13 09:20:47: SP test
+2022/04/13 09:20:47: HKS test
+2022/04/13 09:20:51: WKS test
+2022/04/13 09:21:02: This is data-point is [31, 0.0273, 4.4376, 11.1242]
+2022/04/13 09:21:02: This is 3-th graph with node number = 31
+2022/04/13 09:21:02: SP test
+2022/04/13 09:21:02: HKS test
+2022/04/13 09:21:07: WKS test
+2022/04/13 09:21:18: This is data-point is [31, 0.0268, 4.4326, 11.0941]
+2022/04/13 09:21:18: This is 4-th graph with node number = 31
+2022/04/13 09:21:18: SP test
+2022/04/13 09:21:18: HKS test
+2022/04/13 09:21:22: WKS test
+2022/04/13 09:21:33: This is data-point is [31, 0.0273, 4.4545, 11.1891]
+2022/04/13 09:21:33: This is 0-th graph with node number = 100
+2022/04/13 09:21:33: SP test
+2022/04/13 09:21:34: HKS test
+2022/04/13 09:21:47: WKS test
+2022/04/13 09:22:22: This is data-point is [100, 0.2747, 13.3716, 35.3384]
+2022/04/13 09:22:22: This is 1-th graph with node number = 100
+2022/04/13 09:22:22: SP test
+2022/04/13 09:22:23: HKS test
+2022/04/13 09:22:36: WKS test
+2022/04/13 09:23:11: This is data-point is [100, 0.272, 13.4004, 35.164]
+2022/04/13 09:23:11: This is 2-th graph with node number = 100
+2022/04/13 09:23:11: SP test
+2022/04/13 09:23:12: HKS test
+2022/04/13 09:23:25: WKS test
+2022/04/13 09:24:00: This is data-point is [100, 0.2755, 13.2334, 35.6422]
+2022/04/13 09:24:00: This is 3-th graph with node number = 100
+2022/04/13 09:24:00: SP test
+2022/04/13 09:24:01: HKS test
+2022/04/13 09:24:14: WKS test
+2022/04/13 09:24:50: This is data-point is [100, 0.2743, 13.3747, 35.5304]
+2022/04/13 09:24:50: This is 4-th graph with node number = 100
+2022/04/13 09:24:50: SP test
+2022/04/13 09:24:50: HKS test
+2022/04/13 09:25:03: WKS test
+2022/04/13 09:25:39: This is data-point is [100, 0.2833, 13.2963, 35.3824]
+2022/04/13 09:25:39: This is 0-th graph with node number = 316
+2022/04/13 09:25:39: SP test
+2022/04/13 09:25:41: HKS test
+2022/04/13 09:26:30: WKS test
+2022/04/13 09:28:34: This is data-point is [316, 2.5266, 48.4774, 124.3244]
+2022/04/13 09:28:34: This is 1-th graph with node number = 316
+2022/04/13 09:28:35: SP test
+2022/04/13 09:28:37: HKS test
+2022/04/13 09:29:24: WKS test
+2022/04/13 09:31:30: This is data-point is [316, 2.5246, 46.9694, 125.8506]
+2022/04/13 09:31:30: This is 2-th graph with node number = 316
+2022/04/13 09:31:30: SP test
+2022/04/13 09:31:33: HKS test
+2022/04/13 09:32:20: WKS test
+2022/04/13 09:34:23: This is data-point is [316, 2.4926, 46.7767, 123.4351]
+2022/04/13 09:34:23: This is 3-th graph with node number = 316
+2022/04/13 09:34:23: SP test
+2022/04/13 09:34:26: HKS test
+2022/04/13 09:35:13: WKS test
+2022/04/13 09:37:20: This is data-point is [316, 2.5721, 47.4057, 126.7479]
+2022/04/13 09:37:20: This is 4-th graph with node number = 316
+2022/04/13 09:37:20: SP test
+2022/04/13 09:37:23: HKS test
+2022/04/13 09:38:10: WKS test
+2022/04/13 09:40:13: This is data-point is [316, 2.5588, 47.253, 123.3148]
+Traceback (most recent call last):
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 982, in _finalize_columns_and_data
+    columns = _validate_or_indexify_columns(contents, columns)
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 1030, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 7 columns passed, passed data had 4 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/public1/home/scfa2295/HKS-Wasserstein-kernel/bench.py", line 95, in <module>
+    df = pd.DataFrame(data,columns=column_list)
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/frame.py", line 721, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 519, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 883, in to_arrays
+    content, columns = _finalize_columns_and_data(arr, columns, dtype)
+  File "/public1/home/scfa2295/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 985, in _finalize_columns_and_data
+    raise ValueError(err) from err
+ValueError: 7 columns passed, passed data had 4 columns
