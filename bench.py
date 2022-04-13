@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
     data = []
     ns = [10,int(10**1.5),100,int(100**2.5),1000]
-    ns = [10]
+    # ns = [10]
     for n in ns:
         for i in range(5):
             data_unit = [n]
