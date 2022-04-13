@@ -8,6 +8,9 @@ import wass_dis
 from signature import WKS
 from signature import get_sample4WKS
 
+from signature import HKS
+from signature import get_random_samples_based_exp_dual
+
 def random_adjacency_matrix(n):   
     matrix = [[random.randint(0, 1) for i in range(n)] for j in range(n)]
 
@@ -35,6 +38,8 @@ def test0(g0,g1,kernel):
 def testWKS(g0,g1):
     wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=WKS,sample_method=get_sample4WKS,weight=[0.4])
 
+def testHKS(g0,g1):
+    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=HKS,sample_method=get_random_samples_based_exp_dual,weight=[0.4])
 
 if __name__ == '__main__':
     import timeit
@@ -58,5 +63,6 @@ if __name__ == '__main__':
     g1 = get_dglGraph(adj1)
 
     print(timeit.timeit("testWKS(g0,g1)", globals=locals(),number=10))
+    print(timeit.timeit("testHKS(g0,g1)", globals=locals(),number=10))
 
 
