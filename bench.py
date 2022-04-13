@@ -47,7 +47,7 @@ def testHKS(g0,g1):
 if __name__ == '__main__':
     import timeit
 
-    column_list = ['n','SP','RW','GL3','GL4','HKS','WKS']
+    column_list = ['n','SP','HKS','WKS']
     
 
     SP = grakel.kernels.ShortestPath(normalize=True,with_labels=False)
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     GL4 = grakel.kernels.GraphletSampling(normalize=True,k=4)
 
     data = []
-    ns = [10,int(10**1.5),100,int(10**2.5)]
+    ns = [10,int(10**1.5),100,int(10**2.25),int(10**2.5),int(10**2.75),1000]
     # ns = [10]
     for n in ns:
         for i in range(5):
@@ -71,7 +71,7 @@ if __name__ == '__main__':
             
             # For Python>=3.5 one can also write:
             logging.info('SP test')
-            cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=10))
+            cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=1))
             # logging.info('RW test')
             # cost.append(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
             # logging.info('GL3 test')
@@ -83,15 +83,15 @@ if __name__ == '__main__':
             g1 = get_dglGraph(adj1)
 
             logging.info('HKS test')
-            cost.append(timeit.timeit("testHKS(g0,g1)", globals=locals(),number=10))
+            cost.append(timeit.timeit("testHKS(g0,g1)", globals=locals(),number=1))
             logging.info('WKS test')
-            cost.append(timeit.timeit("testWKS(g0,g1)", globals=locals(),number=10))
+            cost.append(timeit.timeit("testWKS(g0,g1)", globals=locals(),number=1))
             cost = np.array(cost)
             cost = np.round(cost,4)
             data_unit.extend(cost)
             data.append(data_unit)
             logging.info(f'This is data-point is {data_unit}')
+        df = pd.DataFrame(data,columns=column_list)
+        df.to_csv('bench_mean.csv')
     
-    df = pd.DataFrame(data,columns=column_list)
-    df.to_csv('bench_mean.csv')
 
