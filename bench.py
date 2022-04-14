@@ -39,15 +39,15 @@ def test0(g0,g1,kernel):
     kernel.transform([g1])
 
 def testWKS(g0,g1):
-    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=WKS,sample_method=get_sample4WKS,weight=[0.4])
+    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=WKS,sample_method=get_sample4WKS,weight=[0.4],sinkhorn=True)
 
 def testHKS(g0,g1):
-    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=HKS,sample_method=get_random_samples_based_exp_dual,weight=[0.4])
+    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=HKS,sample_method=get_random_samples_based_exp_dual,weight=[0.4],sinkhorn=True)
 
 if __name__ == '__main__':
     import timeit
 
-    column_list = ['n','SP','HKS','WKS']
+    column_list = ['n','HKS with sinkhorn','WKS with sinkhorn']
     
 
     SP = grakel.kernels.ShortestPath(normalize=True,with_labels=False)
@@ -70,8 +70,8 @@ if __name__ == '__main__':
             g1 = grakel.Graph(adj1)
             
             # For Python>=3.5 one can also write:
-            logging.info('SP test')
-            cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=1))
+            # logging.info('SP test')
+            # cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=1))
             # logging.info('RW test')
             # cost.append(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
             # logging.info('GL3 test')
