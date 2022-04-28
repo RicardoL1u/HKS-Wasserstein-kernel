@@ -4,6 +4,10 @@ import random
 import numpy as np
 import dgl
 import wass_dis
+import pandas as pd
+import logging
+logging.basicConfig(format='%(asctime)s: %(message)s',datefmt='%Y/%m/%d %I:%M:%S',level=logging.DEBUG)
+
 
 from signature import WKS
 from signature import get_sample4WKS
@@ -30,39 +34,64 @@ def get_dglGraph(adj_mat):
     g = dgl.DGLGraph((src,dst))
     return g
 
-
 def test0(g0,g1,kernel):
     kernel.fit_transform([g0])
     kernel.transform([g1])
 
 def testWKS(g0,g1):
-    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=WKS,sample_method=get_sample4WKS,weight=[0.4])
+    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=WKS,sample_method=get_sample4WKS,weight=[0.4],sinkhorn=True)
 
 def testHKS(g0,g1):
-    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=HKS,sample_method=get_random_samples_based_exp_dual,weight=[0.4])
+    wass_dis.pairwise_wasserstein_distance([g0,g1],800,signature_method=HKS,sample_method=get_random_samples_based_exp_dual,weight=[0.4],sinkhorn=True)
 
 if __name__ == '__main__':
     import timeit
-    adj0 = random_adjacency_matrix(5)
-    adj1 = random_adjacency_matrix(5)
 
-    g0 = grakel.Graph(adj0)
-    g1 = grakel.Graph(adj1)
+    column_list = ['n','HKS with sinkhorn','WKS with sinkhorn']
     
+
     SP = grakel.kernels.ShortestPath(normalize=True,with_labels=False)
     RW = grakel.kernels.RandomWalk(normalize=True)
     GL3 = grakel.kernels.GraphletSampling(normalize=True,k=3)
     GL4 = grakel.kernels.GraphletSampling(normalize=True,k=4)
-    # For Python>=3.5 one can also write:
-    print(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=10))
-    print(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
-    print(timeit.timeit("test0(g0,g1,GL4)", globals=locals(),number=10))
-    print(timeit.timeit("test0(g0,g1,GL3)", globals=locals(),number=10))
 
-    g0 = get_dglGraph(adj0)
-    g1 = get_dglGraph(adj1)
+    data = []
+    ns = [10,int(10**1.25),int(10**1.5),int(10**1.75),100,int(10**2.25),int(10**2.5),int(10**2.75),1000,int(10**3.25),int(10**3.5),int(10**3.75)]
+    # ns = [10]
+    for n in ns:
+        for i in range(1):
+            data_unit = [n]
+            cost = []
+            logging.info(f'This is {i}-th graph with node number = {n}')
+            adj0 = random_adjacency_matrix(n)
+            adj1 = random_adjacency_matrix(n)
 
-    print(timeit.timeit("testWKS(g0,g1)", globals=locals(),number=10))
-    print(timeit.timeit("testHKS(g0,g1)", globals=locals(),number=10))
+            g0 = grakel.Graph(adj0)
+            g1 = grakel.Graph(adj1)
+            
+            # For Python>=3.5 one can also write:
+            # logging.info('SP test')
+            # cost.append(timeit.timeit("test0(g0,g1,SP)", globals=locals(),number=1))
+            # logging.info('RW test')
+            # cost.append(timeit.timeit("test0(g0,g1,RW)", globals=locals(),number=10))
+            # logging.info('GL3 test')
+            # cost.append(timeit.timeit("test0(g0,g1,GL3)", globals=locals(),number=10))
+            # logging.info('GL4 test')
+            # cost.append(timeit.timeit("test0(g0,g1,GL4)", globals=locals(),number=10))
 
+            g0 = get_dglGraph(adj0)
+            g1 = get_dglGraph(adj1)
+
+            logging.info('HKS test')
+            cost.append(timeit.timeit("testHKS(g0,g1)", globals=locals(),number=1))
+            logging.info('WKS test')
+            cost.append(timeit.timeit("testWKS(g0,g1)", globals=locals(),number=1))
+            cost = np.array(cost)
+            cost = np.round(cost,4)
+            data_unit.extend(cost)
+            data.append(data_unit)
+            logging.info(f'This is data-point is {data_unit}')
+        df = pd.DataFrame(data,columns=column_list)
+        df.to_csv('bench_mean.csv')
+    
 
